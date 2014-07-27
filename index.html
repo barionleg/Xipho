@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article>
+	<h3>About Icecast 2</h3>
+	<p>Icecast is a streaming media server which currently supports Ogg
+	Vorbis and MP3 audio streams. It can be used to create an Internet
+	radio station or a privately running jukebox and many things in
+	between. It is very versatile in that new formats can be added
+	relatively easily and supports open standards for commuincation and
+	interaction.</p>
+	<p>Icecast is distributed under the GNU GPL, version 2.</p>
+</article>
+<h2>Latest News</h2>
+{% for post in site.posts limit:2 %}
+  <article>
+    <h3>{{ post.title }}</h3>
+    {{ post.content }}
+    <aside>Posted <strong>{{ post.date | date: "%b %-d, %Y" }}</strong>{% if post.author %} by <strong>{{ post.author }}</strong>{% endif %} &mdash; <a href="{{ post.url }}">URL</a></aside>
+  </article>
+{% endfor %}
+<p><a href="{{ "/news" | prepend: site.baseurl }}">See all news</a></p>

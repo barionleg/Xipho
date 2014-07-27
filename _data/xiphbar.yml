@@ -1,0 +1,31 @@
+# Xiphbar entries
+entries:
+    - name: Xiph.org
+      url: http://www.xiph.org/
+
+    - name: Opus
+      url: http://www.opus-codec.org/
+
+    - name: FLAC
+      url: http://xiph.org/flac/
+
+    - name: Icecast
+      url: http://www.icecast.org/
+
+    - name: Vorbis
+      url: http://www.vorbis.com/
+
+    - name: Theora
+      url: http://www.theora.org/
+
+    - name: Speex
+      url: http://www.speex.org/
+
+    - name: XSPF
+      url: http://www.xspf.org/
+
+# Xiph logo / alt text
+logo:
+    url: http://www.xiph.org/
+    img: /assets/img/xiph-community.svg
+    alt: the xiph open source community

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ site.title }}{% if page.title %} Docs &mdash; {{ page.title }}{% else %} Documentation{% endif %}</title>
+	{% include head.html %}
+</head>
+
+  <body>
+
+    {% include header.html %}
+
+    <section>
+      <h2>{{ page.product }} {{ page.version }} Docs{% if page.title %} &mdash; {{ page.title }}{% endif %}</h2>
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+</html>

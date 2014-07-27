@@ -1,0 +1,13 @@
+---
+layout: default
+title: News Archive
+permalink: /news/
+---
+<h2>News Archive</h2>
+{% for post in site.posts %}
+  <article>
+    <h3>{{ post.title }}</h3>
+    {{ post.content }}
+    <aside>Posted <strong>{{ post.date | date: "%b %-d, %Y" }}</strong>{% if post.author %} by <strong>{{ post.author }}</strong>{% endif %} &mdash; <a href="{{ post.url }}">URL</a></aside>
+  </article>
+{% endfor %}

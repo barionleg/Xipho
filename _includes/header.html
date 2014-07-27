@@ -1,0 +1,37 @@
+<header>
+  {% if site.data.xiphbar %}
+    {% assign bar = site.data.xiphbar %}
+    <div id="xiphbar">
+      <div>
+        <a href="{{ bar.logo.url }}"><img src="{{ bar.logo.img | prepend: site.baseurl }}" alt="{{ bar.logo.alt }}"/></a>
+        <ul>
+          {% for entry in bar.entries %}
+            <li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+  <h1><a href="/{{ site.baseurl }}" title="Home page">Icecast</a> <span>is free server software for streaming multimedia.</span></h1>
+  <nav>
+    <label for="toggle-nav" title="Toggle navigation"></label>
+    <input type="checkbox" id="toggle-nav" />
+    <ul>
+      {% if site.data.menu %}
+        {% assign menu = site.data.menu %}
+        {% for i in menu %}
+          {% if i.url %}
+            {% assign url = i.url %}
+          {% elsif i.path %}
+            {% assign url = i.path | prepend: site.baseurl %}
+          {% else %}
+            {% assign url = '#' %}
+          {% endif %}
+          <li><a href="{{ url }}">{{ i.name }}</a></li>
+        {% endfor %}
+      {% else %}
+        <li><a href="#">Home</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>

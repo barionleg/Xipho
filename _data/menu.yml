@@ -1,0 +1,22 @@
+# Menu entries
+# shold not contain more than 7 entries
+- name: Download
+  path: /download
+
+- name: Docs
+  path: /docs
+
+- name: Apps
+  path: /apps
+
+- name: Streams
+  url: http://dir.xiph.org/
+
+- name: Ices
+  path: /ices
+
+- name: Subversion
+  path: /svn
+
+- name: Contact
+  path: /contact

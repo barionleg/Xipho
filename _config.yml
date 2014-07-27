@@ -1,0 +1,42 @@
+# Site settings
+title: Icecast
+email: webmaster@xiph.org
+description: "Icecast is free server software for streaming multimedia."
+baseurl: ""
+url: "http://icecast.org"
+timezone: UTC
+
+# Build settings
+markdown: kramdown
+permalink: /news/:title/
+highlighter: pygments
+include: [".htaccess"]
+
+#collections:
+#    docs:
+#        output: true
+
+# Markdown settings
+# only change if you know what you are doing
+kramdown:
+    header_offset: 2
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "page"
+        values:
+            layout: "page"
+    -
+        scope:
+            path: "docs"
+        values:
+            layout: "docs"
+            product: "Icecast"
+    -
+        scope:
+            path: "ices/docs"
+        values:
+            layout: "docs"
+            product: "IceS"
