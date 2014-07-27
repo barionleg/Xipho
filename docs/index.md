@@ -11,7 +11,7 @@ Here is an index to the Icecast documentation we know about. If there is
 something out there on the Web that you know about, but is not listed here,
 [contact us]({{ "/contact" | prepend: site.baseurl }}).
 
-The latest official Icecast documentation is available [here]({{ "/docs/latest" | prepend: site.baseurl }}).
+The latest official Icecast documentation is available [here]({{ "/docs/icecast-latest" | prepend: site.baseurl }}).
 
 All Docs:
 {% for doc in docs reversed %}
