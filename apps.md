@@ -5,7 +5,7 @@ permalink: /apps/
 <article markdown="1">
 # Source Clients
 
-These source clients are known to work with Icecast 2
+These source clients are known to work with Icecast
 
 |Application                                |Platform                     |
 |-------------------------------------------|-----------------------------|
@@ -28,7 +28,7 @@ These source clients are known to work with Icecast 2
 |[Orban Opticodec-PC][orban-opticode-pc]    |Windows                      |
 |[SAM Cast][sam-cast]                       |Windows                      |
 |[iCast][icast]                             |iOS                          |
-
+{: .table-block }
 
 [butt]: http://butt.sourceforge.net/
 [darkice]: https://code.google.com/p/darkice/
@@ -55,7 +55,7 @@ These source clients are known to work with Icecast 2
 <article markdown="1">
 # Mediaplayers that support Icecast streams
 
-These media players are known to work with Icecast 2
+These media players are known to work with Icecast
 
 |Application                                |Platform                                       |
 |-------------------------------------------|-----------------------------------------------|
@@ -69,7 +69,7 @@ These media players are known to work with Icecast 2
 |[FStream][fstream]                         |iOS, Mac OS X                                  |
 |[TuneIn Radio][tunein-radio]               |iOS, Android, Windows Phone, Blackberry        |
 |[Internet Radio Box][internet-radio-box]   |iOS                                            |
-
+{: .table-block }
 
 [foobar2000]: http://www.foobar2000.org/
 [winamp]: http://www.winamp.com/
@@ -92,6 +92,7 @@ Miscellaneous other _stuff_
 |Application                                |Platform                                       |
 |-------------------------------------------|-----------------------------------------------|
 |[Amptracker][amptracker]                   |Webservice                                     |
+{: .table-block }
 
 [amptracker]: http://amptracker.com/
 

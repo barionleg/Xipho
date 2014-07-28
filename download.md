@@ -38,7 +38,7 @@ We suggest that you download one from our [third-party applications]({{ "/apps" 
 <article markdown="1">
 # Icecast Library/Language Bindings
 
-<table>
+<table class="table-flipscroll">
 	<thead>
 		<tr>
 			<th>Library</th>
@@ -75,7 +75,7 @@ We suggest that you download one from our [third-party applications]({{ "/apps" 
 		</tr>
 		<tr>
 			<td>shoutpy</td>
-			<td>shoutpy uses Boost.Python to expose libshout 2 to Python,<br />through a separately usable C++ wrapper</td>
+			<td>shoutpy uses Boost.Python to expose libshout 2 to Python, through a separately usable C++ wrapper</td>
 			<td><a href="https://bitbucket.org/angry_elf/shoutpy">Bitbucket Repo</a></td>
 		</tr>
 	</tbody>
