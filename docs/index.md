@@ -25,35 +25,13 @@ Also, we have a simple [FAQ]({{ "/faq" | prepend: site.baseurl }}).
 </article>
 
 <article markdown="1">
-# Setup
+# Other Information
 
-## What platforms are supported?
-Icecast is being developed on Linux and Windows, and is being tested with major Unices.
+This is a list of some helpful external material (in various languages). Note that these are unofficial and maybe outdated!
 
-## How do I set up Icecast?
-Go to the Icecast [Documentation]({{ "/docs" | prepend: site.baseurl }}) Page and follow
-the instructions for your version there.
-
-</article>
-
-<article markdown="1">
-# Administration
-
-## How can I view the stream status page?
-Check your icecast configuration file for an element called `<webroot>`. This directory
-contains web stuff. In it, place a file called `status.xsl` that transforms an XML file
-containing stream data into a web page (either XHTML or HTML). There are sample XSL
-stylesheets available in icecast/web/ in the CVS distribution of Icecast.
-In addition, the web directory can hold multiple status transforms, if you
-can't decide which one you want.
+- [[EN] Ciaran Anscomb's IceS 2 How-To](http://www.6809.org.uk/kja3/ices2-howto.shtml)
+- [[DE] <del>German Icecast 2 Introduction by MPeX</del>](http://www.mpex.net/info/icecast.html) (outdated)
+- [[PT] Montando um Servidor de Webradio](https://docs.indymedia.org/Sysadmin/IceCastPtBr)
+- [[PT] Transmissão de Vídeo pela Internet e Web TVs](https://docs.indymedia.org/Sysadmin/WebTVPt)
 
 </article>
-
-<article markdown="1">
-# Interoperability
-
-## What can I use to listen to an Icecast stream?
-We maintain a list of Icecast-compatible audio players [here]({{ "/apps" | prepend: site.baseurl }}).
-
-</article>
-
