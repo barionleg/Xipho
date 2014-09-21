@@ -12,7 +12,7 @@
 - name: Streams
   url: http://dir.xiph.org/
 
-- name: Ices
+- name: IceS
   path: /ices
 
 - name: Subversion

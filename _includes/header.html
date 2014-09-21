@@ -29,7 +29,7 @@
           {% else %}
             {% assign url = '#' %}
           {% endif %}
-          <li><a href="{{ url }}">{{ i.name }}</a></li>
+          <li class="{% if page.url contains url %}on{% endif %}"><a href="{{ url }}">{{ i.name }}</a></li>
         {% endfor %}
       {% else %}
         <li><a href="#">Home</a></li>
