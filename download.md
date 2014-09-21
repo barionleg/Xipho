@@ -1,13 +1,30 @@
 ---
 title: Download
 permalink: /download/
+download:
+  linux:
+    format:      ".TAR.GZ"
+    size:        "1,0 MB"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.0.tar.gz"
+    description: "Source Package"
+  windows:
+    format:      ".ZIP"
+    size:        "4,7 MB"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.0.zip"
+    description: "Binary Package"
 ---
 <article id="current-release" markdown="1">
 # Icecast Current Release (2.4.0)
 
-## Windows Binary Packages
+The latest Icecast release can be downloaded below. For Windows there is a binary release, for Linux/UNIX
+there is provided the source package.
 
-The latest Windows binary release can be downloaded here: [icecast_win32_2.4.0.zip](http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.0.zip)
+{% include dl-buttons.html %}
+
+</article>
+
+<article id="other-releases" markdown="1">
+# Other Releases
 
 ## Linux/Unix Binary Packages
 Most current Linux and Unix distributions provide either prebuilt binary packages or a way to build your own package of Icecast.  
@@ -22,9 +39,6 @@ Hints that you might find useful:
 -   There are [package repositories](http://download.opensuse.org/repositories/home:/dm8tbr/)
     that can be added to the distro package manager.
 -   Debian and its derivatives (e.g. Ubuntu) name the package `icecast2`.
-
-## Source Packages
-The source releases (for all platforms) can be downloaded here: [icecast-2.4.0.tar.gz](http://downloads.xiph.org/releases/icecast/icecast-2.4.0.tar.gz)
 
 ## Older Releases
 Older releases can be found [here](http://downloads.xiph.org/releases/icecast/)

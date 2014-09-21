@@ -1,0 +1,20 @@
+{% if page.download %}
+<ul class="buttons">
+  {% if page.download.linux %}
+  <li>
+    <a class="linux" href="{{ page.download.linux.url }}">Icecast for Linux/Unix</a>
+    <span>
+      <em>{{ page.download.linux.format }} ({{ page.download.linux.size }})</em>, {{ page.download.linux.description }}
+    </span>
+  </li>
+  {% endif %}
+  {% if page.download.windows %}
+  <li>
+    <a class="windows" href="{{ page.download.windows.url }}">Icecast for Windows</a>
+    <span>
+      <em>{{ page.download.windows.format }} ({{ page.download.windows.size }})</em>, {{ page.download.linux.description }}
+    </span>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
