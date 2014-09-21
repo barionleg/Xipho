@@ -11,13 +11,13 @@
 
     <section>
       {% assign docs = site.pages | where:"product","Icecast" | sort:"version" | group_by:"version" | last %}
+      <h2>{{ page.product }} {{ page.version }} Docs{% if page.title %} &mdash; {{ page.title }}{% endif %}</h2>
       {% if docs.name != page.version %}
       <aside class="error">
         <strong>Please note:</strong> This doc is for an older Icecast version, you can find the latest doc
         <a href="{{ "/docs/icecast-latest" | prepend: site.baseurl }}">here</a>.
       </aside>
       {% endif %}
-      <h2>{{ page.product }} {{ page.version }} Docs{% if page.title %} &mdash; {{ page.title }}{% endif %}</h2>
       {{ content }}
     </section>
 
