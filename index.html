@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article>
+<article id="about">
 	<h3>About Icecast 2</h3>
 	<p>Icecast is a streaming media server which currently supports
 	Ogg (Vorbis and Theora), Opus, WebM and MP3 audio streams.<br/>
@@ -12,7 +12,7 @@ layout: default
 	interaction.</p>
 	<p>Icecast is distributed under the GNU GPL, version 2.</p>
 </article>
-<h2>Latest News</h2>
+<h2 id="latest-news">Latest News</h2>
 {% for post in site.posts limit:2 %}
   <article>
     <h3>{{ post.title }}</h3>

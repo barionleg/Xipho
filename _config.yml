@@ -10,7 +10,6 @@ timezone: UTC
 markdown: kramdown
 permalink: /news/:title/
 highlighter: pygments
-include: [".htaccess"]
 
 #collections:
 #    docs:
@@ -20,12 +19,13 @@ include: [".htaccess"]
 # only change if you know what you are doing
 kramdown:
     header_offset: 2
+    auto_ids: false
 
 defaults:
     -
         scope:
             path: ""
-            type: "page"
+            type: "pages"
         values:
             layout: "page"
     -

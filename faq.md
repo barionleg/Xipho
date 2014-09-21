@@ -2,7 +2,7 @@
 title: FAQ
 permalink: /faq/
 ---
-<article markdown="1">
+<article id="general-questions" markdown="1">
 # General Questions
 
 ## What is Icecast.org?
@@ -28,7 +28,7 @@ live audio from a sound card and encode it on the fly.
 
 </article>
 
-<article markdown="1">
+<article id="setup" markdown="1">
 # Setup
 
 ## What platforms are supported?
@@ -40,7 +40,7 @@ the instructions for your version there.
 
 </article>
 
-<article markdown="1">
+<article id="administration" markdown="1">
 # Administration
 
 ## How can I view the stream status page?
@@ -53,7 +53,7 @@ can't decide which one you want.
 
 </article>
 
-<article markdown="1">
+<article id="interoperability" markdown="1">
 # Interoperability
 
 ## What can I use to listen to an Icecast stream?

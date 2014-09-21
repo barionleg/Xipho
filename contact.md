@@ -2,7 +2,7 @@
 title: Contact
 permalink: /contact/
 ---
-<article markdown="1">
+<article id="mailing-list" markdown="1">
 # Mailing List
 The Icecast Mailing Lists (and their archives) are one of the first places to
 check for questions that may have been answered in the past.
@@ -22,7 +22,7 @@ found [here](http://lists.xiph.org/mailman/listinfo/icecast) (for the icecast li
 [here](http://lists.xiph.org/mailman/listinfo/icecast-dev) (for the icecast-dev list).
 </article>
 
-<article markdown="1">
+<article id="contact-info" markdown="1">
 # Contact Information
 
 ## IRC

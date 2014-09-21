@@ -3,7 +3,7 @@ title: Admin Interface
 version: 2.4.0
 ---
 
-<article markdown="1">
+<article id="overview" markdown="1">
 # Overview
 This section contains information about the admin interface of icecast. Through this interface the user can manipulate many server features. From it you can gather statistics, move listeners from mountpoint to mountpoint, disconnect connected sources, disconnect connected listeners, and many other activities. Each function is enumerated here as well as an example usage of the function.
 
@@ -11,7 +11,7 @@ Each of these functions requires HTTP authentication via the appropriate usernam
 
 </article>
 
-<article markdown="1">
+<article id="admin-functions-mount-specific" markdown="1">
 # Admin Functions (mount specific)
 All these admin functions are mount specific in that they only apply to a particular mountpoint
 (as opposed to applying to the entire server). Each of these functions requires a mountpoint to
@@ -69,7 +69,7 @@ Example:
 
 </article>
 
-<article markdown="1">
+<article id="admin-functions-general" markdown="1">
 # Admin Functions (general)
 
 ## Stats
@@ -91,7 +91,7 @@ Example:
 
 </article>
 
-<article markdown="1">
+<article id="web-based-admin-interface" markdown="1">
 # Web-Based Admin Interface
 As an alternative to manually invoking these URLs, a web-based admin interface was developed. This
 interface provides the same functions that were identified and described above but presents them in

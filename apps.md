@@ -2,7 +2,7 @@
 title: 3rd Party Applications
 permalink: /apps/
 ---
-<article markdown="1">
+<article id="source-clients" markdown="1">
 # Source Clients
 
 These source clients are known to work with Icecast
@@ -52,7 +52,7 @@ These source clients are known to work with Icecast
 
 </article>
 
-<article markdown="1">
+<article id="players" markdown="1">
 # Mediaplayers that support Icecast streams
 
 These media players are known to work with Icecast
@@ -84,7 +84,7 @@ These media players are known to work with Icecast
 
 </article>
 
-<article markdown="1">
+<article id="misc" markdown="1">
 # Other Applications/Services
 
 Miscellaneous other _stuff_

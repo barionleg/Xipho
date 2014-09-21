@@ -4,7 +4,7 @@ layout: page
 ---
 {% assign docs = site.pages | where:"product","Icecast" | sort:"version" | group_by:"version" %}
 
-<article markdown="1">
+<article id="official-docs" markdown="1">
 # Official Documentation
 
 Here is an index to the Icecast documentation we know about. If there is
@@ -24,7 +24,7 @@ Also, we have a simple [FAQ]({{ "/faq" | prepend: site.baseurl }}).
 
 </article>
 
-<article markdown="1">
+<article id="other" markdown="1">
 # Other Information
 
 This is a list of some helpful external material (in various languages). Note that these are unofficial and maybe outdated!

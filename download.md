@@ -2,7 +2,7 @@
 title: Download
 permalink: /download/
 ---
-<article markdown="1">
+<article id="current-release" markdown="1">
 # Icecast Current Release (2.4.0)
 
 ## Windows Binary Packages
@@ -35,7 +35,7 @@ We suggest that you download one from our [third-party applications]({{ "/apps" 
 </article>
 
 
-<article markdown="1">
+<article id="bindings" markdown="1">
 # Icecast Library/Language Bindings
 
 <table class="table-flipscroll">

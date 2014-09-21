@@ -3,7 +3,7 @@ title: Changes
 version: 2.4.0
 ---
 
-<article markdown="1">
+<article id="v{{ page.version }}" markdown="1">
 # Version {{ page.version }}
 
 ## New Features
@@ -46,7 +46,7 @@ version: 2.4.0
 
 </article>
 
-<article markdown="1">
+<article id="v2.3" markdown="1">
 # Version 2.3
 
 ## New Features

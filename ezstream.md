@@ -2,7 +2,7 @@
 title: Ezstream
 permalink: /ezstream/
 ---
-<article markdown="1">
+<article id="about" markdown="1">
 # About Ezstream
 Ezstream is a command line source client for Icecast media streaming servers. 
 It began as the successor of the old "shout" utility, and has since gained a 
@@ -23,7 +23,7 @@ been compiled in.
 Ezstream is free software and licensed under the GNU General Public License.
 </article>
 
-<article markdown="1">
+<article id="download" markdown="1">
 # Download
 
 ## Latest version: 0.5.6
@@ -39,7 +39,7 @@ Ezstream is free software and licensed under the GNU General Public License.
 Older releases can be found at [downloads.xiph.org/releases/ezstream](http://downloads.xiph.org/releases/ezstream/).
 </article>
 
-<article markdown="1">
+<article id="further-information" markdown="1">
 # Further Information
 
 ## Dependencies
@@ -82,7 +82,7 @@ important changes in ezstream as they happen.
 
 </article>
 
-<article markdown="1">
+<article id="release-notes" markdown="1">
 # Release Notes
 Ezstream 0.5.6 has been released on August 31st 2009.
 
@@ -110,7 +110,7 @@ Version 0.5.6 is a maintenance and feature release.
 
 </article>
 
-<article markdown="1">
+<article id="support" markdown="1">
 # Support
 
 ## Reporting Problems
