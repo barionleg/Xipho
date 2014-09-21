@@ -27,7 +27,7 @@ found [here](http://lists.xiph.org/mailman/listinfo/icecast) (for the icecast li
 
 ## IRC
 IRC is potentially the fastest way to get an answer, if you're lucky.
-Our official channel is [`#icecast`](irc://irc.freenode.net:6667/#icecast) 
+Our official channel is [#icecast](irc://irc.freenode.net:6667/#icecast) 
 on [irc.freenode.net](http://freenode.net) ([Webchat](http://webchat.freenode.net/?randomnick=1&channels=icecast&uio=d4)).
 
 ## Bugreports

@@ -17,7 +17,7 @@ layout: default
   <article>
     <h3>{{ post.title }}</h3>
     {{ post.content }}
-    <aside>Posted <strong>{{ post.date | date: "%b %-d, %Y" }}</strong>{% if post.author %} by <strong>{{ post.author }}</strong>{% endif %} &mdash; <a href="{{ post.url }}">URL</a></aside>
+    <aside>Posted <strong>{{ post.date | date: "%b %-d, %Y" }}</strong>{% if post.author %} by <strong>{{ post.author }}</strong>{% endif %} &mdash; <a href="{{ post.url }}">Permalink</a></aside>
   </article>
 {% endfor %}
 <p><a href="{{ "/news" | prepend: site.baseurl }}">See all news</a></p>
