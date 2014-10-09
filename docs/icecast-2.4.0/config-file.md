@@ -399,7 +399,7 @@ on-demand
 {:#mountsettings}
 
 {% highlight xml %}
-<mount>
+<mount type="normal">
     <mount-name>/example-complex.ogg</mount-name>
     <username>othersource</username>
     <password>hackmemore</password>
@@ -439,6 +439,13 @@ like the maximum number of listeners or a mountpoint specific username/password.
 what you need to but each mount definition needs at least the mount-name. Changes to most of these will apply
 across a configuration file re-read even on active streams, however some only apply when the stream starts or
 ends.
+
+type
+: The type of the mount point (default: "normal"). A mount of type "default"
+  can be used to specify common values for multiple mountpoints. You can use the mount-name
+  setting to specify a wildcard name (e.g. "*.ogg") to apply these settings to a subset
+  of the specified mounts (this experimental feature is available, but please keep in mind that it might
+  change in some way for the next release).
 
 mount-name
 : The name of the mount point for which these settings apply.
