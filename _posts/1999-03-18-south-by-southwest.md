@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SxSW"
+title:  "South by Southwest"
 date:   1999-03-18 16:59:00
 author: Barath Raghavan
 categories: archive

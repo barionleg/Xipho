@@ -442,10 +442,10 @@ ends.
 
 type
 : The type of the mount point (default: "normal"). A mount of type "default"
-  can be used to specify common values for multiple mountpoints. You can use the mount-name
-  setting to specify a wildcard name (e.g. "*.ogg") to apply these settings to a subset
-  of the specified mounts (this experimental feature is available, but please keep in mind that it might
-  change in some way for the next release).
+  can be used to specify common values for multiple mountpoints.  
+  Note that default mountpoints won't merge with other mount blocks,
+  You only get those values if no `type="normal"` mount block exists
+  corresponding to your mountpoint.
 
 mount-name
 : The name of the mount point for which these settings apply.
