@@ -443,7 +443,7 @@ ends.
 type
 : The type of the mount point (default: "normal"). A mount of type "default"
   can be used to specify common values for multiple mountpoints.  
-  Note that default mountpoints won't merge with other mount blocks,
+  Note that default mountpoints won't merge with other mount blocks.
   You only get those values if no `type="normal"` mount block exists
   corresponding to your mountpoint.
 
