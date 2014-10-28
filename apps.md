@@ -27,6 +27,8 @@ These source clients are known to work with Icecast
 |[Ezstream][ezstream]                       |Windows                      |
 |[Orban Opticodec-PC][orban-opticode-pc]    |Windows                      |
 |[SAM Cast][sam-cast]                       |Windows                      |
+|[BroadcastMySelf][broadcastmyself]         |Android                      |
+|[KoalaSAN][koalasan]                       |iOS                          |
 |[iCast][icast]                             |iOS                          |
 {: .table-block }
 
@@ -49,6 +51,8 @@ These source clients are known to work with Icecast
 [roaraudio]: http://roaraudio.keep-cool.org/roaraudio.html
 [sam-cast]: http://spacial.com/sam-cast
 [traktor-dj-studio]: http://www.native-instruments.com/en/traktor/
+[broadcastmyself]: http://novastreamapps.blogspot.fr
+[koalasan]: http://koalasan.net
 
 </article>
 

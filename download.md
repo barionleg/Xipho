@@ -67,6 +67,11 @@ We suggest that you download one from our [third-party applications]({{ "/apps" 
 			<td><a href="http://downloads.xiph.org/releases/libshout/libshout-2.3.1.tar.gz">Latest: 2.3.1 (tar.gz)</a><br />
 				<a href="http://downloads.xiph.org/releases/libshout/">Older</a></td>
 		</tr>
+        <tr>
+            <td>libshout-java</td>
+            <td>Java libshout binding</td>
+            <td><a href="https://github.com/OlegKunitsyn/libshout-java">Github Repo</a></td>
+        </tr>
 		<tr>
 			<td>shout-python</td>
 			<td>Python bindings for libshout 2</td>
