@@ -594,6 +594,8 @@ on-disconnect
     <adminroot>./admin</adminroot>
     <allow-ip>/path/to/ip_allowlist</allow-ip>
     <deny-ip>/path_to_ip_denylist</deny-ip>
+    <ssl-certificate>/path/to/certificate.pem</ssl-certificate>
+    <ssl-allowed-ciphers>ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS</ssl-allowed-ciphers>
     <alias source="/foo" dest="/bar"/>
 </paths>
 {% endhighlight %}
@@ -633,6 +635,14 @@ deny-ip
 alias
 : Aliases are used to provide a way to create multiple mountpoints that refer to the same mountpoint.  
   For example: `<alias source="/foo" dest="/bar">`
+
+ssl-certificate
+: If specified, this points to the location of a file that contains _both_ the X.509 private and public key.
+  This is required for HTTPS support to be enabled. Please note that the user Icecast is running as must be able to read the file. Failing to ensure this will cause a "Invalid cert file" WARN message, just as if the file wasn't there.
+
+ssl-allowed-ciphers
+: This optional tag specifies the list of allowed ciphers passed on to the SSL library.
+  Icecast contains a set of defaults conforming to current best practices and you should _only_ override those, using this tag, if you know exactly what you are doing.
 
 </article>
 
