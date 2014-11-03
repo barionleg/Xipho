@@ -623,12 +623,12 @@ adminroot
   for the web-based admin interface. The admin directory contained within the icecast distribution contains these files.
 
 allow-ip
-: If specified, this specifies the location of a file that contains a list of IP addresses that will be allowed to connect to Icecast.
+: If specified, this points to the location of a file that contains a list of IP addresses that will be allowed to connect to Icecast.
   This could be useful in cases where a master only feeds known slaves.  
   The format of the file is simple, one IP per line.
 
 deny-ip
-: If specified, this specifies the location of a file that contains a list of IP addressess that will be dropped immediately.
+: If specified, this points to the location of a file that contains a list of IP addressess that will be dropped immediately.
   This is mainly for problem clients when you have no access to any firewall configuration.  
   The format of the file is simple, one IP per line.
 
