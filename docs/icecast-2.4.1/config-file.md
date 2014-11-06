@@ -188,7 +188,8 @@ admin
 fileserve
 : This flag turns on the icecast2 fileserver from which static files can be served. All files
   are served relative to the path specified in the `<paths><webroot>` configuration setting.
-  By default the setting is enabled so that requests for the images on the status page are retrievable.
+  By default the setting is enabled so that requests for the static files needed by the status 
+  and admin pages, such as images and CSS are retrievable.
 
 server-id
 : This optional setting allows for the administrator of the server to override the default
