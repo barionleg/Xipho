@@ -14,7 +14,7 @@ version: 2.4.1
 	* Put the XSLT last item check into every filtered tag.
 	* This way we shouldn't run into problems of this type anymore.
 	* Also it should be easier to customize the XSLT this way, if someone wants to filter differently.
--	Fixed <auth> in <mount type="default"> to work properly if no <mount-name> was given.
+-	Fixed `<auth>` in `<mount type="default">` to work properly.
 -	Fixed listener connection duration logging in access.log. Regression was introduced for only some platforms by an earlier security fix.
 -	Fixed time zone reporting in _iso8601 fields on Windows.
 -	added warnings on empty and default values of `<fileserve>`, `<hostname>`, `<location>`, `<admin>` and `<server-id>`
@@ -26,7 +26,7 @@ version: 2.4.1
 	* Add mountpoint to some log lines
 -	Updated the config file to avoid common pitfalls and make some things more obvious.
 -	Fixed some compiler warnings
--	Fix autogen.sh to work properly on Mac OS
+-	Fixed autogen.sh to work properly on Mac OS
 
 ## New Features
 
