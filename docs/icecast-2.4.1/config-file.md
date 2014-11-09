@@ -196,9 +196,16 @@ server-id
   server identification. The default is `icecast` followed by a version number and most will
   not care to change it however this setting will allow this. It is not recommended to use this
   setting, unless you have very good reasons and know what you are doing.
-  
+
+</article>
+
+<article markdown="1">
+# TCP Port settings
+{:#ports}
 
 The following shows how you can specify the listening settings for the server.
+
+## generic port setup
 
 The first shows an example of a common and simple way to define a listening socket:
 
@@ -212,7 +219,9 @@ Using this as a basis we can extend this with an `<bind-address>` setting to lim
 will listen on. Most will not need to use bind-address and often get confused by using it when there is
 no need. Another possibility is to use an `<ssl>` boolean setting which informs Icecast that a secured
 connection is to be used. A common use for using a secure connection would be for admin page access.  
-  
+
+## backward compatibility with Shoutcast source clients
+
 The following shows how we can extend a single listen-socket to work with Shoutcast style source clients.
 There are two issues shoutcast source clients have over icecast source clients, one is the lack of mountpoint
 and the second is the requirement of two ports. Both of these issues are handled by a simple addition in
@@ -230,6 +239,8 @@ listening socket whose port number is always one higher than the port defined, t
 of which mountpoint the shoutcast source client on this socket will be using. Using this approach you can
 allow multiple shoutcast source clients to connect at the same time.  
   
+## old style Shoutcast source client compatible setup (deprecated)
+
 The following is just to show the longer approach to defining shoutcast compatability.
 
 {% highlight xml %}
@@ -283,11 +294,42 @@ shoutcast-compat
 </article>
 
 <article markdown="1">
+# Global HTTP headers
+{:#global-headers}
+
+{% highlight xml %}
+<http-headers>
+    <header name="Access-Control-Allow-Origin" value="*" />
+    <header name="X-Robots-Tag" value="index, noarchive" />
+    <header name="foo" value="bar" status="200" />
+    <header name="Nelson" value="Ha-Ha!" status="404" />
+</http-headers>
+{% endhighlight %}
+
+Icecast can be configured to send custom HTTP headers. This is available as a global setting and inside mountpoints. This section explains the global settings. Only global headers will be sent in case the HTTP status is not "200".
+
+This functionality was introduced mainly to enable the use of simplified cross-origin resource sharing. The Icecast default configuration contains the first header seen in the above exmple, for this reason.
+
+http-headers
+: This element is placed anywhere inside the main section of the icecast config. It will contain `<header>` child elements, that specify the actual headers one by one.
+
+header
+: This tag specifies the actual header to be sent to a HTTP client in response to every request.
+  This tag can contain the following attributes:
+
+  - `name` is required and its value specifies the HTTP header field name.
+  - `value` is required and its value specifies the HTTP header field value.
+  - `status` is optional and limits sending the header to certain HTTP status codes. If not specified, the default is to return the header for every HTTP status code. This attribute is only available for global headers.
+
+
+</article>
+
+<article markdown="1">
 # Relaying Streams
 {:#relay}
 
 This section contains the servers relay settings. The relays are implemented using a pull system where the receiving
-server connects as if its a listener to the sending server.  
+server connects as if it's a listener to the sending server.  
 There are two types of relay setups:  
 a "Master server relay" or a "Specific Mountpoint relay."
 
@@ -431,6 +473,12 @@ on-demand
     <authentication type="xxxxxx">
             <!-- See listener authentiaction documentation -->
     </authentication>
+    <http-headers>
+            <header name="Access-Control-Allow-Origin" value="*" />
+            <header name="X-Robots-Tag" value="index, noarchive" />
+            <header name="foo" value="bar" status="200" />
+            <header name="Nelson" value="Ha-Ha!" status="404" />
+    </http-headers>
     <on-connect>/home/icecast/bin/source-start</on-connect>
     <on-disconnect>/home/icecast/bin/source-end</on-disconnect>
 </mount>
@@ -575,6 +623,16 @@ authentication
   authentication scheme (`type=htpasswd`) and URL based authentication request forwarding. A mountpoint configured with an authenticator
   will display a red key next to the mount point name on the admin screens.  
   You can read more about listener authentication and URL based source authentication [here](auth.html).
+
+http-headers
+: This element is placed anywhere inside the mount section of the icecast config. It will contain `<header>` child elements, that specify the actual HTTP headers one by one.
+
+header
+: This tag specifies the actual header to be sent to a HTTP client in response to every request resulting in a HTTP status code "200" for this mountpoint.
+  This tag can contain the following attributes:
+
+  - `name` is required and its value specifies the HTTP header field name.
+  - `value` is required and its value specifies the HTTP header field value.
 
 on-connect
 : State a program that is run when the source is started. It is passed a parameter which is the name of the mountpoint that is starting.

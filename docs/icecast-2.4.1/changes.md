@@ -32,6 +32,7 @@ version: 2.4.1
 
 -	Added support for global and mount specific custom HTTP headers.
 	* The purpose is to support basic CORS use cases. This is both important for some HTML5 `<audio>` or `<video>` use cases and accessing the JSON status API.
+        * The default icecast config contains the very permissive global header: <header name="Access-Control-Allow-Origin" value="*" />
 
 
 </article>
