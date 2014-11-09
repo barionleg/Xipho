@@ -1,10 +1,43 @@
 ---
 title: Changes
-version: 2.4.0
+version: 2.4.1
 ---
 
 <article id="v{{ page.version }}" markdown="1">
 # Version {{ page.version }}
+
+## Fixes
+
+-	Disabled SSLv3 and SSL compression explicitly to improve security
+-	Updated the default ciphers to be more secure
+-	Fixed JSON status API problems
+	* Put the XSLT last item check into every filtered tag.
+	* This way we shouldn't run into problems of this type anymore.
+	* Also it should be easier to customize the XSLT this way, if someone wants to filter differently.
+-	Fixed <auth> in <mount type="default"> to work properly if no <mount-name> was given.
+-	Fixed listener connection duration logging in access.log. Regression was introduced for only some platforms by an earlier security fix.
+-	Fixed time zone reporting in _iso8601 fields on Windows.
+-	added warnings on empty and default values of `<fileserve>`, `<hostname>`, `<location>`, `<admin>` and `<server-id>`
+-	send errorlog (loglevel WARN) to stderr prior to opening logfiles.
+-	Fixed handling of empty strings in config file. Now empty strings are handled in: accesslog, errorlog, logdir, webroot, adminroot and hopefully all kinds of port.
+-	Be more verbose in case of fileserve off. People disable fileserve and then wonder why the web interface CSS breaks.
+-	More details in log messages
+	* Add source IP adress to startup and source exit logging
+	* Add mountpoint to some log lines
+-	Updated the config file to avoid common pitfalls and make some things more obvious.
+-	Fixed some compiler warnings
+-	Fix autogen.sh to work properly on Mac OS
+
+## New Features
+
+-	Added support for global and mount specific custom HTTP headers.
+	* The purpose is to support basic CORS use cases. This is both important for some HTML5 `<audio>` or `<video>` use cases and accessing the JSON status API.
+
+
+</article>
+
+<article id="v2.4.0" markdown="1">
+# Version 2.4.0
 
 ## New Features
 
@@ -46,31 +79,3 @@ version: 2.4.0
 
 </article>
 
-<article id="v2.3" markdown="1">
-# Version 2.3
-
-## New Features
-
--	Streaming support for ogg speex, ogg flac, ogg midi
--	Intro file support, per mount settable
--	On-demand relays, global and per-relay settable
--	Fallback to file, extends on the intro file handling.
--	New mount-level settings:
-	*	public, type/subtype, genre settings, stream description,
-	*	stream url, stream name, bitrate (override what is sent from the source client)
-	*	mp3 metadata interval
-	*	on-[dis]connect scripts can be stated per-mount, invoked at source start/stop and take 1 arg which is the mountpoint.
--	New URL listener authenticator .included is an example php-based application that can be used in conjunction with the url authenticator to manage a simple subscription-based broadcast.
--	HTPasswd authenticator uses in-memory structures now.
--	On demand files now can be fed through an authenticator
--	Update to admin/web xslt interface
-
-## Fixes
-
--	real/helix works
--	win32 access log correct
--	stats client is stable now (`curl -X STATS http://admin@host:port/`)
--	show mountpoints on stats that are inactive but have an active fallback
--	more updates over HUP possible
-
-</article>
