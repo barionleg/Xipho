@@ -169,7 +169,7 @@ yp-url
 <location>earth</location>
 <admin>icemaster@localhost</admin>
 <fileserve>1</fileserve>
-<server-id>icecast 2.3</server-id>
+<server-id>icecast 2.4.1</server-id>
 {% endhighlight %}
 
 hostname
@@ -194,7 +194,8 @@ fileserve
 server-id
 : This optional setting allows for the administrator of the server to override the default
   server identification. The default is `icecast` followed by a version number and most will
-  not care to change it however this setting will change that.  
+  not care to change it however this setting will allow this. It is not recommended to use this
+  setting, unless you have very good reasons and know what you are doing.
   
 
 The following shows how you can specify the listening settings for the server.
@@ -255,6 +256,10 @@ port
 bind-address
 : An optional IP address that can be used to bind to a specific network
   card. If not supplied, then it will bind to all interfaces.
+
+ssl
+: If set to 1 will enable HTTPS on this listen-socket. Icecast must have been compiled against openSSL to be able
+  to do so.
 
 shoutcast-mount
 : An optional mountpoint setting to be used when shoutcast DSP compatible clients connect. The default global setting
@@ -450,6 +455,7 @@ type
 
 mount-name
 : The name of the mount point for which these settings apply.
+  MUST NOT be used in case of mount type "default".
 
 username
 : An optional value which will set the username that a source must use to connect using this mountpoint.
@@ -693,7 +699,7 @@ logarchive
 loglevel
 : Indicates what messages are logged by icecast. Log messages are categorized into one of 4 types, Debug, Info, Warn, and Error.  
     
-  The following mapping can be used to set the appropraite value:
+  The following mapping can be used to set the appropriate value:
   
   -   loglevel = `4`: Debug, Info, Warn, Error messages are printed
   -   loglevel = `3`: Info, Warn, Error messages are printed
@@ -716,15 +722,16 @@ loglevel
 </security>
 {% endhighlight %}
 
-This section contains configuration settings that can be used to secure the icecast server by performing a chroot to a secured location.  
+This section contains configuration settings that can be used to secure the icecast server by performing a chroot to a secured location or changing user and group on start-up. The latter allows icecast to bind to priviledged ports like 80 and 443, by being started as root and then dropping to the configured user/group after binding listener-sockets.
 _This is currently not supported on Win32._
 
 chroot
 : An indicator which specifies whether a `chroot()` will be done when the server is started.
   The chrooted path is specified by the `<basedir>` configuration value.
+  Setting up and using a chroot is an advanced concept and not in the scope of this document.
 
 changeowner
 : This section indicates the user and group that will own the icecast process when it is started.  
-  These need to be valid users on the system.
+  These need to be valid users on the system. Icecast must be started as root for this to work.
 
 </article>
