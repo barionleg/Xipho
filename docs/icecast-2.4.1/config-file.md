@@ -32,9 +32,6 @@ case running the following command should point out most XML syntax problems.
 
     xmllint icecast.xml
 
-A known limitation of Icecast 2.4.0 is that it will segfault on empty XML tags, so please
-don't use them (e.g. `<webroot></webroot>`).  
-  
 Also check the Icecast error.log for additional hints in case of all problems!
 
 </article>
