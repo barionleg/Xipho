@@ -3,7 +3,9 @@ title: Basic Setup
 version: 2.4.0
 ---
 
-<article id="basic-requirements" markdown="1">
+{::options auto_ids="true" /}
+
+<article markdown="1">
 # Basic Requirements
 This section will describe the essential requirements in setting up a simple Internet radio station. It is by no means a complete list but should give you enough to get started. Please also note that those are generic instructions. If you installed a Linux/Unix distribution package, then it will likely come with different paths, different means of starting it, etc. In that case please also refer to the documentation of that distribution and or a distribution specific How-To.
 
@@ -14,7 +16,7 @@ It is important to note that not all source clients work with Icecast 2. You wil
 
 </article>
 
-<article id="the-basics" markdown="1">
+<article markdown="1">
 # The Basics
 
 Each Icecast server can house multiple broadcasts (or mountpoints) each containing a separate stream of content. A 'mountpoint' is a unique name on your server identifying a particular stream - it looks like a filename, such as '/stream.ogg'. A listener can only listen to a single mountpoint at a time. This means you can have a single Icecast server contain either multiple broadcasts with different content, or possibly the same broadcast but with streams of different bitrates or qualities. In this case each broadcast or stream is a separate mountpoint.

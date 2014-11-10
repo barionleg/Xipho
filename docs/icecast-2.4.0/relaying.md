@@ -3,6 +3,8 @@ title: Relaying
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 # Overview
 Relaying is the process by which one server mirrors one or more streams from a remote server. The servers

@@ -3,7 +3,9 @@ title: Authentication
 version: 2.4.0
 ---
 
-<article id="listener-authentication" markdown="1">
+{::options auto_ids="true" /}
+
+<article markdown="1">
 # Listener Authentication
 Listener authentication is a feature of Icecast which allows you to secure a certain mountpoint such that in order to listen,
 a listener must pass some verification test. With this feature, a simple pay-for-play operation (eg. user/pass), or some filtering
@@ -22,7 +24,7 @@ source client, relay or a webroot based file. They do apply to intro files or fa
 
 </article>
 
-<article id="htpasswd-listener-authentication" markdown="1">
+<article markdown="1">
 # htpasswd Listener Authentication
 In order to use listener authentication, you __must__ configure a mount specific option. This means that you have to provide
 a `<mount>` section in the main icecast config file. The following is an example:
@@ -84,7 +86,7 @@ your stream.
 
 </article>
 
-<article id="url" markdown="1">
+<article markdown="1">
 # URL
 
 Authenticating listeners via the URL method involves Icecast, when a listener connects, issuing requests to a web server
@@ -308,8 +310,9 @@ header_prefix
 
 </article>
 
-<article id="note-player-auth" markdown="1">
+<article markdown="1">
 # A note about players and authentication
+{:#note-player-auth}
 We do not have an exaustive list of players that support listener authentication.  
 We use standard HTTP basic authentication, and in general, many media players support this if they support anything at all.
 Winamp and Foobar2000 support HTTP basic authentication on Windows, and XMMS supports it on UNIX platforms. Winamp/XMMS at
@@ -317,8 +320,9 @@ least support the passing of query parameters, other players may also do.
 
 </article>
 
-<article id="source-auth" markdown="1">
+<article markdown="1">
 # Source Authentication
+{:#source-auth}
 Source authentication is a feature of Icecast which allows you to secure a certain mountpoint such that in order to stream to it,
 a source client must pass some verification test. This section will show you the basics of setting up and maintaining this component.  
 To define source authentication, a group of tags are specified in the `<mount>` group relating to the mountpoint.  

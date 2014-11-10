@@ -3,6 +3,8 @@ title: Changes
 version: 2.4.1
 ---
 
+{::options auto_ids="true" /}
+
 <article id="v{{ page.version }}" markdown="1">
 # Version {{ page.version }}
 

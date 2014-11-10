@@ -3,6 +3,8 @@ title: Glossary
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 Source client
 : A source client is an external program which is responsible for sending content data to Icecast.  

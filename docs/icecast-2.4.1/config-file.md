@@ -3,6 +3,8 @@ title: Config File
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 # Overview
 This section will describe each section of the config file and is grouped into the following sections:

@@ -3,6 +3,8 @@ title: Server Statistics
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 # Overview
 Icecast provides extensive run time statistics. Both in the form of active connection numbers and cumulative

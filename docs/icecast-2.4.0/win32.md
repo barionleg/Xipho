@@ -3,6 +3,8 @@ title: Win32 Specifics
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 The Win32 port of Icecast 2 is a simple command line application,
 it used to be a UI framework around the core Icecast 2 server.  

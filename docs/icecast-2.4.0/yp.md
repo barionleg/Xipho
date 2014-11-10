@@ -3,6 +3,8 @@ title: YP Directories
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 # Overview
 A YP (Yellow Pages) directory is a listing of broadcast streams. Icecast 2 has it own YP directory located at

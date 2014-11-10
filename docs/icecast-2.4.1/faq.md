@@ -3,6 +3,8 @@ title: FAQ
 version: 2.4.0
 ---
 
+{::options auto_ids="true" /}
+
 <article markdown="1">
 # General Questions
 
