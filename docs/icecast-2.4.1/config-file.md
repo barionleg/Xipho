@@ -305,7 +305,7 @@ shoutcast-compat
 </http-headers>
 {% endhighlight %}
 
-Icecast can be configured to send custom HTTP headers. This is available as a global setting and inside mountpoints. This section explains the global settings. Only global headers will be sent in case the HTTP status is not "200".
+Icecast can be configured to send custom HTTP headers. This is available as a global setting and inside mountpoints. This section explains the global settings.
 
 This functionality was introduced mainly to enable the use of simplified cross-origin resource sharing. The Icecast default configuration contains the first header seen in the above exmple, for this reason.
 
@@ -318,8 +318,9 @@ header
 
   - `name` is required and its value specifies the HTTP header field name.
   - `value` is required and its value specifies the HTTP header field value.
-  - `status` is optional and limits sending the header to certain HTTP status codes. If not specified, the default is to return the header for every HTTP status code. This attribute is only available for global headers.
+  - `status` is optional and limits sending the header to certain HTTP status codes. If not specified, the default is to return the header for every HTTP status code. This attribute is only available for global headers, at the moment.
 
+At the moment only global headers will be sent in case the HTTP status is not "200". This is subject to change in the future.
 
 </article>
 
@@ -627,7 +628,7 @@ http-headers
 : This element is placed anywhere inside the mount section of the icecast config. It will contain `<header>` child elements, that specify the actual HTTP headers one by one.
 
 header
-: This tag specifies the actual header to be sent to a HTTP client in response to every request resulting in a HTTP status code "200" for this mountpoint.
+: This tag specifies the actual header to be sent to a HTTP client in response to every request for this mount point, but currently only if the HTTP status code is "200".
   This tag can contain the following attributes:
 
   - `name` is required and its value specifies the HTTP header field name.
