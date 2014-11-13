@@ -38,7 +38,8 @@ version: 2.4.1
 
 ## Known issues
 
--	HTTP PUT implementation currently doesn't support chunked encoding.
+-	HTTP PUT implementation currently doesn't support chunked encoding yet.
+-	HTTP PUT with "Expect: 100-Continue" receives first a "100" and soon after a "200", instead of the "200" at the end of transmission.
 
 </article>
 
