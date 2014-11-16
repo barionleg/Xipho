@@ -300,8 +300,8 @@ password
 : The source of the relay may require authentication itself, if so state the password here.
 
 relay-shoutcast-metadata
-: If you are relaying a Shoutcast stream, you need to specify this indicator to also relay the metadata (song titles) that is part of the Shoutcast stream (1=enabled, 0=disabled).  
-  `1`: enabled, `2`: disabled
+: If you are relaying a Shoutcast stream, you need to specify this indicator to also relay the metadata (song titles) that is part of the Shoutcast stream.  
+  `1`: enabled, `0`: disabled
 
 on-demand
 : An on-demand relay will only retrieve the stream if there are listeners connected.

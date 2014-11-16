@@ -350,7 +350,7 @@ relay-shoutcast-metadata
 : If you are relaying a Shoutcast stream, you may want to specify this indicator to also relay the metadata
   (song titles) that are part of the Shoutcast data stream. By default this is enabled
   but it is up to the remote server on whether it sends any.  
-  `1`: enabled, `2`: disabled
+  `1`: enabled, `0`: disabled
 
 on-demand
 : An on-demand relay will only retrieve the stream if there are listeners requesting the stream.

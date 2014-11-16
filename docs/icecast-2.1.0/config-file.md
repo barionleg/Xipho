@@ -262,8 +262,8 @@ local-mount
 : The name to use for the local mountpoint. This is what the mount will be named on the RELAY SERVER.
 
 relay-shoutcast-metadata
-: If you are relaying a Shoutcast stream, you need to specify this indicator to also relay the metadata (song titles) that is part of the Shoutcast stream (1=enabled, 0=disabled).  
-  `1`: enabled, `2`: disabled
+: If you are relaying a Shoutcast stream, you need to specify this indicator to also relay the metadata (song titles) that is part of the Shoutcast stream.  
+  `1`: enabled, `0`: disabled
 
 </article>
 
