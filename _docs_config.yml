@@ -1,0 +1,36 @@
+# Site settings
+title: Icecast Docs
+email: webmaster@xiph.org
+description: "Icecast is free server software for streaming multimedia."
+baseurl: ""
+url: ""
+timezone: UTC
+
+# Source dir
+source: docs/icecast-2.4.1/
+
+# Destination
+destination: _standalone_docs
+
+# Build settings
+markdown: kramdown
+permalink: /news/:title/
+highlighter: pygments
+
+#collections:
+#    docs:
+#        output: true
+
+# Markdown settings
+# only change if you know what you are doing
+kramdown:
+    header_offset: 2
+    auto_ids: false
+
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            layout: "docs_standalone"
+            product: "Icecast"
