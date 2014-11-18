@@ -307,7 +307,7 @@ shoutcast-compat
 
 Icecast can be configured to send custom HTTP headers. This is available as a global setting and inside mountpoints. This section explains the global settings.
 
-This functionality was introduced mainly to enable the use of simplified cross-origin resource sharing. The Icecast default configuration contains the first header seen in the above exmple, for this reason.
+This functionality was introduced mainly to enable the use of simplified cross-origin resource sharing. The Icecast default configuration contains the first header, as seen in the above exmple, for this reason.
 
 http-headers
 : This element is placed anywhere inside the main section of the icecast config. It will contain `<header>` child elements, that specify the actual headers one by one.
@@ -321,6 +321,7 @@ header
   - `status` is optional and limits sending the header to certain HTTP status codes. If not specified, the default is to return the header for every HTTP status code. This attribute is only available for global headers, at the moment.
 
 At the moment only global headers will be sent in case the HTTP status is not "200". This is subject to change in the future.
+Avoid placing comments inside `<http-headers>` as, in this release, it will prevent icecast from parsing further `<header>` tags.
 
 </article>
 
@@ -636,12 +637,14 @@ header
 
 on-connect
 : State a program that is run when the source is started. It is passed a parameter which is the name of the mountpoint that is starting.
-  The processing of the stream does not wait for the script to end.  
+  The processing of the stream does not wait for the script to end.
+  Caution should be exercised as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
   _This option is not available on Win32_
 
 on-disconnect
 : State a program that is run when the source ends. It is passed a parameter which is the name of the mountpoint that has ended.
   The processing of the stream does not wait for the script to end.  
+  Caution should be exercised as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
   _This option is not available on Win32_
 
 </article>

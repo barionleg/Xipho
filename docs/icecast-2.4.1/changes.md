@@ -10,6 +10,10 @@ version: 2.4.1
 
 ## Fixes
 
+-	Fixed cross-corruption of file descriptors by on-connect/on-disconnect scripts, specifically STDIN, STDOUT and STDERRR vs TCP connections.
+	* We actually close not just 0, 1 and 2, but the first 1024 FDs, which seems common trade-off practice, but still not ideal. A more thorough fix will need platform specific logic and significant work.
+	* The STDIN/OUT/ERR problem is fixed reliably, but other problems could occur if both the script and the server use FDs >1024 at the same time
+	* This is now reasonably safe, but care should be exercised nevertheless. 
 -	Disabled SSLv3 and SSL compression explicitly to improve security
 -	Updated the default ciphers to be more secure
 -	Fixed JSON status API problems
@@ -29,18 +33,16 @@ version: 2.4.1
 -	Updated the config file to avoid common pitfalls and make some things more obvious.
 -	Fixed some compiler warnings
 -	Fixed autogen.sh to work properly on Mac OS
-
-## New Features
-
--	Added support for global and mount specific custom HTTP headers.
-	* The purpose is to support basic CORS use cases. This is both important for some HTML5 `<audio>` or `<video>` use cases and accessing the JSON status API.
-        * The default icecast config contains the very permissive global header: <header name="Access-Control-Allow-Origin" value="*" />
+-	Fixed JSON access by adding support for global and mount specific custom HTTP headers.
+	* The purpose is to fix JSON access from browsers, by supporting basic CORS use cases. This is both important for some HTML5 `<audio>` or `<video>` use cases and accessing the JSON status API.
+	* The default icecast config contains the very permissive global header: <header name="Access-Control-Allow-Origin" value="*" />
 
 ## Known issues
 
 -	HTTP PUT implementation currently doesn't support chunked encoding yet.
 -	HTTP PUT with "Expect: 100-Continue" receives first a "100" and soon after a "200", instead of the "200" at the end of transmission.
-
+-	Caution should be exercised when using `<on-connect>` or `<on-disconnect`, as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
+-	Don't use comments inside `<http-headers>` as it will prevent processing of further `<header>` tags.
 </article>
 
 <article id="v2.4.0" markdown="1">
