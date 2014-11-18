@@ -5,7 +5,7 @@ version: 2.4.1
 
 {::options auto_ids="true" /}
 
-<article markdown="1">
+<div class="article" markdown="1">
 The Win32 port of Icecast 2 is a simple command line application,
 it used to be a UI framework around the core Icecast 2 server.  
   
@@ -15,4 +15,4 @@ __A notable absence is IPv6 support.__
 If there is sufficient user interest we may reintroduce the Icecast GUI
 and capability to start Icecast as a Windows Service.
 
-</article>
+</div>

@@ -5,7 +5,7 @@ version: 2.4.1
 
 {::options auto_ids="true" /}
 
-<article id="v{{ page.version }}" markdown="1">
+<div id="v{{ page.version }}" class="article" markdown="1">
 # Version {{ page.version }}
 
 ## Fixes
@@ -41,11 +41,11 @@ version: 2.4.1
 
 -	HTTP PUT implementation currently doesn't support chunked encoding yet.
 -	HTTP PUT with "Expect: 100-Continue" receives first a "100" and soon after a "200", instead of the "200" at the end of transmission.
--	Caution should be exercised when using `<on-connect>` or `<on-disconnect`, as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
+-	Caution should be exercised when using `<on-connect>` or `<on-disconnect>`, as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
 -	Don't use comments inside `<http-headers>` as it will prevent processing of further `<header>` tags.
-</article>
+</div>
 
-<article id="v2.4.0" markdown="1">
+<div id="v2.4.0" class="article" markdown="1">
 # Version 2.4.0
 
 ## New Features
@@ -86,5 +86,5 @@ version: 2.4.1
 
 -	Will crash if certain config tags are left empty
 
-</article>
+</div>
 

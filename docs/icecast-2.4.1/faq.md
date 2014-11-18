@@ -5,7 +5,7 @@ version: 2.4.1
 
 {::options auto_ids="true" /}
 
-<article markdown="1">
+<div class="article" markdown="1">
 # General Questions
 
 ## What is Icecast.org?
@@ -31,4 +31,4 @@ it on the fly.
 
 ## What can I use to listen to an Icecast stream?
 We maintain a list of Icecast-compatible audio players at [icecast.org](http://www.icecast.org/).
-</article>
+</div>
