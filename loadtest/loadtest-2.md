@@ -2,7 +2,7 @@
 title: Load Test Results
 permalink: /loadtest/2/
 ---
-<article markdown="1">
+<div class="article" markdown="1">
 # Load Test 2
 
 ## Description
@@ -256,7 +256,7 @@ We found that listeners do not seem to affect Icecast too much with regard to me
 and that it adds less load to the CPU as do sources. In the case of listeners, the network
 will be your limiting factor (which we found and reported in our previous load test).
 
-<aside>Posted <strong>Nov 12, 2005</strong> by <strong>oddsock</strong> (© 2005 Ed Zaleski)</aside>
-</article>
+<div class="aside">Posted <strong>Nov 12, 2005</strong> by <strong>oddsock</strong> (© 2005 Ed Zaleski)</div>
+</div>
 
 [Back to overview]({{ "/loadtest/" | prepend: site.baseurl }})

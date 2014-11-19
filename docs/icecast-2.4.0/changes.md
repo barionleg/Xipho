@@ -5,7 +5,7 @@ version: 2.4.0
 
 {::options auto_ids="true" /}
 
-<article id="v{{ page.version }}" markdown="1">
+<div class="article" id="v{{ page.version }}" markdown="1">
 # Version {{ page.version }}
 
 ## New Features
@@ -46,9 +46,9 @@ version: 2.4.0
 
 -	Will crash if certain config tags are left empty
 
-</article>
+</div>
 
-<article id="v2.3" markdown="1">
+<div class="article" id="v2.3" markdown="1">
 # Version 2.3
 
 ## New Features
@@ -75,4 +75,4 @@ version: 2.4.0
 -	show mountpoints on stats that are inactive but have an active fallback
 -	more updates over HUP possible
 
-</article>
+</div>

@@ -2,7 +2,7 @@
 title: Load Test Results
 permalink: /loadtest/1/
 ---
-<article markdown="1">
+<div class="article" markdown="1">
 # Load Test 1
 
 ## Description
@@ -148,7 +148,7 @@ Looks like icecast follows a rather linear progression of cpu utilization with a
 CPU time spend in user time, and the other 3/4 in system time. For 14000 concurrent users I saw 20%
 total utilization, with a breakdown of 5% user and 15% system.
 
-<aside>Posted <strong>Sep 21, 2005</strong> by <strong>oddsock</strong></aside>
-</article>
+<div class="aside">Posted <strong>Sep 21, 2005</strong> by <strong>oddsock</strong></div>
+</div>
 
 [Back to overview]({{ "/loadtest/" | prepend: site.baseurl }})

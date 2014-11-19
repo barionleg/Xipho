@@ -3,7 +3,7 @@ title: Server Statistics
 version: 2.2.0
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Overview
 This section contains information about the server statistics available from Icecast.
 An example stats XML tree will be shown and each element will be described. The following
@@ -72,4 +72,4 @@ public
 type
 : Media type of the stream.
 
-</article>
+</div>

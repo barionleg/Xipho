@@ -4,7 +4,7 @@ layout: page
 ---
 {% assign docs = site.pages | where:"product","Icecast" | sort:"version" | group_by:"version" %}
 
-<article id="official-docs" markdown="1">
+<div class="article" id="official-docs" markdown="1">
 # Official Documentation
 
 Here is an index to the Icecast documentation we know about. If there is
@@ -22,9 +22,9 @@ All Docs:
 
 Also, we have a simple [FAQ]({{ "/faq" | prepend: site.baseurl }}).
 
-</article>
+</div>
 
-<article id="other" markdown="1">
+<div class="article" id="other" markdown="1">
 # Other Information
 
 This is a list of some helpful external material (in various languages). Note that these are unofficial and maybe outdated!
@@ -34,4 +34,4 @@ This is a list of some helpful external material (in various languages). Note th
 - [[PT] Montando um Servidor de Webradio](https://docs.indymedia.org/Sysadmin/IceCastPtBr)
 - [[PT] Transmissão de Vídeo pela Internet e Web TVs](https://docs.indymedia.org/Sysadmin/WebTVPt)
 
-</article>
+</div>

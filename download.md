@@ -13,7 +13,7 @@ download:
     url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.0.zip"
     description: "Binary Package"
 ---
-<article id="current-release" markdown="1">
+<div class="article" id="current-release" markdown="1">
 # Icecast Current Release (2.4.0)
 
 The latest Icecast release can be downloaded below. For Windows there is a binary release, for Linux/UNIX
@@ -21,9 +21,9 @@ there is provided the source package.
 
 {% include dl-buttons.html %}
 
-</article>
+</div>
 
-<article id="other-releases" markdown="1">
+<div class="article" id="other-releases" markdown="1">
 # Other Releases
 
 ## Linux/Unix Binary Packages
@@ -46,10 +46,10 @@ Older releases can be found [here](http://downloads.xiph.org/releases/icecast/)
 ## Source Clients
 In addition to Icecast, you will most likely need to download a source client for creating the actual stream.
 We suggest that you download one from our [third-party applications]({{ "/apps" | prepend: site.baseurl }}) page.
-</article>
+</div>
 
 
-<article id="bindings" markdown="1">
+<div class="article" id="bindings" markdown="1">
 # Icecast Library/Language Bindings
 
 <table class="table-flipscroll">
@@ -99,5 +99,5 @@ We suggest that you download one from our [third-party applications]({{ "/apps" 
 		</tr>
 	</tbody>
 </table>
-</article>
+</div>
 

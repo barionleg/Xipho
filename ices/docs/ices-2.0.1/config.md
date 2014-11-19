@@ -3,7 +3,7 @@ title: Config File
 version: 2.0.1
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 The ices 2 configuration file is in XML format, which is described in detail below. There are some sample XML files provided in the distribution under the conf directory which show the main way ices is used.  
   
 live audio streaming, takes audio from the soundcard which can be captured from say the Mic, line-In, CD or a combination of these.
@@ -15,9 +15,9 @@ Playlist audio streaming, takes pre-encoded Ogg Vorbis files and either sends th
 
 -	ices-playlist.xml
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # General layout
 
 {% highlight xml %}
@@ -28,9 +28,9 @@ Playlist audio streaming, takes pre-encoded Ogg Vorbis files and either sends th
 </ices>
 {% endhighlight %}
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # General settings
 These apply to IceS as a whole. The example below gives a useful example to work to
 
@@ -69,9 +69,9 @@ consolelog
 pidfile
 : State a filename with path to be created at start time. This file will then contain a single number which represents the process id of the running IceS. This process id can then be used to signal the application of certain events.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Stream section
 This describes how the input and outgoing streams are configured.
 
@@ -204,4 +204,4 @@ flush-samples
 : This is the trigger level at which Ogg pages are created for sending to the server. Depending on the bitrate and compression achieved a single Ogg page can contain many seconds of audio which may not be wanted as that can trigger timeouts.
   Setting this to the same value as the encode samplerate will mean that a page per second is sent, if a value that is half of the encoded samplerate is specified then 2 Ogg pages per second are sent.
 
-</article>
+</div>

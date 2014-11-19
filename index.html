@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article id="about">
+<div class="article" id="about">
 	<h3>About Icecast 2</h3>
 	<p>Icecast is a streaming media server which currently supports
 	Ogg (Vorbis and Theora), Opus, WebM and MP3 audio streams.<br/>
@@ -11,13 +11,13 @@ layout: default
 	relatively easily and supports open standards for commuincation and
 	interaction.</p>
 	<p>Icecast is distributed under the GNU GPL, version 2.</p>
-</article>
+</div>
 <h2 id="latest-news">Latest News</h2>
 {% for post in site.posts limit:2 %}
-  <article>
+  <div class="article">
     <h3>{{ post.title }}</h3>
     {{ post.content }}
-    <aside>Posted <strong>{{ post.date | date: "%b %-d, %Y" }}</strong>{% if post.author %} by <strong>{{ post.author }}</strong>{% endif %} &mdash; <a href="{{ post.url }}">Permalink</a></aside>
-  </article>
+    <div class="aside">Posted <strong>{{ post.date | date: "%b %-d, %Y" }}</strong>{% if post.author %} by <strong>{{ post.author }}</strong>{% endif %} &mdash; <a href="{{ post.url }}">Permalink</a></div>
+  </div>
 {% endfor %}
 <p><a href="{{ "/news" | prepend: site.baseurl }}">See all news</a></p>

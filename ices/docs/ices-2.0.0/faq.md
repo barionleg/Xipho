@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 version: 2.0.0
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 This for those questions people have asked as it wasn't covered in the documentation
 
 ## Can ices play mp3 files
@@ -35,4 +35,4 @@ Here are some links where further information can be found:
 [http://www.djcj.org/LAU/guide/index.php](http://www.djcj.org/LAU/guide/index.php)  
 [http://www.linuxdj.com/audio/lad/index.php3](http://www.linuxdj.com/audio/lad/index.php3)  
 
-</article>
+</div>

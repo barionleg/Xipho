@@ -5,14 +5,14 @@ version: 2.4.0
 
 {::options auto_ids="true" /}
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Overview
 Icecast provides extensive run time statistics. Both in the form of active connection numbers and cumulative
 counters (since server startup or respectively source connection startup).
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # HTML interface, XSLT generated
 {:#xslt}
 
@@ -22,9 +22,9 @@ information (see section on raw XML data below).
 __We strongly discourage attempts to scrape data from the web interface__ as we do not consider this an
 API and will change it, even completely, between versions!  
 __The preferred ways are custom XSLT, JSON and raw XML.__
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Advanced machine readable data, XSLT generated
 {:#xslt_advanced}
 
@@ -36,9 +36,9 @@ Since version 2.4.0 Icecast includes a basic JSON API (`/status-json.xsl`) based
 to not break backwards compatibility of this interface in the future, still we recommend to design robust software that
 can deal with possible changes like addition or removal of variables.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Available raw data
 {:#available_raw_data}
 
@@ -302,4 +302,4 @@ user_agent
 Additional data can be accessed through the admin interface, as every page of the admin
 interface has an XML equivalent. 
 
-</article>
+</div>

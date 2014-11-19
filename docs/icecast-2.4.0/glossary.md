@@ -5,7 +5,7 @@ version: 2.4.0
 
 {::options auto_ids="true" /}
 
-<article markdown="1">
+<div class="article" markdown="1">
 Source client
 : A source client is an external program which is responsible for sending content data to Icecast.  
   Some source clients that support Icecast 2 are Oddcast, Ices 2, Ices 0.3 and DarkIce.
@@ -28,4 +28,4 @@ Fallback mountpoint
 : A fallback mountpoint is configured with a parent mountpoint. In the event of the parent mountpoint losing connection with Icecast,
   Icecast will then move all clients currently connected to the now defunct mountpoint to it's fallback mountpoint.
 
-</article>
+</div>

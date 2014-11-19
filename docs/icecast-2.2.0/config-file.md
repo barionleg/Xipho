@@ -3,7 +3,7 @@ title: Config File
 version: 2.2.0
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Overview
 This section will describe each section of the config file and is grouped into the following sections:
 
@@ -17,9 +17,9 @@ This section will describe each section of the config file and is grouped into t
 -   [Logging](#log)
 -   [Security](#security)
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Limits
 {:#limits}
 
@@ -75,9 +75,9 @@ burst-size
 : The burst size is the amount of data (in bytes) to burst to a client at connection time. Like burst-on-connect,
   this is to quickly fill the pre-buffer used by media players. The default is 64 kbytes which is a typical size used by most clients so changing it is not usually required. This setting applies to all mountpoints.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Authentication
 {:#authentication}
 
@@ -102,9 +102,9 @@ admin-user/admin-password
 : The username/password used for all administration functions. This includes retrieving statistics, accessing the web-based
   administration screens, etc. A list of these functions can be found in the "Administration" section of the manual.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # YP Directory Settings
 {:#yp}
 
@@ -126,9 +126,9 @@ yp-url
 : The URL which Icecast uses to communicate with the Directory server.
   The value for this setting is provided by the owner of the Directory server.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Misc Server Settings
 {:#misc}
 
@@ -171,9 +171,9 @@ fileserve
 shoutcast-mount
 : An optional mountpoint to use when shoutcast DSP compatible clients connect. The default is /stream but can be overridden here to use an alternative name which may include an extension that some clients require for certain formats.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Relay Settings
 {:#relay}
 
@@ -287,9 +287,9 @@ relay-shoutcast-metadata
 : If you are relaying a Shoutcast stream, you need to specify this indicator to also relay the metadata (song titles) that is part of the Shoutcast stream.  
   `1`: enabled, `0`: disabled
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Mount Specific Settings
 {:#mountsettings}
 
@@ -360,9 +360,9 @@ authentication
   authentication scheme (`type=htpasswd`).  
   Users and encrypted password are placed in this file (separated by a `:`) and all requests for this mountpoint will require that a user and password be supplied for authentication purposes. These values are passed in via normal HTTP Basic Authentication means (i.e. `http://user:password@stream:port/mountpoint.ogg`). Users and Passwords are maintained via the web admin interface. A mountpoint configured with an authenticator will display a red key next to the mount point name on the admin screens. You can read more about listener authentication [here](auth.html).
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Path Settings
 {:#path}
 
@@ -403,9 +403,9 @@ alias
 : Aliases are used to provide a way to create multiple mountpoints that refer to the same mountpoint.  
   For example: `<alias source="/foo" dest="/bar">`
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Logging Settings
 {:#log}
 
@@ -445,9 +445,9 @@ loglevel
   -   loglevel = `2`: Warn, Error messages are printed
   -   loglevel = `1`: Error messages only are printed
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Security Settings
 {:#security}
 
@@ -472,4 +472,4 @@ changeowner
 : This section indicates the user and group that will own the icecast process when it is started.  
   These need to be valid users on the system.
 
-</article>
+</div>

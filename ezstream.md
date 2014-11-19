@@ -2,7 +2,7 @@
 title: Ezstream
 permalink: /ezstream/
 ---
-<article id="about" markdown="1">
+<div class="article" id="about" markdown="1">
 # About Ezstream
 Ezstream is a command line source client for Icecast media streaming servers. 
 It began as the successor of the old "shout" utility, and has since gained a 
@@ -21,9 +21,9 @@ more formats when the optional [TagLib](http://taglib.github.io) support has
 been compiled in.  
 
 Ezstream is free software and licensed under the GNU General Public License.
-</article>
+</div>
 
-<article id="download" markdown="1">
+<div class="article" id="download" markdown="1">
 # Download
 
 ## Latest version: 0.5.6
@@ -37,9 +37,9 @@ Ezstream is free software and licensed under the GNU General Public License.
 	- MD5: 19c6f28c2de81e6e2fa3e0ed914e6696
 
 Older releases can be found at [downloads.xiph.org/releases/ezstream](http://downloads.xiph.org/releases/ezstream/).
-</article>
+</div>
 
-<article id="further-information" markdown="1">
+<div class="article" id="further-information" markdown="1">
 # Further Information
 
 ## Dependencies
@@ -80,9 +80,9 @@ Those, who are interested in how ezstream development progresses, can stay infor
 looking at the [`NEWS file`](http://svn.xiph.org/trunk/ezstream/NEWS). It is kept up-to-date with
 important changes in ezstream as they happen.
 
-</article>
+</div>
 
-<article id="release-notes" markdown="1">
+<div class="article" id="release-notes" markdown="1">
 # Release Notes
 Ezstream 0.5.6 has been released on August 31st 2009.
 
@@ -108,9 +108,9 @@ Version 0.5.6 is a maintenance and feature release.
 - `examples/`:
 	- NEW: Add a real-world example playlist script with logging feature.
 
-</article>
+</div>
 
-<article id="support" markdown="1">
+<div class="article" id="support" markdown="1">
 # Support
 
 ## Reporting Problems
@@ -133,4 +133,4 @@ Your contribution and efforts are very much appreciated. Thank you!
 ## Contact
 The current maintainer of ezstream is Moritz Grimm (`mdgrimm at gmx dot net`).
 
-</article>
+</div>

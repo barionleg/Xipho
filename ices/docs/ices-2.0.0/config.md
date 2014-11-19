@@ -3,15 +3,15 @@ title: Config File
 version: 2.0.0
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 The ices 2 configuration file is in XML format, which is described in detail below. There are some sample XML files provided in the distribution under the conf directory which show the main way ices is used.  
   
 -   live audio streaming, takes audio from the soundcard which can be captured from say the Mic, line-In, or CD.
 -   playlist audio streaming, takes pre-encoded Ogg Vorbis files and either sends them as-is or re-encodes them to different settings
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # General layout
 
 {% highlight xml %}
@@ -22,9 +22,9 @@ The ices 2 configuration file is in XML format, which is described in detail bel
 </ices>
 {% endhighlight %}
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # General settings
 These apply to IceS as a whole. The example below gives a useful example to work to
 
@@ -63,9 +63,9 @@ consolelog
 pidfile
 : State a filename with path to be created at start time. This file will then contain a single number which represents the process id of the running IceS. This process id can then be used to signal the application of certain events.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Stream section
 This describes how the input and outgoing streams are configured.
 
@@ -193,4 +193,4 @@ samplerate
 channels
 : State the number of channels to use in the encoding. This will either be the number of channels from the input or 1 if downmix is enabled.
 
-</article>
+</div>

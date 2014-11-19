@@ -3,7 +3,7 @@ title: Table of Contents
 version: 2.3.3
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Pages
 
 -	[Changes](changes.html)
@@ -19,9 +19,9 @@ version: 2.3.3
 -	[Glossary](glossary.html)
 -	[FAQ](faq.html)
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Icecast {{ page.version }} Readme
 Icecast is a streaming media server which currently supports Ogg
 Vorbis and MP3 audio streams. It can be used to create an Internet
@@ -33,9 +33,9 @@ interaction.
 Icecast is distributed under the GNU GPL, version 2. A copy of this
 license is included with this software in the COPYING file.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Prerequisites
 Icecast requires the following packages:
 
@@ -46,9 +46,9 @@ Icecast requires the following packages:
 -	[ogg/vorbis](http://www.vorbis.com/files) (>= version 1.0 required)
 -	openssl (optional, enable if SSL support is desired)
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # A Note About RPMS
 This section only applies to you if your operating system uses RPMS.  
 
@@ -59,9 +59,9 @@ normal RPMS for each package.
 please check the websites for each of the prerequisite packages for
 appropriate download links for RPMS.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Build/Install
 To build icecast on a Unix platform, perform the following:
 
@@ -81,4 +81,4 @@ viewing `doc/index.html` in a browser.
 
 Please email us at icecast@xiph.org, or come and see us 
 at irc.freenode.net, channel #icecast, if you have any troubles.
-</article>
+</div>

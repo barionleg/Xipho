@@ -3,7 +3,7 @@ title: IceS
 permalink: /ices/
 ---
 {% assign docs = site.pages | where:"product","IceS" | sort:"version" | group_by:"version" %}
-<article markdown="1">
+<div class="article" markdown="1">
 # What is IceS?
 
 IceS is a source client for a streaming server. The purpose of this client is to provide
@@ -15,9 +15,9 @@ used if certain conditions are met.
 IceS 2.x supports sending an Ogg Vorbis stream to an Icecast server.  
 For MP3 support you may want to take a look at IceS 0.x.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Download
 
 -	__IceS 2 (version 2.0)__  
@@ -39,5 +39,5 @@ All Docs:
 {% endif %}
 {% endfor %}
 
-</article>
+</div>
 

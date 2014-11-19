@@ -3,7 +3,7 @@ title: Changes
 version: 2.3.1
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Version 2.3
 
 ## New Features
@@ -30,4 +30,4 @@ version: 2.3.1
 -	show mountpoints on stats that are inactive but have an active fallback
 -	more updates over HUP possible
 
-</article>
+</div>

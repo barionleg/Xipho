@@ -2,7 +2,7 @@
 title: FAQ
 permalink: /faq/
 ---
-<article id="general-questions" markdown="1">
+<div class="article" id="general-questions" markdown="1">
 # General Questions
 
 ## What is Icecast.org?
@@ -26,9 +26,9 @@ IceS is a program that sends audio data to an icecast server to broadcast to cli
 IceS can either read audio data from disk, such as from Ogg Vorbis files, or sample
 live audio from a sound card and encode it on the fly.
 
-</article>
+</div>
 
-<article id="setup" markdown="1">
+<div class="article" id="setup" markdown="1">
 # Setup
 
 ## What platforms are supported?
@@ -38,9 +38,9 @@ Icecast is being developed on Linux and Windows, and is being tested with major 
 Go to the Icecast [Documentation]({{ "/docs" | prepend: site.baseurl }}) Page and follow
 the instructions for your version there.
 
-</article>
+</div>
 
-<article id="administration" markdown="1">
+<div class="article" id="administration" markdown="1">
 # Administration
 
 ## How can I view the stream status page?
@@ -51,13 +51,13 @@ stylesheets available in icecast/web/ in the CVS distribution of Icecast.
 In addition, the web directory can hold multiple status transforms, if you
 can't decide which one you want.
 
-</article>
+</div>
 
-<article id="interoperability" markdown="1">
+<div class="article" id="interoperability" markdown="1">
 # Interoperability
 
 ## What can I use to listen to an Icecast stream?
 We maintain a list of Icecast-compatible audio players [here]({{ "/apps" | prepend: site.baseurl }}).
 
-</article>
+</div>
 

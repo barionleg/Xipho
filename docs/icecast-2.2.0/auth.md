@@ -3,15 +3,15 @@ title: Listener Authentication
 version: 2.2.0
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Listener Authentication
 Listener authentication is a feature of Icecast which allows you to secure a certain mountpoint such that in order to listen,
 a listener must pass some verification test. With this feature, a simple pay-for-play operation (eg. user/pass), or some filtering
 based on the listener connection can be performed. This section will show you the basics of setting up and maintaining this component.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # htpasswd Listener Authentication
 
 ## Config File Entries
@@ -73,12 +73,12 @@ username and password.
 
 This page will serve a m3u with the username and password and in most cases should open the correct media player and begin playing your stream.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # A note about players and authentication
 We do not have an exaustive list of players that support listener authentication.  
 We use standard HTTP basic authentication, and in general, many media players support this if they support anything at all.
 Winamp and Foobar2000 support HTTP basic authentication on Windows, and XMMS supports it on UNIX platforms. Winamp/XMMS at least support the passing of query parameters, other players may also do.
 
-</article>
+</div>

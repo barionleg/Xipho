@@ -2,7 +2,7 @@
 title: 3rd Party Applications
 permalink: /apps/
 ---
-<article id="source-clients" markdown="1">
+<div class="article" id="source-clients" markdown="1">
 # Source Clients
 
 These source clients are known to work with Icecast
@@ -54,9 +54,9 @@ These source clients are known to work with Icecast
 [broadcastmyself]: http://novastreamapps.blogspot.fr
 [koalasan]: http://koalasan.net
 
-</article>
+</div>
 
-<article id="players" markdown="1">
+<div class="article" id="players" markdown="1">
 # Mediaplayers that support Icecast streams
 
 These media players are known to work with Icecast
@@ -86,9 +86,9 @@ These media players are known to work with Icecast
 [tunein-radio]: http://tunein.com/get-tunein/
 [internet-radio-box]: http://www.eingrad.com/products/internet-radio-box/
 
-</article>
+</div>
 
-<article id="misc" markdown="1">
+<div class="article" id="misc" markdown="1">
 # Other Applications/Services
 
 Miscellaneous other _stuff_
@@ -100,4 +100,4 @@ Miscellaneous other _stuff_
 
 [amptracker]: http://amptracker.com/
 
-</article>
+</div>

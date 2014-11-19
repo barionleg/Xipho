@@ -3,7 +3,7 @@ title: Input Modules
 version: 2.0.2
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 Several input modules are available, depending on the platform, drivers and libraries available. The general layout is defined as
 
 {% highlight xml %}
@@ -17,9 +17,9 @@ Several input modules are available, depending on the platform, drivers and libr
 
 For live input you may want to look into various resources on the web for information on sound input. You may find that ALSA for instance supports a particular soundcard better than the Open Sound System.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Open Sound
 
 {% highlight xml %}
@@ -53,9 +53,9 @@ metadatafilename
   `artist=Queen`  
   `title=We Will Rock You`  
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # ALSA
 The Advanced Linux Sound Architecture (ALSA) is a completely different sound system on linux but provides OSS compatability so the OSS driver should work with it as well. To use ALSA natively a separate module is used
 
@@ -81,9 +81,9 @@ periods
 buffer-time
 : The size of the buffer measured in mS (default 500)
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Sun
 The Sun Solaris DSP input is similar to OSS. It allows for reading from a soundcard on a Sun Solaris UNIX. OpenBSD also has a sound driver that is similar to solaris and as such should be able to use this module.
 
@@ -93,9 +93,9 @@ The Sun Solaris DSP input is similar to OSS. It allows for reading from a soundc
 
 The parameters are the same as the OSS and ALSA modules.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # StdinPCM
 
 {% highlight xml %}
@@ -110,9 +110,9 @@ This module should always be available, and as you can see the parameters are al
   
 As it's raw PCM being fed in, it's impossible to determine the samplerate and channels so make sure the stated parameters match the incoming PCM or the audio will be encoded wrongly.  
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Playlist
 The playlist module is used to get audio from some pre-encoded Ogg Vorbis files. IceS currently checks to see if the same file gets played in succession and skips it, this means that having a playlist repeat with only one Ogg file listed won't work. The method of file selection is determined by the playlist type. The current types are basic and script.
 
@@ -138,9 +138,9 @@ once
 restart-after-reread
 : If the playlist is re-read mid way through, which may occur if the playlist was updated then this will restart at the beginning of the playlist. By default it's off.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Script
 
 {% highlight xml %}
@@ -151,9 +151,9 @@ restart-after-reread
 program
 : State a path to a program which when run will write to it's standard output a path to an Ogg Vorbis file. The program can be anything from an executable to a shell script as long as it starts, writes the filename to it's standard output and then exits.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # RoarAudio
 The RoarAudio module is used to get audio from a RoarAudio Sound Server. This module supports getting both already encoded and raw audio from the sound server. It also allows meta data to be read from the sound server or an file the same way the Open Sound module does.
 
@@ -200,4 +200,4 @@ metadatafilename
 plugin
 : This setting loads a plugin. The plugin name my be followed by parameters to be passed to the plugin. Between the plugin name and the parameters needs to be a space. Normal libroar plugin parameter parsing rules apply (keys and values separated by "=", key-value-pairs separated by ",").
 
-</article>
+</div>

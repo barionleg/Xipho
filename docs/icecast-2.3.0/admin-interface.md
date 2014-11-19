@@ -3,15 +3,15 @@ title: Admin Interface
 version: 2.3.0
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Overview
 This section contains information about the admin interface of icecast. Through this interface the user can manipulate many server features. From it you can gather statistics, move listeners from mountpoint to mountpoint, disconnect connected sources, disconnect connected listeners, and many other activities. Each function is enumerated here as well as an example usage of the function.
 
 Each of these functions requires HTTP authentication via the appropriate username and password. For mount-specific functions, you may use either the `<admin-username>` and `<admin-password>` specified in the icecast config file, or the username and password specified for that mountpoint (if any). For general functions (not specific to a single mountpoint), you must use the admin username and password. It is also important to note that in all the examples 192.168.1.10 is used as the example host and 8000 is used as the example port for the Icecast server.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Admin Functions (mount specific)
 All these admin functions are mount specific in that they only apply to a particular mountpoint
 (as opposed to applying to the entire server). Each of these functions requires a mountpoint to
@@ -67,9 +67,9 @@ to be disconnected is specified via the variable `mount`.
 Example:
 `http://192.168.1.10:8000/admin/killsource?mount=/mystream.ogg`
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Admin Functions (general)
 
 ## Stats
@@ -89,9 +89,9 @@ The list mounts function provides the ability to view all the currently connecte
 Example:
 `http://192.168.1.10:8000/admin/listmounts`
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Web-Based Admin Interface
 As an alternative to manually invoking these URLs, a web-based admin interface was developed. This
 interface provides the same functions that were identified and described above but presents them in
@@ -112,4 +112,4 @@ These work using the document returned by `/admin/stats.xml`.
 To see the XML document that is applied to each admin XSLT, just remove the `.xsl` in your request
 (i.e. `/admin/listclients`). You can then code your XSLT transform accordingly.
 
-</article>
+</div>

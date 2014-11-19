@@ -3,7 +3,7 @@ title: FAQ
 version: 2.3.3
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # General Questions
 
 ## What is Icecast?
@@ -36,4 +36,4 @@ In addition, the web directory can hold multiple status transforms, if you can't
 
 ## What can I use to listen to an Icecast stream?
 We maintain a list of Icecast-compatible audio players at [icecast.org](http://www.icecast.org/).
-</article>
+</div>

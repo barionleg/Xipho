@@ -2,7 +2,7 @@
 title: Load Test Results
 permalink: /loadtest/3/
 ---
-<article markdown="1">
+<div class="article" markdown="1">
 # Load Test 3
 
 
@@ -93,7 +93,7 @@ listener or (shudder) allocate a thread for each listener. Either way, Icecast c
 Well, looks like icecast handles them better all around taking about 50% of User CPU,
 about the same System CPU, and certainly much much fewer amounts of memory per user.
 
-<aside>Posted <strong>Nov 14, 2005</strong> by <strong>oddsock</strong> (© 2005 Ed Zaleski)</aside>
-</article>
+<div class="aside">Posted <strong>Nov 14, 2005</strong> by <strong>oddsock</strong> (© 2005 Ed Zaleski)</div>
+</div>
 
 [Back to overview]({{ "/loadtest/" | prepend: site.baseurl }})

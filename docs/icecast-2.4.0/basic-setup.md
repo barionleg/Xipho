@@ -5,7 +5,7 @@ version: 2.4.0
 
 {::options auto_ids="true" /}
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Basic Requirements
 This section will describe the essential requirements in setting up a simple Internet radio station. It is by no means a complete list but should give you enough to get started. Please also note that those are generic instructions. If you installed a Linux/Unix distribution package, then it will likely come with different paths, different means of starting it, etc. In that case please also refer to the documentation of that distribution and or a distribution specific How-To.
 
@@ -14,9 +14,9 @@ The Icecast server will be the place where all listeners of your station will co
 
 It is important to note that not all source clients work with Icecast 2. You will need to check to make sure that Icecast 2 is supported by your chosen source client.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # The Basics
 
 Each Icecast server can house multiple broadcasts (or mountpoints) each containing a separate stream of content. A 'mountpoint' is a unique name on your server identifying a particular stream - it looks like a filename, such as '/stream.ogg'. A listener can only listen to a single mountpoint at a time. This means you can have a single Icecast server contain either multiple broadcasts with different content, or possibly the same broadcast but with streams of different bitrates or qualities. In this case each broadcast or stream is a separate mountpoint.
@@ -62,5 +62,5 @@ Additionally, you will need to choose a mountpoint and specify this in the sourc
 Once you have configured your source client, you should be able to connect it to the Icecast server. Verify that it is connected by hitting the stats.xml URL that was mentioned above.  
   
 Now that you have the source connnected, listening to the stream involves simply opening the appropriate following URL in a browser: `http://yourip:port/mounpoint-you-specified`. So, for instance, if you attached your source client to an icecast server located at `192.0.2.23:8000` with a mountpoint of `/mystream.ogg`, then you would open: `http://192.0.2.23:8000/mystream.ogg` or `http://192.0.2.23:8000/mystream.ogg.m3u`. Note that the URL with `.m3u` extention will serve up a link that opens most media players. Also it is important to note that m3u need not contain only MP3 stream, it can contain streams of arbitrary content-type and is used by Icecast to serve a playlist that represents your broadcast to listening clients. Alternatively you can open up the stream URL directly within your media player (`http://192.0.2.23:8000/mystream.ogg` in this case)
-</article>
+</div>
 

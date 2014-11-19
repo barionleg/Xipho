@@ -3,7 +3,7 @@ title: Config File
 version: 2.3.2
 ---
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Overview
 This section will describe each section of the config file and is grouped into the following sections:
 
@@ -17,9 +17,9 @@ This section will describe each section of the config file and is grouped into t
 -   [Logging](#log)
 -   [Security](#security)
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Limits
 {:#limits}
 
@@ -73,9 +73,9 @@ burst-on-connect
 burst-size
 : The burst size is the amount of data (in bytes) to burst to a client at connection time. Like burst-on-connect, this is to quickly fill the pre-buffer used by media players. The default is 64 kbytes which is a typical size used by most clients so changing it is not usually required. This setting applies to all mountpoints unless overridden in the mount settings.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Authentication
 {:#authentication}
 
@@ -107,9 +107,9 @@ admin-user/admin-password
 : The username/password used for all administration functions. This includes retrieving statistics, accessing the web-based
   administration screens, etc. A list of these functions can be found in the "Administration" section of the manual.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Stream Directory Settings
 {:#yp}
 
@@ -131,9 +131,9 @@ yp-url
 : The URL which Icecast uses to communicate with the Directory server.
   The value for this setting is provided by the owner of the Directory server.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Misc Server Settings
 {:#misc}
 
@@ -239,9 +239,9 @@ shoutcast-compat
   `shoutcast-compat`. This means if you define `8001` as `shoutcast-compat`, then you will need to define a listen port
   of `8000` and it must not also be defined as `shoutcast-compat`. See the example config file in the distribution for more info.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Relaying Streams
 {:#relay}
 
@@ -357,9 +357,9 @@ on-demand
   `1`: enabled, `0`: disabled (default is `<relays-on-demand>`). This is useful in cases where you want to
   limit bandwidth costs when no one is listening.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Mount Specific Settings
 {:#mountsettings}
 
@@ -536,9 +536,9 @@ on-disconnect
   The processing of the stream does not wait for the script to end.  
   _This option is not available on Win32_
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Path Settings
 {:#path}
 
@@ -591,9 +591,9 @@ alias
 : Aliases are used to provide a way to create multiple mountpoints that refer to the same mountpoint.  
   For example: `<alias source="/foo" dest="/bar">`
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Logging Settings
 {:#log}
 
@@ -642,9 +642,9 @@ loglevel
   -   loglevel = `2`: Warn, Error messages are printed
   -   loglevel = `1`: Error messages only are printed
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Security Settings
 {:#security}
 
@@ -669,4 +669,4 @@ changeowner
 : This section indicates the user and group that will own the icecast process when it is started.  
   These need to be valid users on the system.
 
-</article>
+</div>

@@ -5,15 +5,15 @@ version: 2.4.0
 
 {::options auto_ids="true" /}
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Overview
 Relaying is the process by which one server mirrors one or more streams from a remote server. The servers
 need not be of the same type (i.e. Icecast can relay from Shoutcast). Relaying is used primarily for large
 broadcasts that need to distribute listening clients across multiple physical machines.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Type of Relays
 There are two types of relays that icecast supports.  
 The first type is when both master and slave servers are Icecast 2 servers. In this case, a “master-slave” relay
@@ -26,9 +26,9 @@ The second type of relay is a “single-broadcast” relay. In this case, the sl
 server IP, port and mount and only the mountpoint specified is relayed. In order to relay a broadcast stream on
 a Shoutcast server, you must use the “single-broadcast” relay and specify a mountpoint of `/`.
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Setting Up a Master-Slave Relay
 In order to setup a relay of this type both servers (the one you wish to relay and the one doing the relaying)
 need to be Icecast 2 servers. The following configuration snippet is used as an example:
@@ -48,9 +48,9 @@ and will begin to relay all mountpoints connected to the master server. Addition
 and if so, the slave server will relay those as well. Note that the names of the mountpoints on the slave server will
 be identical to those on the master server. 
 
-</article>
+</div>
 
-<article markdown="1">
+<div class="article" markdown="1">
 # Setting Up a Single-Broadcast Relay
 In this case, the master server need not be an Icecast 2 server. Supported master servers for a single-broadcast
 relay are Shoutcast, Icecast 1.x, and of course Icecast 2. The following configuration snippet is used as an example:
@@ -74,4 +74,4 @@ Additionally, if the server is a Shoutcast server, then the `<mount>` must be sp
 And if you want the Shoutcast relay stream to have metadata contained within it (Shoutcast metadata is embedded
 in the stream itself) then the `<relay-shoutcast-metadata>` needs to be set to `1`.
 
-</article>
+</div>

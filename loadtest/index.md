@@ -2,7 +2,7 @@
 title: Load Tests
 permalink: /loadtest/
 ---
-<article markdown="1">
+<div class="article" markdown="1">
 # Icecast load tests by oddsock
 
 This page contains links to the various load tests that were performed.
@@ -19,6 +19,6 @@ free to stop by [#icecast]({{ "/contact" | prepend: site.baseurl }}).
 [2]: {{ "/loadtest/2/" | prepend: site.baseurl }}
 [3]: {{ "/loadtest/3/" | prepend: site.baseurl }}
 
-<aside>Posted <strong>Nov 14, 2005</strong> by <strong>oddsock</strong></aside>
-</article>
+<div class="aside">Posted <strong>Nov 14, 2005</strong> by <strong>oddsock</strong></div>
+</div>
 

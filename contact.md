@@ -2,7 +2,7 @@
 title: Contact
 permalink: /contact/
 ---
-<article id="mailing-list" markdown="1">
+<div class="article" id="mailing-list" markdown="1">
 # Mailing List
 The Icecast Mailing Lists (and their archives) are one of the first places to
 check for questions that may have been answered in the past.
@@ -20,9 +20,9 @@ Then simply follow the directions from there.
 More details as well as access to the web-accessible archives of the mailing lists can be
 found [here](http://lists.xiph.org/mailman/listinfo/icecast) (for the icecast list) and
 [here](http://lists.xiph.org/mailman/listinfo/icecast-dev) (for the icecast-dev list).
-</article>
+</div>
 
-<article id="contact-info" markdown="1">
+<div class="article" id="contact-info" markdown="1">
 # Contact Information
 
 ## IRC
@@ -41,5 +41,5 @@ or another flaw on icecast.org. For questions, use the mailing list above.
 
 Mail: [{{ site.email }}](mailto:{{ site.email }})
 
-</article>
+</div>
 
