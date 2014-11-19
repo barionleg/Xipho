@@ -1,4 +1,4 @@
-<header>
+<div class="header">
   {% if site.data.xiphbar %}
     {% assign bar = site.data.xiphbar %}
     <div id="xiphbar">
@@ -14,7 +14,7 @@
     </div>
   {% endif %}
   <h1><a href="/{{ site.baseurl }}" title="Home page">Icecast</a> <span>is free server software for streaming multimedia.</span></h1>
-  <nav>
+  <div class="nav">
     <h2 class="hidden">Page navigation</h2>
     <label for="toggle-nav" title="Toggle navigation"></label>
     <input type="checkbox" id="toggle-nav" />
@@ -35,5 +35,5 @@
         <li><a href="#">Home</a></li>
       {% endif %}
     </ul>
-  </nav>
-</header>
+  </div>
+</div>
