@@ -13,6 +13,8 @@ This section will describe each section of the config file and is grouped into t
 -   [Authentication](#authentication)
 -   [Stream Directory Settings](#yp)
 -   [Misc Server settings](#misc)
+-   [TCP-Port settings](#ports)
+-   [Global HTTP Headers](#global-headers)
 -   [Relay settings](#relay)
 -   [Mount Specific settings](#mountsettings)
 -   [File path settings](#path)
@@ -204,7 +206,7 @@ server-id
 
 The following shows how you can specify the listening settings for the server.
 
-## generic port setup
+## Generic port setup
 
 The first shows an example of a common and simple way to define a listening socket:
 
@@ -219,7 +221,7 @@ will listen on. Most will not need to use bind-address and often get confused by
 no need. Another possibility is to use an `<ssl>` boolean setting which informs Icecast that a secured
 connection is to be used. A common use for using a secure connection would be for admin page access.  
 
-## backward compatibility with Shoutcast source clients
+## Backward compatibility with Shoutcast source clients
 
 The following shows how we can extend a single listen-socket to work with Shoutcast style source clients.
 There are two issues shoutcast source clients have over icecast source clients, one is the lack of mountpoint
@@ -238,7 +240,7 @@ listening socket whose port number is always one higher than the port defined, t
 of which mountpoint the shoutcast source client on this socket will be using. Using this approach you can
 allow multiple shoutcast source clients to connect at the same time.  
   
-## old style Shoutcast source client compatible setup (deprecated)
+## Old style Shoutcast source client compatible setup (deprecated)
 
 The following is just to show the longer approach to defining shoutcast compatability.
 
@@ -268,8 +270,7 @@ bind-address
   card. If not supplied, then it will bind to all interfaces.
 
 ssl
-: If set to 1 will enable HTTPS on this listen-socket. Icecast must have been compiled against openSSL to be able
-  to do so.
+: If set to 1 will enable HTTPS on this listen-socket. Icecast must have been compiled against openSSL to be able to do so.
 
 shoutcast-mount
 : An optional mountpoint setting to be used when shoutcast DSP compatible clients connect. The default global setting
@@ -310,7 +311,7 @@ Icecast can be configured to send custom HTTP headers. This is available as a gl
 This functionality was introduced mainly to enable the use of simplified cross-origin resource sharing. The Icecast default configuration contains the first header, as seen in the above exmple, for this reason.
 
 http-headers
-: This element is placed anywhere inside the main section of the icecast config. It will contain `<header>` child elements, that specify the actual headers one by one.
+: This element is placed anywhere inside the main section of the Icecast config. It will contain `<header>` child elements, that specify the actual headers one by one.
 
 header
 : This tag specifies the actual header to be sent to a HTTP client in response to every request.
@@ -321,7 +322,7 @@ header
   - `status` is optional and limits sending the header to certain HTTP status codes. If not specified, the default is to return the header for every HTTP status code. This attribute is only available for global headers, at the moment.
 
 At the moment only global headers will be sent in case the HTTP status is not "200". This is subject to change in the future.
-Avoid placing comments inside `<http-headers>` as, in this release, it will prevent icecast from parsing further `<header>` tags.
+Avoid placing comments inside `<http-headers>` as, in this release, it will prevent Icecast from parsing further `<header>` tags.
 
 </div>
 
