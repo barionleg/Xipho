@@ -22,12 +22,12 @@ refer to the [ChangeLog](http://svn.xiph.org/icecast/tags/icecast-2.4.1/ChangeLo
 
 ## Fixes
 
--	Fix autogen.sh to work properly on OS X
--	Removed threadpool from the example config (it is long gone and unused)
--	More detailed logging:
+-   Fix autogen.sh to work properly on OS X
+-   Removed threadpool from the example config (it is long gone and unused)
+-   More detailed logging:
         * Add source IP adress to source start/stop logging
         * Add mountpoints to some log lines
--	Fix `<auth>` working in default mounts (`<mount type="default">`) if no `<mount-name>` is given
+-   Fix `<auth>` working in default mounts (`<mount type="default">`) if no `<mount-name>` is given
 -   Fix the JSON status API (`status-json.xsl`), which could return invalid JSON in some cases
 -   SSL Security improvements:
         * Disable SSLv3
@@ -40,4 +40,4 @@ refer to the [ChangeLog](http://svn.xiph.org/icecast/tags/icecast-2.4.1/ChangeLo
 
 ## Known issues
 
--	Webinterface shows Login when using just `stream_auth`.
+-   Webinterface shows Login when using just `stream_auth`.
