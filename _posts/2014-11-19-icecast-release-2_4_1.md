@@ -34,7 +34,7 @@ refer to the [ChangeLog](http://svn.xiph.org/icecast/tags/icecast-2.4.1/ChangeLo
 -   Fix logging of client connection duration time on Windows
 -   Fix possibly broken XML on Windows
 -   Require `Content-Type` header for PUT requests
--   Fix on-connect and on-disconnect script STDIN/STDOUT/STDERR corruption due to shared file descriptors.
+-   Fix on-connect and on-disconnect script STDIN/STDOUT/STDERR corruption due to shared file descriptors. (CVE-2014-9018)
 -   Fix JSON access by adding support for global and mount specific [custom HTTP headers]({{site.baseurl}}/docs/icecast-2.4.1/config-file.html#global-headers)
 
 ## Known issues
