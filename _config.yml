@@ -5,6 +5,7 @@ description: "Icecast is free server software for streaming multimedia."
 baseurl: ""
 url: "http://icecast.org"
 timezone: UTC
+include: ["redirect.rules"]
 
 # Build settings
 markdown: kramdown
