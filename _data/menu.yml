@@ -15,8 +15,8 @@
 - name: Streams
   url: http://dir.xiph.org/
 
-- name: Subversion
-  path: /svn
+- name: Contributing
+  path: /contribute
 
 - name: Contact
   path: /contact
