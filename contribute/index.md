@@ -15,12 +15,12 @@ good a possible. If relevant please attach the `error.log` and your `icecast.xml
 can make sure it is not a configuration problem.
 
 If you are unsure if you found a bug or not, or you don't want to open a ticket on our Bugtracker, you can
-send us an e-mail to our [icecast-dev](/contact#mailing-list) mailinglist, but please subscribe first.
+send us an e-mail to our [icecast](/contact#mailing-list) mailinglist, but please subscribe first.
 
 ## Requesting features
 
 If you thing that a feature should be added to Icecast, you can submit us feature requests by sending them to
-the [icecast-dev](/contact#mailing-list) mailinglist (subscribe first). Please make sure that your feature is
+the [icecast](/contact#mailing-list) mailinglist (subscribe first). Please make sure that your feature is
 of general nature and not something that only you might need.
 </div>
 
