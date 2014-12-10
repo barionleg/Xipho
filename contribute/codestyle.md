@@ -145,4 +145,64 @@ Multiline comment should have text on the first line, but not on the last:
  */
 {% endhighlight %}
 
+## TAGs for Comments
+
+The following tags should be used in comments, when necessary, for easier finding stuff that needs to be reviewed or handled in future release.
+
+### Actions
+
+-   REVIEW: Ask for a review of this.
+-   REWRITE: Ask for a rewrite of this section.
+-   TODO: Ask for implementation of a feature.
+-   FIXME: Ask correcting an implementation.
+-   REMOVE: Remove a block or feature.
+-   DOCUMENT: Documentation for this block or feature is missing, incomplete or wrong and needs update.
+
+### Conditions
+
+-   [BEFORE|AFTER|IN] RELEASE $version: This is relevant to release $version. $version can also be NEXT.
+-   [BEFORE|AFTER|IN] YEAR $yyyy: This is relevant to (4-digit) year $yyyy
+
+### Extra Tags
+
+-   IMPORTANT: This is an important problem.
+-   SECURITY: This is security critical.
+-   LEAK: This leaks some resource (memory, file descriptors, …)
+
+### Syntax
+
+{% highlight c %}
+/* [CONDITION[ CONDITION[...]]] [EXTRA TAGS] ACTION [#TICKET]: DESCRIPTION
+ * [LONG DESCRIPTION]
+ */
+{% endhighlight %}
+
+### Examples
+
+{% highlight c %}
+/* BEFORE RELEASE 2.5.3 REVIEW #1234: Should we convert A to B?
+ * A is according to standard REF0. This standard was superseded by
+ * standard REF1 which could be implemented with option B.
+ * This may break early clients of standard REF0 not being aware of SOMETHING.
+ */
+{% endhighlight %}
+
+{% highlight c %}
+/* IN YEAR 2022 REWRITE: Change copyright statement as license expires. */
+{% endhighlight %}
+
+{% highlight c %}
+/* LEAK FIXME #1234: Fix case object can not be added to queue. */
+{% endhighlight %}
+
+{% highlight c %}
+/* BEFORE RELEASE NEXT IMPORTANT SECURITY FIXME #1234: Do not expose passwords
+ * on authentication failure of backend server
+ */
+{% endhighlight %}
+
+{% highlight c %}
+/* AFTER RELEASE 2.5.3 REMOVE: Remove support for Icecast 1.x style SOURCE requests */
+{% endhighlight %}
+
 </div>
