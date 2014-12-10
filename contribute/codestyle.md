@@ -160,8 +160,8 @@ The following tags should be used in comments, when necessary, for easier findin
 
 ### Conditions
 
--   [BEFORE|AFTER|IN] RELEASE $version: This is relevant to release $version. $version can also be NEXT.
--   [BEFORE|AFTER|IN] YEAR $yyyy: This is relevant to (4-digit) year $yyyy
+-   [BEFORE\|AFTER\|IN] RELEASE $version: This is relevant to release $version. $version can also be NEXT.
+-   [BEFORE\|AFTER\|IN] YEAR $yyyy: This is relevant to (4-digit) year $yyyy
 
 ### Extra Tags
 
