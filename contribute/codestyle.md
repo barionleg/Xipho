@@ -2,10 +2,18 @@
 title: Contributing
 permalink: /contribute/codestyle.html
 ---
+{::options auto_ids="true" /}
 <div class="article" markdown="1">
 
 # C Coding Style
+{:.no_toc}
 Proposal for Icecast
+
+## Contents
+{:.no_toc}
+
+*   Kramdown will put table of contents here!
+{:toc}
 
 ## Formatting
 Indent with (4) spaces, no tabs.  
