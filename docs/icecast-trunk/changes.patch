@@ -1,0 +1,57 @@
+diff --git a/docs/icecast-2.4.1/changes.md b/docs/icecast-2.4.1/changes.md
+index b186da6..88197f3 100644
+--- a/docs/icecast-2.4.1/changes.md
++++ b/docs/icecast-2.4.1/changes.md
+@@ -10,6 +10,10 @@ version: 2.4.1
+ 
+ ## Fixes
+ 
++-	Fixed cross-corruption of file descriptors by on-connect/on-disconnect scripts, specifically STDIN, STDOUT and STDERRR vs TCP connections.
++	* We actually close not just 0, 1 and 2, but the first 1024 FDs, which seems common trade-off practice, but still not ideal. A more thorough fix will need platform specific logic and significant work.
++	* The STDIN/OUT/ERR problem is fixed reliably, but other problems could occur if both the script and the server use FDs >1024 at the same time
++	* This is now reasonably safe, but care should be exercised nevertheless. 
+ -	Disabled SSLv3 and SSL compression explicitly to improve security
+ -	Updated the default ciphers to be more secure
+ -	Fixed JSON status API problems
+@@ -29,17 +33,15 @@ version: 2.4.1
+ -	Updated the config file to avoid common pitfalls and make some things more obvious.
+ -	Fixed some compiler warnings
+ -	Fixed autogen.sh to work properly on Mac OS
+-
+-## New Features
+-
+--	Added support for global and mount specific custom HTTP headers.
+-	* The purpose is to support basic CORS use cases. This is both important for some HTML5 `<audio>` or `<video>` use cases and accessing the JSON status API.
+-        * The default icecast config contains the very permissive global header: <header name="Access-Control-Allow-Origin" value="*" />
++-	Fixed JSON access by adding support for global and mount specific custom HTTP headers.
++	* The purpose is to fix JSON access from browsers, by supporting basic CORS use cases. This is both important for some HTML5 `<audio>` or `<video>` use cases and accessing the JSON status API.
++	* The default icecast config contains the very permissive global header: <header name="Access-Control-Allow-Origin" value="*" />
+ 
+ ## Known issues
+ 
+ -	HTTP PUT implementation currently doesn't support chunked encoding yet.
+ -	HTTP PUT with "Expect: 100-Continue" receives first a "100" and soon after a "200", instead of the "200" at the end of transmission.
++-	Caution should be exercised when using `<on-connect>` or `<on-disconnect`, as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
+ 
+ </article>
+ 
+diff --git a/docs/icecast-2.4.1/config-file.md b/docs/icecast-2.4.1/config-file.md
+index b8122c0..92569d5 100644
+--- a/docs/icecast-2.4.1/config-file.md
++++ b/docs/icecast-2.4.1/config-file.md
+@@ -636,12 +636,14 @@ header
+ 
+ on-connect
+ : State a program that is run when the source is started. It is passed a parameter which is the name of the mountpoint that is starting.
+-  The processing of the stream does not wait for the script to end.  
++  The processing of the stream does not wait for the script to end. 
++  Caution should be exercised as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
+   _This option is not available on Win32_
+ 
+ on-disconnect
+ : State a program that is run when the source ends. It is passed a parameter which is the name of the mountpoint that has ended.
+   The processing of the stream does not wait for the script to end.  
++  Caution should be exercised as there is a small chance of stream file descriptors being mixed up with script file descriptors, if the FD numbers go above 1024. This will be further addressed in the next Icecast release.
+   _This option is not available on Win32_
+ 
+ </article>
