@@ -4,17 +4,17 @@ permalink: /download/
 download:
   linux:
     format:      ".TAR.GZ"
-    size:        "1,0 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.0.tar.gz"
+    size:        "2.3 MB"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.1.tar.gz"
     description: "Source Package"
   windows:
     format:      ".ZIP"
-    size:        "4,7 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.0.zip"
+    size:        "5.9 MB"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.1.zip"
     description: "Binary Package"
 ---
 <div class="article" id="current-release" markdown="1">
-# Icecast Current Release (2.4.0)
+# Icecast Current Release (2.4.1)
 
 The latest Icecast release can be downloaded below. For Windows there is a binary release, for Linux/UNIX
 there is provided the source package.
@@ -48,6 +48,28 @@ In addition to Icecast, you will most likely need to download a source client fo
 We suggest that you download one from our [third-party applications]({{ "/apps" | prepend: site.baseurl }}) page.
 </div>
 
+
+<div class="article" id="git" markdown="1">
+# Clone Git Repository
+
+Additionally to the release tarballs we have a [public git repository](https://git.xiph.org/?p=icecast-server.git;a=summary) where we do our development, that anyone can clone.
+
+To get the latest development state:
+
+{% highlight sh %}
+git clone --recursive https://git.xiph.org/icecast-server.git
+{% endhighlight %}
+
+If your git version does not support `--recursive` clones, do
+
+{% highlight sh %}
+git clone https://git.xiph.org/icecast-server.git
+cd icecast-server
+git submodule update --init
+{% endhighlight %}
+
+For further instruction, see our Wiki page: [Icecast Git Workflow](https://wiki.xiph.org/Icecast/Git_workflow)
+</div>
 
 <div class="article" id="bindings" markdown="1">
 # Icecast Library/Language Bindings

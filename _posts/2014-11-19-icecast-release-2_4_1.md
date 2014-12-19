@@ -21,20 +21,20 @@ refer to the [ChangeLog](http://svn.xiph.org/icecast/tags/icecast-2.4.1/ChangeLo
 -   Fix autogen.sh to work properly on OS X
 -   Removed threadpool from the example config (it is long gone and unused)
 -   More detailed logging:
-        * Add source IP adress to source start/stop logging
-        * Add mountpoints to some log lines
+    - Add source IP adress to source start/stop logging
+    - Add mountpoints to some log lines
 -   Fix logging to send errors to STDERR prior to opening log files
 -   Fix `<auth>` in default mounts (`<mount type="default">`) to work properly
 -   Fix the JSON status API (`status-json.xsl`), which could return invalid JSON in some cases
 -   SSL Security improvements:
-        * Disable SSLv3
-        * Disable SSL compression
-        * Updated the default ciphers to be more secure
+    - Disable SSLv3
+    - Disable SSL compression
+    - Updated the default ciphers to be more secure
 -   Handle empty strings in config file better
 -   Fix logging of client connection duration time on Windows
 -   Fix possibly broken XML on Windows
 -   Require `Content-Type` header for PUT requests
--   Fix on-connect and on-disconnect script STDIN/STDOUT/STDERR corruption due to shared file descriptors.
+-   Fix on-connect and on-disconnect script STDIN/STDOUT/STDERR corruption due to shared file descriptors. (CVE-2014-9018)
 -   Fix JSON access by adding support for global and mount specific [custom HTTP headers]({{site.baseurl}}/docs/icecast-2.4.1/config-file.html#global-headers)
 
 ## Known issues
