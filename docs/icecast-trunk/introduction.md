@@ -7,7 +7,7 @@ version: 2.4.1
 
 <div class="article" markdown="1">
 # What is Icecast?
-Icecast is a streaming media server which currently supports Ogg Vorbis and MP3 audio streams. It can be used to create an Internet radio station or a privately running jukebox and many things in between. It is very versatile in that new formats can be added relatively easily and supports open standards for commuincation and interaction.
+Icecast is a streaming media server which currently supports Ogg Vorbis, Opus, Theora and WebM streams, MP3 and AAC streams are known to work. It can be used to create an Internet radio station or a privately running jukebox and many things in between. It is very versatile in that new formats can be added relatively easily and supports open standards for commuincation and interaction.
 
 There are two major parts to most streaming media servers: the component providing the content (what we call source clients) and the component which is responsible for serving that content to listeners (this is the function of icecast).
 </div>
@@ -38,8 +38,8 @@ There are many ways to contact the icecast development team
 
 Best Ways:
 
--	Icecast mailing list [http://www.xiph.org/archives](http://www.xiph.org/archives)
--	Icecast Developers mailing list [http://www.xiph.org/archives](http://www.xiph.org/archives)
+-	Icecast mailing list [http://lists.xiph.org/mailman/listinfo/icecast](http://lists.xiph.org/mailman/listinfo/icecast)
+-	Icecast Developers mailing list [http://lists.xiph.org/mailman/listinfo/icecast-dev](http://lists.xiph.org/mailman/listinfo/icecast-dev)
 -	Icecast IRC chat room - irc.freenode.net : #icecast
 
 </div>
