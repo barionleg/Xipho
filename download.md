@@ -3,21 +3,21 @@ title: Download
 permalink: /download/
 download:
   linux:
-    format:      ".TAR.GZ"
+    format:      ".tar.gz"
     size:        "2.3 MB"
     url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.1.tar.gz"
-    description: "Source Package"
+    description: "Source Tarball"
   windows:
-    format:      ".ZIP"
-    size:        "5.9 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.1.zip"
-    description: "Binary Package"
+    format:      ".exe"
+    size:        "5.0 MB"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.1.exe"
+    description: "Binary Installer"
 ---
 <div class="article" id="current-release" markdown="1">
 # Icecast Current Release (2.4.1)
 
-The latest Icecast release can be downloaded below. For Windows there is a binary release, for Linux/UNIX
-there is provided the source package.
+The latest Icecast release can be downloaded below. For Windows there is a binary release in an installer, for Linux/UNIX
+we provide the sources.
 
 {% include dl-buttons.html %}
 
@@ -31,14 +31,14 @@ Most current Linux and Unix distributions provide either prebuilt binary package
 This is the preferred way to install Icecast, as distribution packaging is tuned to make Icecast fit well into your system. In most cases packaging will also provide necessary scripts/files to make Icecast start as a service on boot.  
 For details please refer to the package repository section of your distribution's fine manual.  
   
+### Official packages of current Icecast
 
-Hints that you might find useful:
-
--   Thomas provides test builds, packaged for various distributions, using his
+-   Thomas provides official builds of latest Icecast, packaged for various distributions, using his
     [OBS project](https://build.opensuse.org/package/show/home:dm8tbr/icecast) for Icecast.
 -   There are [package repositories](http://download.opensuse.org/repositories/home:/dm8tbr/)
-    that can be added to the distro package manager.
+    that can be added to the distro package manager. You can think of it as a "PPA" or whatever your distro calls this.
 -   Debian and its derivatives (e.g. Ubuntu) name the package `icecast2`.
+-   Packages are built with openSSL enabled, to ease setting up HTTPS streaming/access.
 
 ## Older Releases
 Older releases can be found [here](http://downloads.xiph.org/releases/icecast/)
