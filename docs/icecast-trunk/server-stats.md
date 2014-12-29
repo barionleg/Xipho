@@ -1,6 +1,6 @@
 ---
 title: Server Statistics
-version: 2.4.1
+version: 2.4.99.1
 ---
 
 {::options auto_ids="true" /}
@@ -24,18 +24,25 @@ API and will change it, even completely, between versions!
 __The preferred ways are custom XSLT, JSON and raw XML.__
 </div>
 
+
+<!-- FIXME -->
+<div class="article" markdown="1">
+# JSON API, machine readable data
+{:#json}
+
+Since version 2.4.0 Icecast includes a basic JSON API (`/status-json.xsl`) based on a xml2json template by Doeke Zanstra
+(see `xml2json.xslt`). It exposes the same set of server statistics that are available through the web interface and
+should fulfil basic user needs. The intention is to not break backwards compatibility of this interface in the future, 
+still we recommend to design robust software that can deal with possible changes like addition or removal of variables.
+Also note that not all variables are available all the time and availability may change at runtime due to stream type, etc.
+</div>
+
 <div class="article" markdown="1">
 # Advanced machine readable data, XSLT generated
 {:#xslt_advanced}
 
 Icecast uses the very powerful libXSLT engine to transform its internal raw statistical data into custom tailored interfaces.
 Many people have written custom XSLT code that produces e.g. plain text “now playing”, XSPF, VCLT, munin interface data, etc.  
-  
-Since version 2.4.0 Icecast includes a basic JSON API (`/status-json.xsl`) based on a xml2json template by Doeke Zanstra
-(see `xml2json.xslt`). It exposes a basic set of server statistics that should fulfil basic user needs. The intention is
-to not break backwards compatibility of this interface in the future, still we recommend to design robust software that
-can deal with possible changes like addition or removal of variables.
-
 </div>
 
 <div class="article" markdown="1">
@@ -45,6 +52,7 @@ can deal with possible changes like addition or removal of variables.
 This section contains information about the raw XML server statistics data available inside Icecast. An example
 stats XML tree will be shown and each element will be described. The following example stats tree will be used:  
 
+<!-- FIXME -->
 {% highlight xml %}
 <icestats>
 	<admin>icemaster@localhost</admin>
@@ -56,7 +64,7 @@ stats XML tree will be shown and each element will be described. The following e
 	<listener_connections>90</listener_connections>
 	<listeners>0</listeners>
 	<location>Earth</location>
-	<server_id>Icecast 2.4.0</server_id>
+	<server_id>Icecast 2.5</server_id>
 	<source_client_connections>164</source_client_connections>
 	<source_relay_connections>0</source_relay_connections>
 	<source_total_connections>164</source_total_connections>

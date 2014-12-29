@@ -1,6 +1,6 @@
 ---
 title: Authentication
-version: 2.4.1
+version: 2.4.99.1
 ---
 
 {::options auto_ids="true" /}
@@ -16,6 +16,7 @@ that authentication can apply to listeners of source clients or relays.
   
 The following authentication mechanisms can apply to listeners:
 
+<!-- FIXME -->
 *	htpasswd: lookup a named file for a matching username and password
 *	URL: issue web requests (eg. PHP) to match authentication
 
@@ -29,6 +30,7 @@ source client, relay or a webroot based file. They do apply to intro files or fa
 In order to use listener authentication, you __must__ configure a mount specific option. This means that you have to provide
 a `<mount>` section in the main icecast config file. The following is an example:
 
+<!-- FIXME -->
 {% highlight xml %}
 <mount>
 	<mount-name>/example.ogg</mount-name>
@@ -105,6 +107,7 @@ should also be returned for placing in the log files.
 In order to use URL based listener authentication, you __must__ configure a mount specific option. This means that you
 have to provide a `<mount>` section in the main Icecast config file. The following shows the list of options available:  
 
+<!-- FIXME -->
 {% highlight xml %}
 <mount>
     <mount-name>/example.ogg</mount-name>
@@ -127,6 +130,7 @@ have to provide a `<mount>` section in the main Icecast config file. The followi
 The options are described below in more detail, each of which is optional, but in each case, within the POST data,
 the value for each setting is encoded.
 
+<!-- FIXME -->
 
 ## mount_add
 
@@ -329,6 +333,7 @@ To define source authentication, a group of tags are specified in the `<mount>` 
   
 The following authentication mechanisms can apply to sources:
 
+<!-- FIXME -->
 *   BASIC: `<password>` and possibly `<username>` in the `<mount>` section
 *   URL: issue web requests (eg. PHP) to match authentication
 

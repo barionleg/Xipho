@@ -1,6 +1,6 @@
 ---
 title: Config File
-version: 2.4.1
+version: 2.4.99.1
 ---
 
 {::options auto_ids="true" /}
@@ -104,7 +104,7 @@ burst-size
 <div class="article" markdown="1">
 # Authentication
 {:#authentication}
-
+<!-- FIXME -->
 {% highlight xml %}
 <authentication>
     <source-password>hackme</source-password>
@@ -115,20 +115,29 @@ burst-size
 </authentication>
 {% endhighlight %}
 
+<!-- FIXME -->
 This section contains all the usernames and passwords used for administration purposes or to connect sources and relays.
 
+<!-- FIXME -->
+role
+: contains role definitions
+
+<!-- FIXME -->
 source-password
 : The unencrypted password used by sources to connect to Icecast. The default username for all 
   source connections is 'source' but this option allows to specify a default password. This and the
   username can be changed in the individual mount sections.
 
+<!-- FIXME -->
 relay-user
 : Used in the master server as part of the authentication when a slave requests the list of streams
   to relay. The default username is `relay`
 
+<!-- FIXME -->
 relay-password
 : Used in the master server as part of the authentication when a slave requests the list of streams to relay.
 
+<!-- FIXME -->
 admin-user/admin-password
 : The username/password used for all administration functions. This includes retrieving statistics, accessing the web-based
   administration screens, etc. A list of these functions can be found in the "Administration" section of the manual.
@@ -448,6 +457,7 @@ on-demand
 # Mount Specific Settings
 {:#mountsettings}
 
+<!-- FIXME -->
 {% highlight xml %}
 <mount type="normal">
     <mount-name>/example-complex.ogg</mount-name>
@@ -473,7 +483,7 @@ on-demand
     <burst-size>65536</burst-size>
     <mp3-metadata-interval>4096</mp3-metadata-interval>
     <authentication type="xxxxxx">
-            <!-- See listener authentiaction documentation -->
+            <!-- See authentication documentation -->
     </authentication>
     <http-headers>
             <header name="Access-Control-Allow-Origin" value="*" />
@@ -507,12 +517,14 @@ mount-name
 : The name of the mount point for which these settings apply.
   MUST NOT be used in case of mount type "default".
 
+<!-- FIXME -->
 username
 : An optional value which will set the username that a source must use to connect using this mountpoint.
   Do not set this value unless you are sure that the source clients connecting to the mount point can be
   configured to send a username other than `source`.  
   If this value is not present the default username is `source`.
 
+<!-- FIXME -->
 password
 : An optional value which will set the password that a source must use to connect using this mountpoint.
   There is also a [URL based authentication method](auth.html#stream-auth) for sources that can be used instead.
@@ -620,11 +632,12 @@ hidden
 : Enable this to prevent this mount from being shown on the xsl pages. This is mainly for cases where a local relay is configured
   and you do not want the source of the local relay to be shown.
 
+<!-- FIXME -->
 authentication
 : This specifies that the named mount point will require listener (or source) authentication. Currently, we support a file-based
   authentication scheme (`type=htpasswd`) and URL based authentication request forwarding. A mountpoint configured with an authenticator
   will display a red key next to the mount point name on the admin screens.  
-  You can read more about listener authentication and URL based source authentication [here](auth.html).
+  You can read more about authentication and URL based source authentication [here](auth.html).
 
 http-headers
 : This element is placed anywhere inside the mount section of the icecast config. It will contain `<header>` child elements, that specify the actual HTTP headers one by one.
@@ -672,7 +685,7 @@ on-disconnect
 This section contains paths which are used for various things within icecast. All paths (other than any aliases) should not end in a `/`.
 
 basedir
-: This path is used in conjunction with the chroot settings, and specified the base directory that is chrooted to when the server is started.  
+: This path is used in conjunction with the chroot settings, and specifies the base directory that is chrooted to when the server is started.  
   _This feature is not supported on Win32._
 
 logdir
@@ -701,6 +714,7 @@ deny-ip
   This is mainly for problem clients when you have no access to any firewall configuration.  
   The format of the file is simple, one IP per line.
 
+<!-- FIXME -->
 alias
 : Aliases are used to provide a way to create multiple mountpoints that refer to the same mountpoint.  
   For example: `<alias source="/foo" dest="/bar">`
@@ -746,7 +760,7 @@ errorlog
 
 playlistlog
 : Into this file, a log of all metadata for each mountpoint will be written. The format of the logfile will most likely change over time
-  as we narrow in on a standard format for this. Currently, the file is pipe delimited. This option is optional and can be removed entirely
+  as we narrow in on a standard format for this. Currently, the file is pipe delimited. This is optional and can be removed entirely
   from the config file.
 
 logsize

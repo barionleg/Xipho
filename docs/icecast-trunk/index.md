@@ -1,6 +1,6 @@
 ---
 title: Table of Contents
-version: 2.4.1
+version: 2.4.99.1
 ---
 
 {::options auto_ids="true" /}

@@ -1,12 +1,21 @@
 ---
 title: Changes
-version: 2.4.1
+version: 2.4.99.1
 ---
 
 {::options auto_ids="true" /}
 
 <div id="v{{ page.version }}" class="article" markdown="1">
 # Version {{ page.version }}
+<!-- FIXME -->
+-	Roles
+-	Events
+-	Stuff
+-	Read ChangeLog for details
+
+
+<div id="v2.4.1" class="article" markdown="1">
+# Version 2.4.1
 
 ## Fixes
 
