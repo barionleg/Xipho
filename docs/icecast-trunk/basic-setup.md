@@ -22,7 +22,9 @@ It is important to note that not all source clients work with Icecast 2. You wil
 Each Icecast server can house multiple broadcasts (or mountpoints) each containing a separate stream of content. A 'mountpoint' is a unique name on your server identifying a particular stream - it looks like a filename, such as '/stream.ogg'. A listener can only listen to a single mountpoint at a time. This means you can have a single Icecast server contain either multiple broadcasts with different content, or possibly the same broadcast but with streams of different bitrates or qualities. In this case each broadcast or stream is a separate mountpoint.
 
 At this point, the steps outlined here related to the Unix version or Win32 console version of Icecast. Icecast is also available in a Win32 GUI version, and the steps are similar in setup, but not quite the same.
-
+<!-- FIXME 
+This section seems very win32 and directories are rearranged there too.
+-->
 The first step in the process is to find and install the Icecast2 server itself. How to do this is not contained within this documentation. After installation you should have and Icecast binary and 3 directories
 
 -	`conf`  
