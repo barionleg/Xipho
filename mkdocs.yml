@@ -1,0 +1,16 @@
+site_name: Icecast Docs
+theme: readthedocs
+
+pages:
+- [index.md,            Introduction]
+- [basic_setup.md,      Basic Setup]
+- [config_file.md,      Configuration File]
+- [server_stats.md,     Server Statistics]
+- [auth.md,             Authentication]
+- [relaying.md,         Relaying]
+- [yp.md,               Listing in a YellowPage Directory]
+- [admin_interface.md,  Admin Interface]
+- [advanced_config.md,  Advanced Configuration]
+- [win32.md,            Windows Specific]
+
+markdown_extensions: [def_list, admonition]
