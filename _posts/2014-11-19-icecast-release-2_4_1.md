@@ -14,7 +14,7 @@ refer to the [ChangeLog](http://svn.xiph.org/icecast/tags/icecast-2.4.1/ChangeLo
 ## Downloads
 
 -   Source: [icecast-2.4.1.tar.gz](http://downloads.xiph.org/releases/icecast/icecast-2.4.1.tar.gz)
--   Windows [icecast_win32_2.4.1.zip](http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.1.zip)
+-   Windows [icecast_win32_2.4.1.exe](http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.1.exe)
 
 ## Fixes
 
