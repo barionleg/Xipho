@@ -22,9 +22,9 @@ These source clients are known to work with Icecast
 |[IceGenerator][icegenerator]               |Linux/Unix                   |
 |[KRADradio][kradradio]                     |Linux/Unix                   |
 |[Muse][muse]                               |Linux/Unix                   |
+|[Ezstream][ezstream]                       |Linux/Unix                   |
 |[Nicecast][nicecast]                       |Mac OS X                     |
 |[Edcast reborn][edcast-reborn]             |Windows                      |
-|[Ezstream][ezstream]                       |Windows                      |
 |[Orban Opticodec-PC][orban-opticode-pc]    |Windows                      |
 |[SAM Cast][sam-cast]                       |Windows                      |
 |[BroadcastMySelf][broadcastmyself]         |Android                      |
