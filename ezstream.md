@@ -27,18 +27,20 @@ Ezstream is free software and licensed under the GNU General Public License.
 <div class="article" id="download" markdown="1">
 # Download
 
-## Latest version: 0.5.6
-[Changes](#changes)
+## Latest version: 0.6.0
 
 - Source .tar.gz (all platforms)
-  - [ezstream-0.5.6.tar.gz](http://downloads.xiph.org/releases/ezstream/ezstream-0.5.6.tar.gz)
-  - MD5: 1be68119d44fbe71454a901fa650a359
-- MS Windows binary (32bit)
-  - [ezstream-0.5.6-win32.zip](http://downloads.xiph.org/releases/ezstream/ezstream-0.5.6-win32.zip)
-  - MD5: 19c6f28c2de81e6e2fa3e0ed914e6696
+  - [ezstream-0.6.0.tar.gz](http://downloads.xiph.org/releases/ezstream/ezstream-0.6.0.tar.gz)
+  - SHA256: `f86eb8163b470c3acbc182b42406f08313f85187bd9017afb8b79b02f03635c9`
+
+## Older releases
 
 Older releases can be found at
 [downloads.xiph.org/releases/ezstream](http://downloads.xiph.org/releases/ezstream/).
+
+The last official build for MS Windows is available here:
+[ezstream-0.5.6-win32.zip](http://downloads.xiph.org/releases/ezstream/ezstream-0.5.6-win32.zip)
+(MD5: `19c6f28c2de81e6e2fa3e0ed914e6696`).
 </div>
 
 <div class="article" id="further-information" markdown="1">
@@ -71,7 +73,11 @@ It might be a good idea to check whether the operating system vendor
 provides a binary package of a recent ezstream release and install that
 one instead of building from source.
 
-## Windows
+## MS Windows
+
+Due to technical constraints, MS Windows is no longer a supported platform for
+ezstream. Unsupported builds of older versions of ezstream are still
+available, however.
 
 Windows users can simply copy the `ezstream.exe` file from the binary
 distribution archive (.ZIP) to any location of their choosing. Users, who wish
@@ -81,41 +87,55 @@ The ezstream binary release depends on MSVC 2008 runtime libraries.
 These libraries can be downloaded from Microsoft as the
 [`vcredist_x86.exe`](http://www.microsoft.com/DOWNLOADS/details.aspx?familyid=A5C84275-3B97-4AB7-A40D-3802B2AF5FC2)
 file, at no cost.
-
-## Even more ...
-
-Comprehensive documentation of ezstream and its configuration is included in the man page `ezstream(1)`.
-Those, who are interested in how ezstream development progresses, can stay informed by occasionally
-looking at the [`NEWS file`](http://svn.xiph.org/trunk/ezstream/NEWS). It is kept up-to-date with
-important changes in ezstream as they happen.
 </div>
 
 <div class="article" id="release-notes" markdown="1">
 # Release Notes
-Ezstream 0.5.6 has been released on August 31st 2009.
+Ezstream 0.6.0 has been released on January 18th 2015.
 
-Version 0.5.6 is a maintenance and feature release.
+Version 0.6.0 is a security and maintenance release.
+
+- This release contains a **SECURITY FIX** for a command injection
+  vulnerability that was found and reported by Alexandre Rebert:
+
+  The previous handling of metadata placeholders allowed for arbitrary shell
+  commands to be trivially injected and executed as the ezstream user, via
+  malicious media files.
+
+  This vulnerability depends on both a configuration using metadata
+  placeholders and the user streaming media files from untrusted sources
+  without noticing \`commands\` or $(commands) in artist or title fields.
+
+  While the group of actually affected users may be limited, all users are
+  advised to upgrade.
+
+- This release requires existing users to **ADJUST** their **CONFIGURATION**:
+
+  To protect against the injection vulnerability above, metadata is now
+  properly quoted and escaped from the shell. This means that any extra
+  quoting must be removed from configuration files.
+
+  Remove all quoting from metadata placeholders in `<encode/>` and `<decode/>`
+  commands, e.g. replace `"@M@"` with `@M@`, and `"@T@"` with `@T@`, etc.
+  Without these changes, stream metadata will look both wrong and the injection
+  vulnerability may be re-introduced.
+
+  Configuration examples have been adjusted accordingly.
 
 ## Changes
 
-- `ezstream-file.sh`:
-  - NEW: Add and install ezstream-file.sh, a new convenience shell
-    script that generates configuration and playlist from a template and
-    command line, respectively. (Bourne shell and POSIX utilities required.)
 - `src/ezstream.c`:
-  - MISC: Be more tolerant towards faulty playlists and similar issues.
-    Failure to open a resource (e.g. a media file) is no longer fatal and
-    operation will continue until 100 subsequent errors.
-    Based on an idea from dhorton.
-    (Ticket [#1585](https://trac.xiph.org/ticket/1585))
-  - NEW: New command line option `-s`: Make ezstream function as a line-based
-    shuffling utility.
-- `src/playlist.c`:
-  - MISC: Consider no output from a playlist program to be equivalent
-    to an empty line, indicating that the end of the playlist is reached.
-  - FIX: Do not complain when receiving an empty line from a playlist program.
-- `examples/`:
-  - NEW: Add a real-world example playlist script with logging feature.
+  - FIX: Prevent certain characters from being interpreted by the shell.
+  - FIX: Prevent ezstream from entering an infinite loop when stopping to send
+    data to standard input. From gquintard.
+    (Ticket [#2045](https://trac.xiph.org/ticket/2045))
+- various:
+  - NEW: Add new `<metadata_refreshinterval/>` feature from Matthew Adams (with
+    minor changes plus documentation.) This allows for recurring and custom
+    metadata updates in between song changes via `<metadata_progname/>`.
+  - NEW: Add new command line option `-m` to disable any active metadata
+    updates. Idea from Richard Thomas.
+    (Ticket [#1620](https://trac.xiph.org/ticket/1620))
 </div>
 
 <div class="article" id="support" markdown="1">
@@ -143,5 +163,5 @@ Your contribution and efforts are very much appreciated. Thank you!
 
 ## Contact
 
-The current maintainer of ezstream is Moritz Grimm (`mdgrimm at gmx dot net`).
+The current maintainer of ezstream is Moritz Grimm (`mgrimm at mrsserver dot net`).
 </div>
