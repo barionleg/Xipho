@@ -35,10 +35,10 @@ Multiple directory XML chunks can be specified in order to be listed in multiple
 ## Further options that play a significant role in YP listings
 
 ### `<hostname>`
-The hostname option **MUST** be set to a name that resolves to the machine this Icecast server runs on.
+The hostname option **MUST** be set to a name that can be resolved through DNS to the IP address(es) of the machine this Icecast server runs on.
 
 ### `<listener-socket><port>`
-The **first** `listener-socke`+`port` entry is used to build the URL advertized to the YP server.
+The **first** `listener-socket`+`port` entry is used to build the URL advertized to the YP server.
 
 ### `<listener-socket><bind-address>`
 If you don't specify an explicit `bind-address`, including `::` and `0.0.0.0`, then the default
@@ -56,11 +56,15 @@ for the YP directory. An invalid or unreachable address is likely to get your ra
 
 ### Verifying the advertized URL
 
-After adjusting the settings and configuring your source client, you should verify setup:   
+After adjusting the settings and configuring your source client, you should verify your setup:<br />
 Go to the Icecast web interface, specifically the admin part `/admin/` and look for the `listenurl` values 
-of your streams. These URLs **MUST** work from the public internet, or your listings will fail.
+of your streams. These URLs **MUST** work from the public internet, or your listings will fail. 
+If you are running Icecast on a LAN, behind a NAT router, then test the stream from outside that network or ask
+someone 'on the internet' to help you verify.
 
-This is also one of the checks performed by a YP server. Common misconfigurations are:  
+This is also one of the checks performed by a YP server. 
+
+Common misconfigurations are:  
  * `<hostname>` set to `localhost`
  * `<hostname>` set to some address that does **NOT** point to the Icecast server
  * hostname has AAAA record but Icecast not bound to `::`
