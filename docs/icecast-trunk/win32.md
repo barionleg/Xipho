@@ -19,3 +19,16 @@ We are planning to reintroduce the capability to start Icecast
 as a Windows Service in the 2.5.0 release.
 
 </div>
+<div class="article" markdown="1">
+# A note on outbound https connections
+
+Icecast uses libcurl to make most of its outbound connections,
+e.g. for URL based authentication.
+
+We do support HTTPS for such connections, but on Windows do not
+include a CA-certificate bundle. This means that by default
+Icecast will not trust any HTTPS servers and connections will fail:
+
+  WARN auth_url/auth_url.c auth to server https://example.org/ice-auth failed with Problem with the SSL CA cert (path? access rights?)
+
+</div>
