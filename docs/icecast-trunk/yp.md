@@ -20,7 +20,7 @@ to configure Icecast correctly, as even one wrong setting can prevent listings t
 <div class="article" markdown="1">
 # Configuring Icecast for YP Support
 First of all, Icecast must have been built with YP support. This is automatically done if you have libcurl installed.
-If libcurl is not detected when icecats is compiled, then YP support is disabled.  
+If libcurl is not detected when Icecast is compiled, then YP support is disabled.  
 If Icecast has been built with YP support, then the following configuration options control the YP directory settings:
 
 {% highlight xml %}
