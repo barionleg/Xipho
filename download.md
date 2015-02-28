@@ -33,12 +33,13 @@ For details please refer to the package repository section of your distribution'
   
 ### Official packages of current Icecast
 
--   Thomas provides official builds of latest Icecast, packaged for various distributions, using his
-    [OBS project](https://build.opensuse.org/package/show/home:dm8tbr/icecast) for Icecast.
--   There are [package repositories](http://download.opensuse.org/repositories/home:/dm8tbr/)
+-   Xiph.org provides official builds of latest Icecast, packaged for various distributions, using their
+    [OBS project](https://build.opensuse.org/package/show/multimedia:xiph/icecast) for Icecast.
+-   There are [package repositories](http://download.opensuse.org/repositories/multimedia:/xiph/)
     that can be added to the distro package manager. You can think of it as a "PPA" or whatever your distro calls this.
 -   Debian and its derivatives (e.g. Ubuntu) name the package `icecast2`.
 -   Packages are built with openSSL enabled, to ease setting up HTTPS streaming/access.
+-   Packages are signed by the [openSUSE OBS multimedia project GPG key](/multimedia-obs.key)
 
 ## Older Releases
 Older releases can be found [here](http://downloads.xiph.org/releases/icecast/)
