@@ -5,16 +5,16 @@ download:
   linux:
     format:      ".tar.gz"
     size:        "2.3 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.1.tar.gz"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.2.tar.gz"
     description: "Source Tarball"
   windows:
     format:      ".exe"
     size:        "5.0 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.1.exe"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.2.exe"
     description: "Binary Installer"
 ---
 <div class="article" id="current-release" markdown="1">
-# Icecast Current Release (2.4.1)
+# Icecast Current Release (2.4.2)
 
 The latest Icecast release can be downloaded below. For Windows there is a binary release in an installer, for Linux/UNIX
 we provide the sources.
@@ -24,14 +24,12 @@ we provide the sources.
 </div>
 
 <div class="article" id="other-releases" markdown="1">
-# Other Releases
-
-## Linux/Unix Binary Packages
+# Linux/Unix Binary Packages
 Most current Linux and Unix distributions provide either prebuilt binary packages or a way to build your own package of Icecast.  
 This is the preferred way to install Icecast, as distribution packaging is tuned to make Icecast fit well into your system. In most cases packaging will also provide necessary scripts/files to make Icecast start as a service on boot.  
 For details please refer to the package repository section of your distribution's fine manual.  
   
-### Official packages of current Icecast
+## Official packages of current Icecast
 
 -   Xiph.org provides official builds of latest Icecast, packaged for various distributions, using their
     [OBS project](https://build.opensuse.org/package/show/multimedia:xiph/icecast) for Icecast.
@@ -40,6 +38,8 @@ For details please refer to the package repository section of your distribution'
 -   Debian and its derivatives (e.g. Ubuntu) name the package `icecast2`.
 -   Packages are built with openSSL enabled, to ease setting up HTTPS streaming/access.
 -   Packages are signed by the [openSUSE OBS multimedia project GPG key](/multimedia-obs.key)
+
+# Other Releases
 
 ## Older Releases
 Older releases can be found [here](http://downloads.xiph.org/releases/icecast/)
