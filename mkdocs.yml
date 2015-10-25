@@ -10,7 +10,6 @@ pages:
 - [relaying.md,         Relaying]
 - [yp.md,               Listing in a YellowPage Directory]
 - [admin_interface.md,  Admin Interface]
-- [advanced_config.md,  Advanced Configuration]
 - [win32.md,            Windows Specific]
 
 markdown_extensions: [def_list, admonition]
