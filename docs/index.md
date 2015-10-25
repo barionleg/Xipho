@@ -14,11 +14,17 @@ something out there on the Web that you know about, but is not listed here,
 The latest official Icecast documentation is available [here]({{ "/docs/icecast-latest" | prepend: site.baseurl }}).
 
 All Docs:
-{% for doc in docs reversed %}
-{% if doc.name != "" %}
-*	[Icecast {{ doc.name }} Docs]({{ site.baseurl }}/docs/icecast-{{ doc.name }}/)
-{% endif %}
-{% endfor %}
+
+*	[Icecast 2.0.1 Docs]({{ site.baseurl }}/docs/icecast-2.0.1/)
+*	[Icecast 2.0.2 Docs]({{ site.baseurl }}/docs/icecast-2.0.2/)
+*	[Icecast 2.1.0 Docs]({{ site.baseurl }}/docs/icecast-2.1.0/)
+*	[Icecast 2.2.0 Docs]({{ site.baseurl }}/docs/icecast-2.2.0/)
+*	[Icecast 2.3.0 Docs]({{ site.baseurl }}/docs/icecast-2.3.0/)
+*	[Icecast 2.3.1 Docs]({{ site.baseurl }}/docs/icecast-2.3.1/)
+*	[Icecast 2.3.2 Docs]({{ site.baseurl }}/docs/icecast-2.3.2/)
+*	[Icecast 2.3.3 Docs]({{ site.baseurl }}/docs/icecast-2.3.3/)
+*	[Icecast 2.4.0 Docs]({{ site.baseurl }}/docs/icecast-2.4.0/)
+*	[Icecast 2.4.1 Docs]({{ site.baseurl }}/docs/icecast-2.4.1/)
 
 Also, we have a simple [FAQ]({{ "/faq" | prepend: site.baseurl }}).
 
