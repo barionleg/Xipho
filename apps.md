@@ -28,11 +28,13 @@ These source clients are known to work with Icecast
 |[Orban Opticodec-PC][orban-opticode-pc]    |Windows                      |
 |[SAM Cast][sam-cast]                       |Windows                      |
 |[BroadcastMySelf][broadcastmyself]         |Android                      |
+|[Cool Mic][coolmic]                        |Android                      |
 |[KoalaSAN][koalasan]                       |iOS                          |
 |[iCast][icast]                             |iOS                          |
 {: .table-block }
 
 [butt]: http://butt.sourceforge.net/
+[coolmic]: http://coolmic.net
 [darkice]: https://code.google.com/p/darkice/
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
 [edcast-reborn]: http://code.google.com/p/edcast-reborn/
