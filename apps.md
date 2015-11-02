@@ -7,30 +7,30 @@ permalink: /apps/
 
 These source clients are known to work with Icecast
 
-|Application                                |Platform                     |
-|-------------------------------------------|-----------------------------|
-|[liquidsoap][liquidsoap]                   |Linux/Unix, Mac OS X, Windows|
-|[RoarAudio][roaraudio]                     |Linux/Unix, Mac OS X, Windows|
-|[butt (broadcast using this tool)][butt]   |Linux/Unix, Mac OS X, Windows|
-|[Mixxx][mixxx]                             |Linux/Unix, Mac OS X, Windows|
-|[Music Player Daemon (MPD)][mpd]           |Linux/Unix, Mac OS X         |
-|[Traktor DJ Studio][traktor-dj-studio]     |Linux/Unix, Mac OS X         |
-|[Ices][ices]                               |Linux/Unix                   |
-|[DarkIce][darkice]                         |Linux/Unix                   |
-|[DeeFuzzer][deefuzzer]                     |Linux/Unix                   |
-|[FreeJ][freej]                             |Linux/Unix                   |
-|[IceGenerator][icegenerator]               |Linux/Unix                   |
-|[KRADradio][kradradio]                     |Linux/Unix                   |
-|[Muse][muse]                               |Linux/Unix                   |
-|[Ezstream][ezstream]                       |Linux/Unix                   |
-|[Nicecast][nicecast]                       |Mac OS X                     |
-|[Edcast reborn][edcast-reborn]             |Windows                      |
-|[Orban Opticodec-PC][orban-opticode-pc]    |Windows                      |
-|[SAM Cast][sam-cast]                       |Windows                      |
-|[BroadcastMySelf][broadcastmyself]         |Android                      |
-|[Cool Mic][coolmic]                        |Android                      |
-|[KoalaSAN][koalasan]                       |iOS                          |
-|[iCast][icast]                             |iOS                          |
+|Application                                  |Platform                     |
+|---------------------------------------------|-----------------------------|
+|[liquidsoap][liquidsoap]                     |Linux/Unix, Mac OS X, Windows|
+|[RoarAudio][roaraudio]                       |Linux/Unix, Mac OS X, Windows|
+|[butt (broadcast using this tool)][butt]     |Linux/Unix, Mac OS X, Windows|
+|[Mixxx][mixxx]                               |Linux/Unix, Mac OS X, Windows|
+|[Music Player Daemon (MPD)][mpd]             |Linux/Unix, Mac OS X         |
+|[Traktor DJ Studio][traktor-dj-studio]       |Linux/Unix, Mac OS X         |
+|[Ices][ices]                                 |Linux/Unix                   |
+|[DarkIce][darkice]                           |Linux/Unix                   |
+|[DeeFuzzer][deefuzzer]                       |Linux/Unix                   |
+|[FreeJ][freej]                               |Linux/Unix                   |
+|[IceGenerator][icegenerator]                 |Linux/Unix                   |
+|[KRADradio][kradradio]                       |Linux/Unix                   |
+|[Muse][muse]                                 |Linux/Unix                   |
+|[Ezstream][ezstream]                         |Linux/Unix                   |
+|[Nicecast][nicecast]                         |Mac OS X                     |
+|[Edcast reborn][edcast-reborn]               |Windows                      |
+|[StreamS Live Encoder][streams-live-encoder] |Windows                      |
+|[SAM Cast][sam-cast]                         |Windows                      |
+|[BroadcastMySelf][broadcastmyself]           |Android                      |
+|[Cool Mic][coolmic]                          |Android                      |
+|[KoalaSAN][koalasan]                         |iOS                          |
+|[iCast][icast]                               |iOS                          |
 {: .table-block }
 
 [butt]: http://butt.sourceforge.net/
@@ -49,7 +49,7 @@ These source clients are known to work with Icecast
 [muse]: http://muse.dyne.org/
 [mpd]: http://www.musicpd.org/
 [nicecast]: http://www.rogueamoeba.com/nicecast/
-[orban-opticode-pc]: http://www.orban.com/orban/products/stream/1010_overview.html
+[streams-live-encoder]: https://www.indexcom.com/products/encoder/
 [roaraudio]: http://roaraudio.keep-cool.org/roaraudio.html
 [sam-cast]: http://spacial.com/sam-cast
 [traktor-dj-studio]: http://www.native-instruments.com/en/traktor/
