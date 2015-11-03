@@ -1,11 +1,3 @@
----
-title: Authentication
-version: 2.4.99.1
----
-
-{::options auto_ids="true" /}
-
-<div class="article" markdown="1">
 # Listener Authentication
 Listener authentication is a feature of Icecast which allows you to secure a certain mountpoint such that in order to listen,
 a listener must pass some verification test. With this feature, a simple pay-for-play operation (eg. user/pass), or some filtering
@@ -23,15 +15,13 @@ The following authentication mechanisms can apply to listeners:
 The listener authentication within a specified mount in the icecast XML configuration can apply to either to a stream from a
 source client, relay or a webroot based file. They do apply to intro files or fallback streams.
 
-</div>
 
-<div class="article" markdown="1">
 # htpasswd Listener Authentication
 In order to use listener authentication, you __must__ configure a mount specific option. This means that you have to provide
 a `<mount>` section in the main icecast config file. The following is an example:
 
 <!-- FIXME -->
-{% highlight xml %}
+```xml
 <mount>
 	<mount-name>/example.ogg</mount-name>
 	<authentication type="htpasswd">
@@ -39,7 +29,7 @@ a `<mount>` section in the main icecast config file. The following is an example
 		<option name="allow_duplicate_users" value="0"/>
 	</authentication>
 </mount>
-{% endhighlight %}
+```
 
 To support listener authentication you __must__ provide at a minimum `<mount-name>` and `<authentication>`.  
 The `mount-name` is the name of the mountpoint that you will use to connect your source client with and `authentication` configures
@@ -86,9 +76,6 @@ username and password.
 This page will serve a m3u with the username and password and in most cases should open the correct media player and begin playing
 your stream.
 
-</div>
-
-<div class="article" markdown="1">
 # URL
 
 Authenticating listeners via the URL method involves Icecast, when a listener connects, issuing requests to a web server
@@ -108,7 +95,7 @@ In order to use URL based listener authentication, you __must__ configure a moun
 have to provide a `<mount>` section in the main Icecast config file. The following shows the list of options available:  
 
 <!-- FIXME -->
-{% highlight xml %}
+```xml
 <mount>
     <mount-name>/example.ogg</mount-name>
     <authentication type="url">
@@ -125,7 +112,7 @@ have to provide a `<mount>` section in the main Icecast config file. The followi
         <option name="stream_auth" value="http://auth.example.org/source.php"/>
     </authentication>
 </mount>
-{% endhighlight %}
+```
 
 The options are described below in more detail, each of which is optional, but in each case, within the POST data,
 the value for each setting is encoded.
@@ -312,21 +299,15 @@ headers
 header_prefix
 : This is the prefix used for passing client headers. See headers for details.
 
-</div>
 
-<div class="article" markdown="1">
 # A note about players and authentication
-{:#note-player-auth}
 We do not have an exaustive list of players that support listener authentication.  
 We use standard HTTP basic authentication, and in general, many media players support this if they support anything at all.
 Winamp and Foobar2000 support HTTP basic authentication on Windows, and XMMS supports it on UNIX platforms. Winamp/XMMS at
 least support the passing of query parameters, other players may also do.
 
-</div>
 
-<div class="article" markdown="1">
 # Source Authentication
-{:#source-auth}
 Source authentication is a feature of Icecast which allows you to secure a certain mountpoint such that in order to stream to it,
 a source client must pass some verification test. This section will show you the basics of setting up and maintaining this component.  
 To define source authentication, a group of tags are specified in the `<mount>` group relating to the mountpoint.  
@@ -370,5 +351,3 @@ stream is active. For these `admin` is set to `1` in POST details.
 
 ### Example
 `action=stream_auth&mount=/stream.ogg&ip=192.0.2.0&server=icecast.example.org&port=8000&user=source&pass=password&admin=1`
-
-</div>
