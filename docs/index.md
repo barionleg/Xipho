@@ -25,6 +25,7 @@ All Docs:
 *	[Icecast 2.3.3 Docs]({{ site.baseurl }}/docs/icecast-2.3.3/)
 *	[Icecast 2.4.0 Docs]({{ site.baseurl }}/docs/icecast-2.4.0/)
 *	[Icecast 2.4.1 Docs]({{ site.baseurl }}/docs/icecast-2.4.1/)
+*	[Icecast 2.5.0 Docs (WIP)]({{ site.baseurl }}/docs/icecast-trunk/)
 
 Also, we have a simple [FAQ]({{ "/faq" | prepend: site.baseurl }}).
 
