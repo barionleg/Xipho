@@ -75,6 +75,7 @@ These media players are known to work with Icecast
 |[FStream][fstream]                         |iOS, Mac OS X                                  |
 |[TuneIn Radio][tunein-radio]               |iOS, Android, Windows Phone, Blackberry        |
 |[Internet Radio Box][internet-radio-box]   |iOS                                            |
+|[StreamS HiFi Radio App][streams-hifi]     |iOS, tvOS                                      |
 {: .table-block }
 
 [foobar2000]: http://www.foobar2000.org/
@@ -87,6 +88,7 @@ These media players are known to work with Icecast
 [fstream]: http://www.sourcemac.com/?page=fstream
 [tunein-radio]: http://tunein.com/get-tunein/
 [internet-radio-box]: http://www.eingrad.com/products/internet-radio-box/
+[streams-hifi]: https://www.indexcom.com/products/hifiradio/
 
 </div>
 
