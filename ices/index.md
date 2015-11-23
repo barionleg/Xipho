@@ -6,9 +6,9 @@ permalink: /ices/
 <div class="article" markdown="1">
 # What is IceS?
 
-IceS is a source client for a streaming server. The purpose of this client is to provide
-an audio stream to a streaming server such that one or more listeners can access the stream.
-With this layout, this source client can be situated remotely from the icecast server.  
+IceS is a source client for the Icecast streaming server. The purpose of this client is to provide
+an audio stream to Icecast, so that one or more listeners can access the stream.
+With this layout, the source client can be situated remotely from the Icecast server.  
   
 The primary example of a streaming server used is Icecast 2, although others could be
 used if certain conditions are met.  
