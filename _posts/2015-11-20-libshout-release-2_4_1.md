@@ -6,9 +6,9 @@ author: ePirat
 categories: libshout release
 ---
 
-Based on the great feedback we got from the comunity we proudly release a new version fixing the last release.
+We're grateful that our community quickly noticed a problem in 2.4.0 and we are releasing version 2.4.1, including additional fixes.
 
-This fix includes:
+These fixes include:
 
 - Fix a compilation error (No rule to make target 'libshout.chkport'), ref [#2235]
 - Fix a little problem with build env checks on some targets
