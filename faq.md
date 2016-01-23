@@ -9,7 +9,7 @@ permalink: /faq/
 Icecast.org, the project, is a collection of programs and libraries for streaming audio over the Internet.
 This includes:
 
-- Icecast, a program that streams audio data to listeners
+- Icecast, a program that streams audio and video data to listeners
 - libshout, a library for communicating with Icecast servers
 - IceS, a program that sends audio data to Icecast servers
 
