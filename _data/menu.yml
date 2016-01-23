@@ -9,6 +9,9 @@
 - name: Apps
   path: /apps
 
+- name: Ezstream
+  path: /ezstream
+
 - name: IceS
   path: /ices
 
