@@ -5,16 +5,16 @@ download:
   linux:
     format:      ".tar.gz"
     size:        "2.3 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.2.tar.gz"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.3.tar.gz"
     description: "Source Tarball"
   windows:
     format:      ".exe"
-    size:        "5.0 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.2.exe"
+    size:        "4.9 MB"
+    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.3.exe"
     description: "Binary Installer"
 ---
 <div class="article" id="current-release" markdown="1">
-# Icecast Current Release (2.4.2)
+# Icecast Current Release (2.4.3)
 
 The latest Icecast release can be downloaded below. For Windows there is a binary release in an installer, for Linux/UNIX
 we provide the sources.
