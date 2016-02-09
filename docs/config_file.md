@@ -109,7 +109,7 @@ burst-size
 This section contains all the usernames and passwords used for administration purposes or to connect sources and relays.
 For more information, refer to the [Authentication](auth.md) Page.
 
-# YellowPage Directory Settings
+# Public Directory Publishing Settings
 
 ```xml
 <directory>
@@ -118,9 +118,9 @@ For more information, refer to the [Authentication](auth.md) Page.
 </directory>
 ```
 
-This section contains all the settings for listing a stream on any of the Icecast YP Directory servers.
+This section contains all the settings for listing a stream on any of the Icecast Directory servers.
 Multiple occurances of this section can be specified in order to be listed on multiple directory servers.  
-For more Information see the [Listing in a YellowPage Directory](yp.md) Page.
+For more Information see the [Listing in a Directory](yp.md) Page.
 
 yp-url-timeout
 : This value is the maximum time Icecast will wait for a response from a particular directory server.
@@ -357,38 +357,38 @@ charset
 public
 : The default setting for this is `-1` indicating that it is up to the source client or relay to determine if this mountpoint
   should advertise. A setting of `0` will prevent any advertising and a setting of `1` will force it to advertise. 
-  If you do force advertising you may need to set other settings listed below as the YP server can refuse to advertise
+  If you do force advertising you may need to set other settings listed below as the directory server can refuse to advertise
   if there is not enough information provided.
 
 stream-name
-: Setting this will add the specified name to the stats (and therefore YP) for this mountpoint even if the source client/relay provide one.
+: Setting this will add the specified name to the stats (and therefore directory listings) for this mountpoint even if the source client/relay provide one.
 
 stream-description
-: Setting this will add the specified description to the stats (and therefore YP) for this mountpoint even if the source client/relay provide one.
+: Setting this will add the specified description to the stats (and therefore directory listings) for this mountpoint even if the source client/relay provide one.
 
 stream-url
-: Setting this will add the specified URL to the stats (and therefore YP) for this mountpoint even if the source client/relay provide one.  
+: Setting this will add the specified URL to the stats (and therefore directory listings) for this mountpoint even if the source client/relay provide one.
   The URL is generally for directing people to a website.
 
 genre
-: Setting this will add the specified genre to the stats (and therefore YP) for this mountpoint even if the source client/relay provide one.  
-  This can be anything be using certain key words can help searches in the YP directories.
+: Setting this will add the specified genre to the stats (and therefore directory listings) for this mountpoint even if the source client/relay provide one.
+  This can be anything be using certain key words can help searches in the directories.
 
 bitrate
-: Setting this will add the specified bitrate to the stats (and therefore YP) for this mountpoint even if the source client/relay provide one.  
+: Setting this will add the specified bitrate to the stats (and therefore directory listings) for this mountpoint even if the source client/relay provide one.
   This is stated in kbps.
 
 type
-: Setting this will add the specified mime type to the stats (and therefore YP) for this mountpoint even if the source client/relay provide one.  
+: Setting this will add the specified mime type to the stats (and therefore directory listings) for this mountpoint even if the source client/relay provide one.
   It is very unlikely that this will be needed.
 
 subtype
-: Setting this will add the specified subtype to the stats (and therefore YP) for this mountpoint.
-  The subtype is really to help the YP server to identify the components of the type.
-  An example setting is vorbis/theora do indicate the codecs in an Ogg stream
+: Setting this will add the specified subtype to the stats (and therefore directory listings) for this mountpoint.
+  The subtype is really to help the directory server to identify the components of the type.
+  An example setting is vorbis/theora and indicates the codecs in an Ogg stream
 
 burst-size
-: This optional setting allows for providing a burst size which overrides the default burst size as defined in limits.  
+: This optional setting allows for providing a burst size which overrides the default burst size as defined in limits.
   The value is in bytes.
 
 mp3-metadata-interval

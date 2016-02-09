@@ -111,14 +111,14 @@ admin
 
 client_connections
 : Client connections are basically anything that is not a source connection. These include listeners (not concurrent,
-  but cumulative), any admin function accesses, and any static content (file serving) accesses.  
+  but cumulative), any admin function accesses, and any static content (file serving) accesses.
   _This is an accumulating counter._
 
 clients
 : Number of currently active client connections.
 
 connections
-: The total of all inbound TCP connections since start-up.  
+: The total of all inbound TCP connections since start-up.
   _This is an accumulating counter._
 
 file_connections
@@ -129,7 +129,7 @@ host
   Icecast instance is running.
 
 listener_connections
-: Number of listener connections to mount points.  
+: Number of listener connections to mount points.
   _This is an accumulating counter._
 
 listeners
@@ -151,15 +151,15 @@ server_start
 
 source_client_connections
 : Source client connections are the number of times (cumulative since start-up, not just currently connected) a source
-  client has connected to Icecast.  
+  client has connected to Icecast.
   _This is an accumulating counter._
 
 source_relay_connections
-: Number of outbound relay connections to (master) icecast servers.  
+: Number of outbound relay connections to (master) icecast servers.
   _This is an accumulating counter._
 
 source_total_connections
-: Both clients and relays.  
+: Both clients and relays.
   _This is an accumulating counter._
 
 sources
@@ -169,23 +169,23 @@ stats
 : The total of currently connected STATS clients.
 
 stats_connections
-: Number of times a stats client has connected to Icecast.  
-  _This is an accumulating counter._ 
+: Number of times a stats client has connected to Icecast.
+  _This is an accumulating counter._
 
 ## Source-specific Statistics
-Please note that the statistics are valid within the scope of the current source connection.  
-A reconnect or disconnection will reset those.  
+Please note that the statistics are valid within the scope of the current source connection.
+A reconnect or disconnection will reset those.
 
 artist
-: Artist of the current song  
+: Artist of the current song
   _Metadata set by source client_
 
 title
-: Title of the current song  
+: Title of the current song
   _Metadata set by source client_
 
 audio_bitrate
-: Audio bitrate in bits/s  
+: Audio bitrate in bits/s
   _Can be set by source client_
 
 audio_channels
@@ -193,53 +193,53 @@ audio_channels
 
 audio-info
 : Information about the bitrate/samplerate/quality of the stream.
-  Also used for YP entries.  
-  _Metadata set by source client_  
-  Example:  
-  `samplerate=44100;quality=10%2e0;channels=2` (LadioCast)  
+  Also used for directory listings.
+  _Metadata set by source client_
+  Example:
+  `samplerate=44100;quality=10%2e0;channels=2` (LadioCast)
   `ice-bitrate=128;ice-channels=2;ice-samplerate=44100` (Butt)
 
 ice-bitrate
-: Information about the audio bitrate (in kbit/s) of the stream.  
+: Information about the audio bitrate (in kbit/s) of the stream.
   _Can be set by source client_
 
 samplerate
-: Information about the samplerate of the stream.  
+: Information about the samplerate of the stream.
   _Can be set by source client_
 
 quality
-: Information about the audio quality of the stream.  
+: Information about the audio quality of the stream.
   _Metadata set by source client_
 
 frame_rate
-: Information about the framerate of the stream.  
+: Information about the framerate of the stream.
   _Only present for video streams_
 
 frame_size
-: Information about the frame size of the stream.  
+: Information about the frame size of the stream.
   _Only present for video streams_
 
 video_bitrate
-: Information about the video bitrate of the stream.  
+: Information about the video bitrate of the stream.
   _Only present for video streams_
 
 video_quality
-: Information about the video quality of the stream.  
+: Information about the video quality of the stream.
   _Only present for video streams_
 
 server_name
-: Stream name  
+: Stream name
   _Metadata set by source client_
 
 server_description
-: Stream description  
+: Stream description
   _Metadata set by source client_
 
 server_type
 : MIME-type for the stream currently active on this mountpoint.
 
 subtype
-: MIME-subtype, can be e.g. codecs like Opus, Vorbis, Theora.  
+: MIME-subtype, can be e.g. codecs like Opus, Vorbis, Theora.
   Separated with `/`.
 
 listener_peak
@@ -255,14 +255,14 @@ max_listeners
 : Maximum number of listeners permitted to concurrently connect to this mountpoint.
 
 public
-: Flag that indicates whether this mount is to be listed on a YP.  
+: Flag that indicates whether this mount is to be listed on a directory.
   _Set by source client, can be overriden by server config_
 
 slow_listeners
 : Number of slow listeners
 
 source_ip
-: IP address of the currently connected source client.  
+: IP address of the currently connected source client.
   In case of relays the content of `<server>`.
 
 stream_start_iso8601
