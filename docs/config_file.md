@@ -243,7 +243,7 @@ For information about the two types and how to configure them, refer to the [Rel
     <fallback-mount>/example2.ogg</fallback-mount>
     <fallback-override>1</fallback-override>
     <fallback-when-full>1</fallback-when-full>
-    <charset>ISO8859-1</charset>
+    <charset>ISO-8859-1</charset>
     <public>1</public>
     <stream-name>My audio stream</stream-name>
     <stream-description>My audio description</stream-description>
@@ -345,9 +345,9 @@ fallback-when-full
   been reached, to move to the fallback mount if there is one specified.
 
 charset
-: For non-Ogg streams like MP3, the metadata that is inserted into the stream often has no defined character set.
+: For legacy, non-Ogg streams like MP3, the metadata that is inserted into the stream often has no defined character set.
   We have traditionally assumed UTF8 as it allows for multiple language sets on the web pages and stream directory,
-  however many source clients for MP3 type streams have assumed Latin1 (ISO 8859-1) or leave it to whatever character
+  however many source clients for MP3 type streams have assumed Latin1 (ISO-8859-1) or leave it to whatever character
   set is in use on the source client system.  
   This character mismatch has been known to cause a problem as the stats engine and stream directory servers want UTF8
   so now we assume Latin1 for non-Ogg streams (to handle the common case) but you can specify an alternative character
