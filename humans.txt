@@ -22,7 +22,6 @@ Fira Sans & Fira Mono typeface: Erik Spiekermann, Ralph du Carrois, Mozilla
 
 
 /* SITE */
-Last update: 2014/10/21
 Language: English
 Standards: HTML5, CSS3
 
