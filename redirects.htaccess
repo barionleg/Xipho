@@ -29,4 +29,4 @@ Redirect permanent /docs/ices-latest /ices/docs/latest
 Redirect temp /docs/latest /docs/icecast-2.4.1
 Redirect temp /ices/docs/latest /ices/docs/ices-2.0.2
 
-# Some comment...
+
