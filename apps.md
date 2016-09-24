@@ -31,6 +31,7 @@ These source clients are known to work with Icecast
 |[Cool Mic][coolmic]                          |Android                      |
 |[KoalaSAN][koalasan]                         |iOS                          |
 |[iCast][icast]                               |iOS                          |
+|[ShoutVST][shoutvst]                         |VST Plugin                   |
 {: .table-block }
 
 [butt]: http://butt.sourceforge.net/
@@ -55,6 +56,7 @@ These source clients are known to work with Icecast
 [traktor-dj-studio]: http://www.native-instruments.com/en/traktor/
 [broadcastmyself]: http://novastreamapps.blogspot.fr
 [koalasan]: http://koalasan.net
+[shoutvst]: https://github.com/R-Tur/ShoutVST
 
 </div>
 
