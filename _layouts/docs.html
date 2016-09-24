@@ -14,7 +14,7 @@
       <h2>{{ page.product }} {{ page.version }} Docs{% if page.title %} &mdash; {{ page.title }}{% endif %}</h2>
       {% assign thename = docs.name %}
       {% assign theversion = page.version %}
-      {% if (thename != theversion) %}
+      {% if thename != theversion %}
       <div class="aside error">
         <strong>Please note:</strong> This doc is for an older Icecast version, you can find the latest doc
         <a href="{{ "/docs/icecast-latest" | prepend: site.baseurl }}">here</a>.
