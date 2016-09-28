@@ -23,6 +23,7 @@ These source clients are known to work with Icecast
 |[KRADradio][kradradio]                       |Linux/Unix                   |
 |[Muse][muse]                                 |Linux/Unix                   |
 |[Ezstream][ezstream]                         |Linux/Unix                   |
+|[Ladiocast][ladiocast]                       |macOS                        |
 |[Nicecast][nicecast]                         |macOS                        |
 |[Edcast reborn][edcast-reborn]               |Windows                      |
 |[StreamS Live Encoder][streams-live-encoder] |Windows                      |
@@ -57,6 +58,7 @@ These source clients are known to work with Icecast
 [broadcastmyself]: http://novastreamapps.blogspot.fr
 [koalasan]: http://koalasan.net
 [shoutvst]: https://github.com/R-Tur/ShoutVST
+[ladiocast]: http://blog.kawauso.com/ladiocast
 
 </div>
 
