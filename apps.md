@@ -69,6 +69,7 @@ These media players are known to work with Icecast
 |-------------------------------------------|-----------------------------------------------|
 |[VLC][vlc]                                 |Linux/Unix, Windows, Mac OS X, Android, iOS    |
 |[MPlayer][mplayer]                         |Linux/Unix, Windows, Mac OS X                  |
+|[Clementine Music Player][clementine]      |Linux/Unix, Windows, Mac OS X                  |
 |[Zinf][zinf] (MP3, OGG Vorbis)             |Linux/Unix, Windows                            |
 |[XMMS][xmms] (MP3, OGG Vorbis)             |Linux/Unix                                     |
 |[Xine][xine]                               |Linux/Unix                                     |
@@ -91,6 +92,7 @@ These media players are known to work with Icecast
 [tunein-radio]: http://tunein.com/get-tunein/
 [internet-radio-box]: http://www.eingrad.com/products/internet-radio-box/
 [streams-hifi]: https://www.indexcom.com/products/hifiradio/
+[clementine]: https://www.clementine-player.org
 
 </div>
 
