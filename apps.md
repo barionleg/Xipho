@@ -9,12 +9,12 @@ These source clients are known to work with Icecast
 
 |Application                                  |Platform                     |
 |---------------------------------------------|-----------------------------|
-|[liquidsoap][liquidsoap]                     |Linux/Unix, Mac OS X, Windows|
-|[RoarAudio][roaraudio]                       |Linux/Unix, Mac OS X, Windows|
-|[butt (broadcast using this tool)][butt]     |Linux/Unix, Mac OS X, Windows|
-|[Mixxx][mixxx]                               |Linux/Unix, Mac OS X, Windows|
-|[Music Player Daemon (MPD)][mpd]             |Linux/Unix, Mac OS X         |
-|[Traktor DJ Studio][traktor-dj-studio]       |Linux/Unix, Mac OS X         |
+|[liquidsoap][liquidsoap]                     |Linux/Unix, macOS, Windows   |
+|[RoarAudio][roaraudio]                       |Linux/Unix, macOS, Windows   |
+|[butt (broadcast using this tool)][butt]     |Linux/Unix, macOS, Windows   |
+|[Mixxx][mixxx]                               |Linux/Unix, macOS, Windows   |
+|[Music Player Daemon (MPD)][mpd]             |Linux/Unix, macOS            |
+|[Traktor DJ Studio][traktor-dj-studio]       |Linux/Unix, macOS            |
 |[Ices][ices]                                 |Linux/Unix                   |
 |[DarkIce][darkice]                           |Linux/Unix                   |
 |[DeeFuzzer][deefuzzer]                       |Linux/Unix                   |
@@ -23,7 +23,7 @@ These source clients are known to work with Icecast
 |[KRADradio][kradradio]                       |Linux/Unix                   |
 |[Muse][muse]                                 |Linux/Unix                   |
 |[Ezstream][ezstream]                         |Linux/Unix                   |
-|[Nicecast][nicecast]                         |Mac OS X                     |
+|[Nicecast][nicecast]                         |macOS                        |
 |[Edcast reborn][edcast-reborn]               |Windows                      |
 |[StreamS Live Encoder][streams-live-encoder] |Windows                      |
 |[SAM Cast][sam-cast]                         |Windows                      |
@@ -67,15 +67,15 @@ These media players are known to work with Icecast
 
 |Application                                |Platform                                       |
 |-------------------------------------------|-----------------------------------------------|
-|[VLC][vlc]                                 |Linux/Unix, Windows, Mac OS X, Android, iOS    |
-|[MPlayer][mplayer]                         |Linux/Unix, Windows, Mac OS X                  |
-|[Clementine Music Player][clementine]      |Linux/Unix, Windows, Mac OS X                  |
+|[VLC][vlc]                                 |Linux/Unix, Windows, macOS, Android, iOS       |
+|[MPlayer][mplayer]                         |Linux/Unix, Windows, macOS                     |
+|[Clementine Music Player][clementine]      |Linux/Unix, Windows, macOS                     |
 |[Zinf][zinf] (MP3, OGG Vorbis)             |Linux/Unix, Windows                            |
 |[XMMS][xmms] (MP3, OGG Vorbis)             |Linux/Unix                                     |
 |[Xine][xine]                               |Linux/Unix                                     |
 |[foobar2000][foobar2000] (MP3, OGG Vorbis) |Windows                                        |
 |[Winamp][winamp] 2.x/5.x (MP3, OGG Vorbis) |Windows                                        |
-|[FStream][fstream]                         |iOS, Mac OS X                                  |
+|[FStream][fstream]                         |iOS, macOS                                     |
 |[TuneIn Radio][tunein-radio]               |iOS, Android, Windows Phone, Blackberry        |
 |[Internet Radio Box][internet-radio-box]   |iOS                                            |
 |[StreamS HiFi Radio App][streams-hifi]     |iOS, tvOS                                      |
