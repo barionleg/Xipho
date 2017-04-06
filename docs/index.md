@@ -15,19 +15,22 @@ The latest official Icecast documentation is available [here]({{ "/docs/icecast-
 
 All Docs:
 
-*	[Icecast 2.0.1 Docs]({{ site.baseurl }}/docs/icecast-2.0.1/)
-*	[Icecast 2.0.2 Docs]({{ site.baseurl }}/docs/icecast-2.0.2/)
-*	[Icecast 2.1.0 Docs]({{ site.baseurl }}/docs/icecast-2.1.0/)
-*	[Icecast 2.2.0 Docs]({{ site.baseurl }}/docs/icecast-2.2.0/)
-*	[Icecast 2.3.0 Docs]({{ site.baseurl }}/docs/icecast-2.3.0/)
-*	[Icecast 2.3.1 Docs]({{ site.baseurl }}/docs/icecast-2.3.1/)
-*	[Icecast 2.3.2 Docs]({{ site.baseurl }}/docs/icecast-2.3.2/)
-*	[Icecast 2.3.3 Docs]({{ site.baseurl }}/docs/icecast-2.3.3/)
-*	[Icecast 2.4.0 Docs]({{ site.baseurl }}/docs/icecast-2.4.0/)
-*	[Icecast 2.4.1 Docs]({{ site.baseurl }}/docs/icecast-2.4.1/)
-*	[Icecast 2.5.0 Docs (WIP)]({{ site.baseurl }}/docs/icecast-trunk/)
+*	[Icecast 2.4.1 Docs]({{ "/docs/icecast-2.4.1/" | prepend: site.baseurl }})
+*	[Icecast 2.4.0 Docs]({{ "/docs/icecast-2.4.0/" | prepend: site.baseurl }})
+*	[Icecast 2.3.3 Docs]({{ "/docs/icecast-2.3.3/" | prepend: site.baseurl }})
+*	[Icecast 2.3.2 Docs]({{ "/docs/icecast-2.3.2/" | prepend: site.baseurl }})
+*	[Icecast 2.3.1 Docs]({{ "/docs/icecast-2.3.1/" | prepend: site.baseurl }})
+*	[Icecast 2.3.0 Docs]({{ "/docs/icecast-2.3.0/" | prepend: site.baseurl }})
+*	[Icecast 2.2.0 Docs]({{ "/docs/icecast-2.2.0/" | prepend: site.baseurl }})
+*	[Icecast 2.1.0 Docs]({{ "/docs/icecast-2.1.0/" | prepend: site.baseurl }})
+*	[Icecast 2.0.2 Docs]({{ "/docs/icecast-2.0.2/" | prepend: site.baseurl }})
+*	[Icecast 2.0.1 Docs]({{ "/docs/icecast-2.0.1/" | prepend: site.baseurl }})
 
 Also, we have a simple [FAQ]({{ "/faq" | prepend: site.baseurl }}).
+
+Unstable Docs:
+
+*	[Icecast 2.5.0 Docs (WIP)]({{ "/docs/icecast-trunk/" | prepend: site.baseurl }})
 
 </div>
 
