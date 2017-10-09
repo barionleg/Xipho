@@ -109,6 +109,7 @@ Multiple instances can be defined to allow for multiple encodings, this is usefu
 <instance>
 	hostname
     port
+    username
     password
     mount
     yp
@@ -125,8 +126,11 @@ hostname
 port
 : State the port to connect to, this will be the port icecast is listening on, typically 8000 but can be any.
 
+username
+: Sets the username used to authenticate to Icecast.
+
 password
-: For providing a stream, a username/password has to be provided, and must match what icecast expects.
+: For providing a stream, a password has to be provided, and must match what Icecast expects.
 
 mount
 : Mountpoints are used to identify a particular stream on a icecast server, they must begin with / and for the sake of certain listening clients should end with the .ogg extension.
