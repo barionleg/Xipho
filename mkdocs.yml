@@ -2,14 +2,14 @@ site_name: Icecast Docs
 theme: readthedocs
 
 pages:
-- [index.md,            Introduction]
-- [basic_setup.md,      Basic Setup]
-- [config_file.md,      Configuration File]
-- [server_stats.md,     Server Statistics]
-- [auth.md,             Authentication]
-- [relaying.md,         Relaying]
-- [yp.md,               Listing in a YellowPage Directory]
-- [admin_interface.md,  Admin Interface]
-- [win32.md,            Windows Specific]
+- Introduction: index.md
+- Basic Setup: basic_setup.md
+- Configuration File: config_file.md
+- Server Statistics: server_stats.md
+- Authentication: auth.md
+- Relaying: relaying.md
+- Listing in a YellowPage Directory: yp.md
+- Admin Interface: admin_interface.md
+- Windows Specific: win32.md
 
 markdown_extensions: [def_list, admonition]
