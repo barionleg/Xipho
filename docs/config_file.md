@@ -254,7 +254,7 @@ For information about the two types and how to configure them, refer to the [Rel
     <subtype>vorbis</subtype>
     <hidden>1</hidden>
     <burst-size>65536</burst-size>
-    <mp3-metadata-interval>4096</mp3-metadata-interval>
+    <icy-metadata-interval>4096</icy-metadata-interval>
     <authentication type="xxxxxx">
             <!-- See authentication documentation -->
     </authentication>
@@ -391,8 +391,9 @@ burst-size
 : This optional setting allows for providing a burst size which overrides the default burst size as defined in limits.
   The value is in bytes.
 
-mp3-metadata-interval
-: This optional setting specifies what interval, in bytes, there is between metadata updates within shoutcast compatible streams.
+icy-metadata-interval
+: Previously `mp3-metadata-interval`.  
+  This optional setting specifies what interval, in bytes, between ICY metadata updates for streams using ICY metadata.
   This only applies to new listeners connecting on this mountpoint, not existing listeners falling back to this mountpoint. The
   default is either the hardcoded server default or the value passed from a relay.
 
