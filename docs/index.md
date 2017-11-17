@@ -36,6 +36,7 @@ Currently the following Windows platforms are supported:
 -	Windows Vista
 -	Windows 7
 -	Windows 8
+-   Windows 10
 -	Windows Server 2003
 -	Windows Server 2008
 -	Windows Server 2012
