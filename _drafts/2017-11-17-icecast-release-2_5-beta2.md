@@ -28,7 +28,7 @@ This is a beta release and not recommended for production use.
 - HTTP PUT now supports chunked encoding
 - HTTP PUT with `Expect: 100-Continue` now sends the `200` status as expected at the end of transmission, not right after the `100`
 - Fixed login problems for admin user, if default mount had auth defined
-- Fixed that the JSON exposed listener details if queried with a specific mountpoint
+- Fixed querying mount point with JSON led to exposed listener details
 - Fixed segfault on some bad opus streams
 - Fixed segfaults due to empty strings in config
 - Fixed Icecast fetching streamlist (for relaying) from HTTP/1.1 servers
@@ -37,4 +37,4 @@ This is a beta release and not recommended for production use.
 
 ## Known issues
 
-- YP and m3u playlists do not use the `https` sheme for URLs when using TLS
+- YP and m3u playlists do not use the `https` scheme for URLs when using TLS
