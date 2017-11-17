@@ -1,4 +1,4 @@
-# Icecast 2.4.1 Documentation
+# Icecast 2.5 Beta 2 Documentation
 
 Icecast is a streaming media server which currently supports Ogg Vorbis and MP3 audio streams.
 It can be used to create an Internet radio station or a privately running jukebox and many
