@@ -444,6 +444,7 @@ on-disconnect
     <tls-certificate>/path/to/certificate.pem</tls-certificate>
     <ssl-allowed-ciphers>ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS</ssl-allowed-ciphers>
     <alias source="/foo" dest="/bar"/>
+    <mime-types>/path/to/mime.types</mime-types>
 </paths>
 ```
 
@@ -491,6 +492,9 @@ tls-certificate
 tls-allowed-ciphers
 : This optional tag specifies the list of allowed ciphers passed on to the SSL library.
   Icecast contains a set of defaults conforming to current best practices and you should _only_ override those, using this tag, if you know exactly what you are doing.
+
+mime-types
+: This optional tag specified a path to a mimetypes file that Icecast will use to map file extensions to mime-types when serving files.
 
 # Logging Settings
 
