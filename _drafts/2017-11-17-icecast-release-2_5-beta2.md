@@ -9,6 +9,8 @@ categories: icecast release
 We are pleased to announce Icecast 2.5 beta2 (2.4.99.2).
 This is a beta release and not recommended for production use.
 
+Note: The documentation for 2.5-beta2 does not yet cover all the new features and options!
+
 ## Downloads
 
 -   Source: [icecast-2.5-beta2.tar.gz](http://downloads.xiph.org/releases/icecast/icecast-2.5-beta2.tar.gz)
