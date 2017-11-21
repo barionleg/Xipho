@@ -8,7 +8,8 @@ permalink: /contribute/
 
 ## Reporting bugs
 
-If you find a bug in Icecast, you can report it on our [Bugtracker](https://trac.xiph.org/newticket) (make sure it's not a duplicate).
+If you find a bug in Icecast, you can report it on our [Bugtracker](https://gitlab.xiph.org/xiph/icecast-server/issues)
+(make sure it's not a duplicate).
 
 Please make sure that you include all necessary information for us to reproduce the bug and describe it as
 good a possible. If relevant please attach the `error.log` and your `icecast.xml` (without passwords), so we
@@ -30,8 +31,8 @@ of general nature and not something that only you might need.
 
 You can contribute to the Icecast development by sending us patches that fix bugs or implement new features. Note that
 new features should be discussed before you start working on them (read above).  
-You can either send us patches through the [Bugtracker](https://trac.xiph.org/newticket), just create a ticket that describes what your patchs adds/fixes and
-attach the patch to it.  
+You can either send us patches through the [Bugtracker](https://gitlab.xiph.org/xiph/icecast-server/issues), just create
+a ticket that describes what your patchs adds/fixes and attach the patch to it.  
 If you prefer you can also send us the patch to our [icecast-dev](/contact#mailing-list) mailinglist.
 
 ## Guidelines for patches
