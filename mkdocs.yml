@@ -13,3 +13,4 @@ pages:
 - Windows Specific: win32.md
 
 markdown_extensions: [def_list, admonition]
+plugins: []
