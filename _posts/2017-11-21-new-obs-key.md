@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New GPG key for Xiph repo"
-date:   2017-11-21 20:04:00
+date:   2017-11-21 18:04:00
 author: ePirat
 ---
 
