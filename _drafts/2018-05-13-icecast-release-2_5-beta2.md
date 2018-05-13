@@ -36,7 +36,7 @@ This is a beta release and not recommended for production use.
     * Moved `<mime-types>` to the `<paths>` section
     * Rename `<mp3-metadata-interval>` tag to `<icy-metadata-interval>`
     * Rename `<kartoffelsalat>` tag to `<event-bindings>`
-    * Rename `<ssl>` tag to `<tls>`
+    * Rename `ssl` tags (`<ssl>`, `<ssl-certificate>`, `<ssl-allowed-ciphers>`) to `tls` (`<tls>`, `<tls-certificate>`, `<tls-allowed-ciphers>`) 
 
 
 ## Fixes
