@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Icecast Release 2.5 beta2"
-date:   2018-05-13 09:55:00
+date:   2018-05-19 13:06:00
 author: ePirat
 categories: icecast release
 ---
