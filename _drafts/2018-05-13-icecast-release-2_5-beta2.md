@@ -22,7 +22,7 @@ This is a beta release and not recommended for production use.
     * HTTP Keep-Alive support
     * New error handling and better HTTP status codes in error cases
     * Improved HTTP headers returned by Icecast
-    * Send `<admin>` tag content to YP servers
+    * Send `<admin>` tag content to YP servers - provides contact information for directory operators
 - Web Interface/API:
     * Add support for Opus metadata in web/stats interface
     * List last played songs in web/stats interface
@@ -53,4 +53,4 @@ This is a beta release and not recommended for production use.
 
 ## Known issues
 
-- YP and m3u playlists do not use the `https` sheme for URLs when using TLS
+- YP and m3u playlists do not use the `https` scheme for URLs when using TLS
