@@ -24,7 +24,7 @@ These source clients are known to work with Icecast
 |[Muse][muse]                                 |Linux/Unix                   |
 |[Ezstream][ezstream]                         |Linux/Unix                   |
 |[Ladiocast][ladiocast]                       |macOS                        |
-|[Nicecast][nicecast]                         |macOS                        |
+|[Audio Hijack][audiohighjack]                |macOS                        |
 |[Edcast reborn][edcast-reborn]               |Windows                      |
 |[StreamS Live Encoder][streams-live-encoder] |Windows                      |
 |[SAM Cast][sam-cast]                         |Windows                      |
@@ -50,7 +50,7 @@ These source clients are known to work with Icecast
 [mixxx]: http://mixxx.org/
 [muse]: http://muse.dyne.org/
 [mpd]: http://www.musicpd.org/
-[nicecast]: http://www.rogueamoeba.com/nicecast/
+[audiohighjack]: https://rogueamoeba.com/audiohijack/
 [streams-live-encoder]: https://www.indexcom.com/products/encoder/
 [roaraudio]: http://roaraudio.keep-cool.org/roaraudio.html
 [sam-cast]: http://spacial.com/sam-cast
