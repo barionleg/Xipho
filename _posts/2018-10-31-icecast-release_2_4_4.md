@@ -35,6 +35,6 @@ All issues have been also addressed in our development master branch. We plan to
 ## Downloads
 
 -   Source: [icecast-2.4.4.tar.gz](http://downloads.xiph.org/releases/icecast/icecast-2.4.4.tar.gz)
--   Windows [icecast_win32_2.4.4.exe](http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.4.exe)
+-   Windows: [icecast_win32_2.4.4.exe](http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.4.exe)
 
 [#2342]: https://gitlab.xiph.org/xiph/icecast-server/issues/2342
