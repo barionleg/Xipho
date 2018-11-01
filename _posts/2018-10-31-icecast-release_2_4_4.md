@@ -22,7 +22,7 @@ All issues have been also addressed in our development master branch. We plan to
     * A malicious client could send long HTTP headers, leading to a buffer overflow and potential remote code execution.
     * The problematic code was introduced in version 2.4.0 and was now brought to our attention by Nick Rolfe of [Semmle Security Research Team](https://lgtm.com/security)
 -   Worked around buffer overflows in URL auth's cURL interface.
-    * We currently do not believe that this issue is exploitable. It would require a malicious URL authentication backend server to send a crafted payload and make it through libcURL.
+    * We currently do not believe that this issue is exploitable. It would require a malicious URL authentication back end server to send a crafted payload and make it through libcURL.
     * If someone manages, please let us know.
 -   Do not report hashed user passworts in user list. There is no practical reason to show this to the administrator and it improves security.
 -   Fixed segfault in htpasswd auth if no filename is set
