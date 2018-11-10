@@ -30,7 +30,6 @@ These source clients are known to work with Icecast
 |[SAM Cast][sam-cast]                         |Windows                      |
 |[BroadcastMySelf][broadcastmyself]           |Android                      |
 |[Cool Mic][coolmic]                          |Android                      |
-|[KoalaSAN][koalasan]                         |iOS                          |
 |[iCast][icast]                               |iOS                          |
 |[ShoutVST][shoutvst]                         |VST Plugin                   |
 {: .table-block }
@@ -56,7 +55,6 @@ These source clients are known to work with Icecast
 [sam-cast]: http://spacial.com/sam-cast
 [traktor-dj-studio]: http://www.native-instruments.com/en/traktor/
 [broadcastmyself]: http://novastreamapps.blogspot.fr
-[koalasan]: http://koalasan.net
 [shoutvst]: https://github.com/R-Tur/ShoutVST
 [ladiocast]: http://blog.kawauso.com/ladiocast
 
