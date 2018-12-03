@@ -143,7 +143,7 @@ The following shows how you can specify the listening settings for the server.
 
 <listen-socket>
     <port>8443</port>
-    <tls>1</tls>
+    <tls>auto</tls>
 </listen-socket>
 
 <listen-socket>
@@ -173,13 +173,33 @@ bind-address
 : An optional IP address that can be used to bind to a specific network
   card. If not supplied, then it will bind to all interfaces.
 
+so-sndbuf
+: This setting can be used to enforce a specific TCP send buffer. This is only needed on some windows systems
+  as they do not handle TCP window scaling correctly.
+
+listen-backlog
+: Sets the size of the listen backlog. Tuning this may be useful for servers with several thousand listeners.
+
 tls
-: If set to 1 will enable HTTPS on this listen-socket. Icecast must have been compiled against OpenSSL to be able to do so.
+: This sets the TLS mode to use. Possile values are:
+  `disabled` (TLS is disabled on this port),
+  `auto` (TLS may be used on this port in any mode),
+  `auto_no_plain` (TLS must be used on this port, any mode is acceptable),
+  `rfc2817` (TLS using HTTP/1.1 Upgrade must be used by clients), and
+  `rfc2818` (HTTP over TLS must be used by clients).
+  Icecast must be compiled with TLS support enabled to use TLS.
+
+authentication
+: An optional authentication block can be defined for each listen socket.
+  You can read more about authentication [here](auth.html).
 
 shoutcast-mount
 : An optional mountpoint setting to be used when Shoutcast DSP compatible clients connect.  
   Defining this within a listen-socket group tells Icecast that this port and the subsequent port are to be used for
   Shoutcast compatible source clients.
+
+shoutcast-compat
+: Do not use this setting.
 
 # HTTP headers
 
