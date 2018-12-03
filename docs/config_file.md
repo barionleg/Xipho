@@ -131,7 +131,7 @@ yp-url
   The value for this setting is provided by the owner of the Directory server.
 
 
-# TCP Port settings
+# Listen Socket settings
 
 The following shows how you can specify the listening settings for the server.
 
