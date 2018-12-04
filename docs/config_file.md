@@ -327,6 +327,7 @@ max-listeners
 
 max-listener-duration
 : An optional value which will set the length of time a listener will stay connected to the stream.  
+  The time is given as integer of seconds.
   An auth component may override this.
 
 dump-file
