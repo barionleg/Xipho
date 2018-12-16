@@ -19,7 +19,7 @@ Also check the Icecast error.log for additional hints in case of problems!
 <hostname>example.org</hostname>
 <location>Moon</location>
 <admin>icemaster@example.org</admin>
-<fileserve>1</fileserve>
+<fileserve>true</fileserve>
 <server-id>icecast 2.4.1</server-id>
 ```
 
@@ -205,7 +205,7 @@ shoutcast-compat
 
 ```xml
 <http-headers>
-    <header name="Access-Control-Allow-Origin" value="*" />
+    <header type="cors" name="Access-Control-Allow-Origin" />
     <header name="X-Robots-Tag" value="index, noarchive" status="200" />
 </http-headers>
 ```
@@ -223,6 +223,8 @@ This functionality was introduced mainly to enable the use of simplified cross-o
     <dd>This tag specifies the actual header to be sent to a HTTP client in response to every request.<br />
         This tag can contain the following attributes:
         <dl>
+            <dt>type</dt>
+            <dd>Specifies the HTTP header field type. Can be "static" or "cors". (optional, default "static")</dd>
             <dt>name</dt>
             <dd>Specifies the HTTP header field name. (required)</dd>
             <dt>value</dt>
@@ -264,7 +266,7 @@ For information about the two types and how to configure them, refer to the [Rel
     <fallback-override>1</fallback-override>
     <fallback-when-full>1</fallback-when-full>
     <charset>ISO-8859-1</charset>
-    <public>1</public>
+    <public>true</public>
     <stream-name>My audio stream</stream-name>
     <stream-description>My audio description</stream-description>
     <stream-url>http://some.place.com</stream-url>
@@ -272,14 +274,14 @@ For information about the two types and how to configure them, refer to the [Rel
     <bitrate>64</bitrate>
     <type>application/ogg</type>
     <subtype>vorbis</subtype>
-    <hidden>1</hidden>
+    <hidden>true</hidden>
     <burst-size>65536</burst-size>
     <icy-metadata-interval>4096</icy-metadata-interval>
-    <authentication type="xxxxxx">
+    <authentication>
             <!-- See authentication documentation -->
     </authentication>
     <http-headers>
-            <header name="Access-Control-Allow-Origin" value="*" />
+            <header type="cors" name="Access-Control-Allow-Origin" />
             <header name="X-Robots-Tag" value="index, noarchive" />
             <header name="foo" value="bar" status="200" />
             <header name="Nelson" value="Ha-Ha!" status="404" />
@@ -376,8 +378,8 @@ charset
   The source clients can also specify a `charset=` parameter to the metadata update URL if they so wish.
 
 public
-: The default setting for this is `-1` indicating that it is up to the source client or relay to determine if this mountpoint
-  should advertise. A setting of `0` will prevent any advertising and a setting of `1` will force it to advertise. 
+: The default setting for this is `client` indicating that it is up to the source client or relay to determine if this mountpoint
+  should advertise. A setting of `false` will prevent any advertising and a setting of `true` will force it to advertise. 
   If you do force advertising you may need to set other settings listed below as the directory server can refuse to advertise
   if there is not enough information provided.
 
@@ -462,10 +464,9 @@ on-disconnect
     <adminroot>./admin</adminroot>
     <allow-ip>/path/to/ip_allowlist</allow-ip>
     <deny-ip>/path_to_ip_denylist</deny-ip>
-    <tls-certificate>/path/to/certificate.pem</tls-certificate>
-    <ssl-allowed-ciphers>ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS</ssl-allowed-ciphers>
-    <alias source="/foo" dest="/bar"/>
+    <resource source="/foo" destination="/bar"/>
     <mime-types>/path/to/mime.types</mime-types>
+    <reportxmldb>/path/to/reportxmldb.xml</reportxmldb>
 </paths>
 ```
 
@@ -502,20 +503,28 @@ deny-ip
   The format of the file is simple, one IP per line.
 
 <!-- FIXME -->
-alias
-: Aliases are used to provide a way to create multiple mountpoints that refer to the same mountpoint.  
-  For example: `<alias source="/foo" dest="/bar">`
+resource
+: Resources define how a specific resource is handled by the server. Their most common use is defining
+  alias names.
+  For example: `<resource source="/foo" destination="/bar">`
+  This tag can contain the following attributes:
 
-tls-certificate
-: If specified, this points to the location of a file that contains _both_ the X.509 private and public key.
-  This is required for HTTPS support to be enabled. Please note that the user Icecast is running as must be able to read the file. Failing to ensure this will cause a "Invalid cert file" WARN message, just as if the file wasn't there.
-
-tls-allowed-ciphers
-: This optional tag specifies the list of allowed ciphers passed on to the SSL library.
-  Icecast contains a set of defaults conforming to current best practices and you should _only_ override those, using this tag, if you know exactly what you are doing.
+  - `source` is the name of the resource this tag is applied on.
+  - `description` is the name of the destination resource if any.
+  - `port` is a port number filter.
+  - `bind-address` is a bind address filter.
+  - `listen-socket` is a listen socket filter. This is a reference to the ID of the listen socket.
+  - `vhost` is a vhost based filter.
+  - `module` is the module to use to process the request.
+  - `handler` is the name of the `module`'s handler.
+  - `omode` is the operation mode.
+  - `prefixmatch` is a filter for exact matches (`false`, the default) or prefix matches (`true`).
 
 mime-types
 : This optional tag specified a path to a mimetypes file that Icecast will use to map file extensions to mime-types when serving files.
+
+reportxmldb
+: This optional tag specified a path to a report XML status code database. If not given internal defaults are used.
 
 # Logging Settings
 
@@ -524,7 +533,7 @@ mime-types
     <accesslog>access.log</accesslog>
     <errorlog>error.log</errorlog>
     <playlistlog>playlist.log</playlistlog>
-    <loglevel>4</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+    <loglevel>debug</loglevel>
 </logging>
 ```
 
@@ -559,14 +568,14 @@ logarchive
   prevent the filling up of filesystems for people who don't care (or know) that their logs are growing.
 
 loglevel
-: Indicates what messages are logged by icecast. Log messages are categorized into one of 4 types, Debug, Info, Warn, and Error.  
+: Indicates what messages are logged by icecast. Log messages are categorized into one of four types, Debug, Info, Warn, and Error.  
     
   The following mapping can be used to set the appropriate value:
   
-  -   loglevel = `4`: Debug, Info, Warn, Error messages are printed
-  -   loglevel = `3`: Info, Warn, Error messages are printed
-  -   loglevel = `2`: Warn, Error messages are printed
-  -   loglevel = `1`: Error messages only are printed
+  - `debug`: Debug, Info, Warn, Error messages are printed
+  - `information`: Info, Warn, Error messages are printed
+  - `warning`: Warn, Error messages are printed
+  - `error`: Error messages only are printed
 
 # Security Settings
 This section contains configuration settings that can be used to secure the icecast server by performing a chroot to a secured location or changing user and group on start-up. The latter allows icecast to bind to priviledged ports like 80 and 443, by being started as root and then dropping to the configured user/group after binding listener-sockets.
@@ -576,19 +585,40 @@ This section contains configuration settings that can be used to secure the icec
 
 ```xml
 <security>
-    <chroot>0</chroot>
+    <chroot>false</chroot>
     <changeowner>
         <user>nobody</user>
         <group>nogroup</group>
     </changeowner>
+    <tls-context>
+        <tls-certificate>/path/to/certificate.pem</tls-certificate>
+        <tls-key>/path/to/key.pem</tls-key>
+        <tls-allowed-ciphers>ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS</tls-allowed-ciphers>
+    </tls-context>
 </security>
 ```
 
 chroot
-: An indicator which specifies whether a `chroot()` will be done when the server is started.
+: An indicator which specifies whether a `chroot(2)` will be done when the server is started.
   The chrooted path is specified by the `<basedir>` configuration value.
   Setting up and using a chroot is an advanced concept and not in the scope of this document.
 
 changeowner
 : This section indicates the user and group that will own the icecast process when it is started.  
   These need to be valid users on the system. Icecast must be started as root for this to work.
+
+tls-context
+: This element controls the TLS parameters including the used key and certificates.
+
+tls-certificate (child of tls-context)
+: If specified, this points to the location of a file that contains the X.509 public key (certificate).
+  Optionally this can also contain the X.509 private key.
+  This is required for HTTPS support to be enabled. Please note that the user Icecast is running as must be able to read the file. Failing to ensure this will cause a "Invalid cert file" WARN message, just as if the file wasn't there.
+
+tls-key (child of tls-context)
+: If specified, this points to the location of a file that contains the X.509 private key.
+  This is required for HTTPS support to be enabled. Please note that the user Icecast is running as must be able to read the file. Failing to ensure this will cause a "Invalid cert file" WARN message, just as if the file wasn't there.
+
+tls-allowed-ciphers (child of tls-context)
+: This optional tag specifies the list of allowed ciphers passed on to the SSL library.
+  Icecast contains a set of defaults conforming to current best practices and you should _only_ override those, using this tag, if you know exactly what you are doing.
