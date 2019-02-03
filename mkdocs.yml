@@ -11,6 +11,7 @@ pages:
 - Listing in a YellowPage Directory: yp.md
 - Admin Interface: admin_interface.md
 - Windows Specific: win32.md
+- FAQ: faq.md
 
 markdown_extensions: [def_list, admonition]
 plugins: []
