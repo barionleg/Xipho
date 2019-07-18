@@ -46,7 +46,7 @@ These source clients are known to work with Icecast
 [liquidsoap]: http://liquidsoap.fm/
 [mixxx]: http://mixxx.org/
 [muse]: https://www.dyne.org/software/muse/
-[mpd]: http://www.musicpd.org/
+[mpd]: https://www.musicpd.org
 [audiohighjack]: https://rogueamoeba.com/audiohijack/
 [streams-live-encoder]: https://www.indexcom.com/products/encoder/
 [roaraudio]: http://roaraudio.keep-cool.org/roaraudio.html
