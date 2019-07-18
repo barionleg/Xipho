@@ -14,7 +14,6 @@ These source clients are known to work with Icecast
 |[butt (broadcast using this tool)][butt]     |Linux/Unix, macOS, Windows   |
 |[Mixxx][mixxx]                               |Linux/Unix, macOS, Windows   |
 |[Music Player Daemon (MPD)][mpd]             |Linux/Unix, macOS            |
-|[Traktor DJ Studio][traktor-dj-studio]       |Linux/Unix, macOS            |
 |[Ices][ices]                                 |Linux/Unix                   |
 |[DarkIce][darkice]                           |Linux/Unix                   |
 |[DeeFuzzer][deefuzzer]                       |Linux/Unix                   |
@@ -24,6 +23,7 @@ These source clients are known to work with Icecast
 |[Ezstream][ezstream]                         |Linux/Unix                   |
 |[Ladiocast][ladiocast]                       |macOS                        |
 |[Audio Hijack][audiohighjack]                |macOS                        |
+|[Traktor DJ Studio][traktor-dj-studio]       |macOS, Windows               |
 |[StreamS Live Encoder][streams-live-encoder] |Windows                      |
 |[SAM Cast][sam-cast]                         |Windows                      |
 |[BroadcastMySelf][broadcastmyself]           |Android                      |
