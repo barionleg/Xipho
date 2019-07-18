@@ -44,7 +44,7 @@ These source clients are known to work with Icecast
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
 [ices]: https://icecast.org/ices/
 [liquidsoap]: http://liquidsoap.fm/
-[mixxx]: http://mixxx.org/
+[mixxx]: https://mixxx.org
 [muse]: https://www.dyne.org/software/muse/
 [mpd]: https://www.musicpd.org
 [audiohighjack]: https://rogueamoeba.com/audiohijack/
