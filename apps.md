@@ -25,7 +25,6 @@ These source clients are known to work with Icecast
 |[Ezstream][ezstream]                         |Linux/Unix                   |
 |[Ladiocast][ladiocast]                       |macOS                        |
 |[Audio Hijack][audiohighjack]                |macOS                        |
-|[Edcast reborn][edcast-reborn]               |Windows                      |
 |[StreamS Live Encoder][streams-live-encoder] |Windows                      |
 |[SAM Cast][sam-cast]                         |Windows                      |
 |[BroadcastMySelf][broadcastmyself]           |Android                      |
@@ -41,7 +40,6 @@ These source clients are known to work with Icecast
 [coolmic]: https://coolmic.net
 [darkice]: http://www.darkice.org
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
-[edcast-reborn]: http://code.google.com/p/edcast-reborn/
 [ezstream]: http://www.icecast.org/ezstream.php
 [freej]: http://freej.org
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
