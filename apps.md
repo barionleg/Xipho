@@ -31,7 +31,6 @@ These source clients are known to work with Icecast
 |[BroadcastMySelf][broadcastmyself]           |Android                      |
 |[Cool Mic][coolmic]                          |Android                      |
 |[Backpack Studio][backpackstudio]            |iOS                          |
-|[iCast][icast]                               |iOS                          |
 |[ShoutVST][shoutvst]                         |VST Plugin                   |
 {: .table-block }
 
@@ -43,7 +42,6 @@ These source clients are known to work with Icecast
 [edcast-reborn]: http://code.google.com/p/edcast-reborn/
 [ezstream]: http://www.icecast.org/ezstream.php
 [freej]: http://freej.org
-[icast]: http://icast.anthonymyatt.net/
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
 [ices]: http://www.icecast.org/ices.php
 [kradradio]: http://kradradio.com/
