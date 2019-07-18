@@ -30,10 +30,12 @@ These source clients are known to work with Icecast
 |[SAM Cast][sam-cast]                         |Windows                      |
 |[BroadcastMySelf][broadcastmyself]           |Android                      |
 |[Cool Mic][coolmic]                          |Android                      |
+|[Backpack Studio][backpackstudio]            |iOS                          |
 |[iCast][icast]                               |iOS                          |
 |[ShoutVST][shoutvst]                         |VST Plugin                   |
 {: .table-block }
 
+[backpackstudio]: https://backpackstudioapp.com
 [butt]: http://butt.sourceforge.net/
 [coolmic]: http://coolmic.net
 [darkice]: https://code.google.com/p/darkice/
