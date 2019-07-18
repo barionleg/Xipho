@@ -35,7 +35,7 @@ These source clients are known to work with Icecast
 {: .table-block }
 
 [backpackstudio]: https://backpackstudioapp.com
-[butt]: http://butt.sourceforge.net/
+[butt]: https://danielnoethen.de/butt/
 [coolmic]: https://coolmic.net
 [darkice]: https://code.google.com/p/darkice/
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
