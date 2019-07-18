@@ -36,7 +36,7 @@ These source clients are known to work with Icecast
 
 [backpackstudio]: https://backpackstudioapp.com
 [butt]: http://butt.sourceforge.net/
-[coolmic]: http://coolmic.net
+[coolmic]: https://coolmic.net
 [darkice]: https://code.google.com/p/darkice/
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
 [edcast-reborn]: http://code.google.com/p/edcast-reborn/
