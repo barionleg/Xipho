@@ -41,7 +41,7 @@ These source clients are known to work with Icecast
 [darkice]: http://www.darkice.org
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
 [ezstream]: https://icecast.org/ezstream/
-[freej]: http://freej.org
+[freej]: https://www.dyne.org/software/freej/
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
 [ices]: http://www.icecast.org/ices.php
 [kradradio]: http://kradradio.com/
