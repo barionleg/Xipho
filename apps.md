@@ -39,7 +39,7 @@ These source clients are known to work with Icecast
 [butt]: https://danielnoethen.de/butt/
 [izicast]: https://danielnoethen.de/iziCast/
 [coolmic]: https://coolmic.net
-[darkice]: https://code.google.com/p/darkice/
+[darkice]: http://www.darkice.org
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
 [edcast-reborn]: http://code.google.com/p/edcast-reborn/
 [ezstream]: http://www.icecast.org/ezstream.php
