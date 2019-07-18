@@ -51,7 +51,7 @@ These source clients are known to work with Icecast
 [streams-live-encoder]: https://www.indexcom.com/products/encoder/
 [roaraudio]: http://roaraudio.keep-cool.org/roaraudio.html
 [sam-cast]: http://spacial.com/sam-cast
-[traktor-dj-studio]: http://www.native-instruments.com/en/traktor/
+[traktor-dj-studio]: https://www.native-instruments.com/en/products/traktor/
 [broadcastmyself]: http://novastreamapps.blogspot.fr
 [shoutvst]: https://github.com/R-Tur/ShoutVST
 [ladiocast]: http://blog.kawauso.com/ladiocast
