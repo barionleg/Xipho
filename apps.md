@@ -43,7 +43,7 @@ These source clients are known to work with Icecast
 [ezstream]: https://icecast.org/ezstream/
 [freej]: https://www.dyne.org/software/freej/
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
-[ices]: http://www.icecast.org/ices.php
+[ices]: https://icecast.org/ices/
 [kradradio]: http://kradradio.com/
 [liquidsoap]: http://liquidsoap.fm/
 [mixxx]: http://mixxx.org/
