@@ -31,11 +31,13 @@ These source clients are known to work with Icecast
 |[BroadcastMySelf][broadcastmyself]           |Android                      |
 |[Cool Mic][coolmic]                          |Android                      |
 |[Backpack Studio][backpackstudio]            |iOS                          |
+|[iziCast][izicast]                           |iOS                          |
 |[ShoutVST][shoutvst]                         |VST Plugin                   |
 {: .table-block }
 
 [backpackstudio]: https://backpackstudioapp.com
 [butt]: https://danielnoethen.de/butt/
+[izicast]: https://danielnoethen.de/iziCast/
 [coolmic]: https://coolmic.net
 [darkice]: https://code.google.com/p/darkice/
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
