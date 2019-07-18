@@ -53,7 +53,7 @@ These source clients are known to work with Icecast
 [sam-cast]: http://spacial.com/sam-cast
 [traktor-dj-studio]: https://www.native-instruments.com/en/products/traktor/
 [broadcastmyself]: http://novastreamapps.blogspot.fr
-[shoutvst]: https://github.com/R-Tur/ShoutVST
+[shoutvst]: https://github.com/Iunusov/ShoutVST
 [ladiocast]: http://blog.kawauso.com/ladiocast
 
 </div>
