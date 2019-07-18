@@ -20,7 +20,6 @@ These source clients are known to work with Icecast
 |[DeeFuzzer][deefuzzer]                       |Linux/Unix                   |
 |[FreeJ][freej]                               |Linux/Unix                   |
 |[IceGenerator][icegenerator]                 |Linux/Unix                   |
-|[KRADradio][kradradio]                       |Linux/Unix                   |
 |[Muse][muse]                                 |Linux/Unix                   |
 |[Ezstream][ezstream]                         |Linux/Unix                   |
 |[Ladiocast][ladiocast]                       |macOS                        |
@@ -44,7 +43,6 @@ These source clients are known to work with Icecast
 [freej]: https://www.dyne.org/software/freej/
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
 [ices]: https://icecast.org/ices/
-[kradradio]: http://kradradio.com/
 [liquidsoap]: http://liquidsoap.fm/
 [mixxx]: http://mixxx.org/
 [muse]: http://muse.dyne.org/
