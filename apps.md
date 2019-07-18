@@ -40,7 +40,7 @@ These source clients are known to work with Icecast
 [coolmic]: https://coolmic.net
 [darkice]: http://www.darkice.org
 [deefuzzer]: https://pypi.python.org/pypi/DeeFuzzer/
-[ezstream]: http://www.icecast.org/ezstream.php
+[ezstream]: https://icecast.org/ezstream/
 [freej]: http://freej.org
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
 [ices]: http://www.icecast.org/ices.php
