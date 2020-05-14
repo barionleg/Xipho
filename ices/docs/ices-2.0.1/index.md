@@ -6,10 +6,10 @@ version: 2.0.1
 <div class="article" markdown="1">
 # Pages
 
--	[Introduction](intro.html)
--	[Basic Setup](basic.html)
--	[Config File](config.html)
--	[Input modules](inputs.html)
--	[FAQ](faq.html)
+-	[Introduction](intro)
+-	[Basic Setup](basic)
+-	[Config File](config)
+-	[Input modules](inputs)
+-	[FAQ](faq)
 
 </div>
