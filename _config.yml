@@ -10,7 +10,7 @@ include: ["redirect.rules"]
 # Build settings
 markdown: kramdown
 permalink: /news/:title/
-highlighter: pygments
+highlighter: rouge
 
 #collections:
 #    docs:
