@@ -21,7 +21,7 @@ A Line Should Not Exceed 80 Characters.
 
 ### Brace Placement
 All `if`, `while`, `for` and `do` statements should either have braces or be on a single line.
-Do not put parens next to keywords. Put a space between.
+Do not put braces next to keywords. Put a space between.
 
 {% highlight c %}
 if (foo == 1) {
