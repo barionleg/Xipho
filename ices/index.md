@@ -22,8 +22,8 @@ For MP3 support you may want to take a look at IceS 0.x.
 
 -	__IceS 2 (version 2.0)__  
 	Source client for broadcasting in Ogg Vorbis format to an Icecast 2 server
-	*	[ices-2.0.2.tar.bz2](http://downloads.us.xiph.org/releases/ices/ices-2.0.2.tar.bz2)
-	*	[ices-2.0.2.tar.gz](http://downloads.us.xiph.org/releases/ices/ices-2.0.2.tar.gz)
+	*	[ices-2.0.3.tar.bz2](http://downloads.us.xiph.org/releases/ices/ices-2.0.3.tar.bz2)
+	*	[ices-2.0.3.tar.gz](http://downloads.us.xiph.org/releases/ices/ices-2.0.3.tar.gz)
 -	__IceS 0 (deprecated)__  
 	source client for broadcasting in MP3 format to an icecast2 server
 	*	[ices-0.4.tar.gz](http://downloads.us.xiph.org/releases/ices/ices-0.4.tar.gz)
