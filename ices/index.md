@@ -30,7 +30,7 @@ For MP3 support you may want to take a look at IceS 0.x.
 
 ## Documentation
 
-Documentation for IceS 2 can be found [here](docs/ices-2.0.2/).
+Documentation for IceS 2 can be found [here](docs/ices-2.0.3/).
 
 All Docs:
 {% for doc in docs reversed %}
