@@ -43,7 +43,7 @@ These source clients are known to work with Icecast
 [freej]: https://www.dyne.org/software/freej/
 [icegenerator]: http://sourceforge.net/projects/icegenerator/
 [ices]: https://icecast.org/ices/
-[liquidsoap]: http://liquidsoap.fm/
+[liquidsoap]: https://www.liquidsoap.info
 [mixxx]: https://mixxx.org
 [muse]: https://www.dyne.org/software/muse/
 [mpd]: https://www.musicpd.org
