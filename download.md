@@ -53,18 +53,18 @@ We suggest that you download one from our [third-party applications]({{ "/apps" 
 <div class="article" id="git" markdown="1">
 # Clone Git Repository
 
-Additionally to the release tarballs we have a [public git repository](https://git.xiph.org/?p=icecast-server.git;a=summary) where we do our development, that anyone can clone.
+Additionally to the release tarballs we have a [public git repository](https://gitlab.xiph.org/xiph/icecast-server) where we do our development, that anyone can clone.
 
 To get the latest development state:
 
 {% highlight sh %}
-git clone --recursive https://git.xiph.org/icecast-server.git
+git clone --recursive https://gitlab.xiph.org/xiph/icecast-server.git
 {% endhighlight %}
 
 If your git version does not support `--recursive` clones, do
 
 {% highlight sh %}
-git clone https://git.xiph.org/icecast-server.git
+git clone https://gitlab.xiph.org/xiph/icecast-server.git
 cd icecast-server
 git submodule update --init
 {% endhighlight %}
