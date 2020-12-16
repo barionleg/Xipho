@@ -90,6 +90,12 @@ For further instruction, see our Wiki page: [Icecast Git Workflow](https://wiki.
 			<td><a href="http://downloads.xiph.org/releases/libshout/libshout-2.4.4.tar.gz">Latest: 2.4.4 (tar.gz)</a><br />
 				<a href="http://downloads.xiph.org/releases/libshout/">Older</a></td>
 		</tr>
+		<tr>
+			<td>libigloo</td>
+			<td>Generic C framework used and developed by the Icecast project</td>
+			<td><a href="https://ftp.osuosl.org/pub/xiph/releases/igloo/libigloo-0.9.0.tar.gz">Latest: 0.9.0 (tar.gz)</a><br />
+				<a href="https://ftp.osuosl.org/pub/xiph/releases/igloo/">Older</a></td>
+		</tr>
         <tr>
             <td>libshout-java</td>
             <td>Java libshout binding</td>
