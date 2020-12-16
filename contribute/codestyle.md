@@ -135,6 +135,48 @@ When putting expressions in macros always wrap the expression in parenthesis
 #define ADD(x,y) ((x) + (y))
 {% endhighlight %}
 
+## Variables
+
+### Placement and formating
+Variable declarations should always go to the begin of the current scope.
+Each block of declarations is terminated by a single blank line.
+Variables are never declared mixed with code.
+
+{% highlight c %}
+static void test(void)
+{
+    char *str;
+    int i;
+
+    /* code */
+
+    if (expr) {
+        const char *msg = getmsg();
+
+        printf("Message: %s\n", msg);
+    }
+}
+{% endhighlight %}
+
+### Types
+Types should be chosen by there definition. Generic or native types should be avoided
+as they are often defined in a way that can result in portability problems.
+
+Common errors include assumptions about the size or data structure of types.
+Examples include the use of `short` when a 16 bit integer type is required.
+The correct type here is `int16_t` from `<stdint.h>`.
+
+Good types include:
+
+|Type                   |Usage                                                                                                              |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------|
+|`intN_t`               |signed integer type of fixed size (N bits)                                                                         |
+|`uintN_t`              |unsigned integer type of fixed size (N bits)                                                                       |
+|`size_t`               |Unsigned type used for counting objects in memory. Such as results of sizeof(), array sizes and indices, string lengths, or as counter loops iterating over arrays. |
+|`ssize_t`              |Similar to `size_t` but can in addition hold the value `-1` (often used to indicate an error).                     |
+|`char *`               |Strings, 0-terminated                                                                                              |
+|`void *`               |Blocks of memory, not 0-terminated. Often accompanied by length parameters which should have a type of `size_t`.   |
+
 ## Comments
 For comments, `//` should never be used but instead `/* comment here */`.  
 
