@@ -2,6 +2,9 @@
 _site/
 _standalone_docs/
 
+# VIM
+.*.swp
+
 # Mac files
 .DS_Store
 .AppleDouble
