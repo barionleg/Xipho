@@ -30,16 +30,16 @@ Ezstream is free software and licensed under the GNU General Public License.
 ## Latest version: 0.6.0
 
 - Source .tar.gz (all platforms)
-  - [ezstream-0.6.0.tar.gz](http://downloads.xiph.org/releases/ezstream/ezstream-0.6.0.tar.gz)
+  - [ezstream-0.6.0.tar.gz](https://downloads.xiph.org/releases/ezstream/ezstream-0.6.0.tar.gz)
   - SHA256: `f86eb8163b470c3acbc182b42406f08313f85187bd9017afb8b79b02f03635c9`
 
 ## Older releases
 
 Older releases can be found at
-[downloads.xiph.org/releases/ezstream](http://downloads.xiph.org/releases/ezstream/).
+[downloads.xiph.org/releases/ezstream](https://downloads.xiph.org/releases/ezstream/).
 
 The last official build for MS Windows is available here:
-[ezstream-0.5.6-win32.zip](http://downloads.xiph.org/releases/ezstream/ezstream-0.5.6-win32.zip)
+[ezstream-0.5.6-win32.zip](https://downloads.xiph.org/releases/ezstream/ezstream-0.5.6-win32.zip)
 (MD5: `19c6f28c2de81e6e2fa3e0ed914e6696`).
 </div>
 

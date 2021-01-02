@@ -5,12 +5,12 @@ download:
   linux:
     format:      ".tar.gz"
     size:        "2.3 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast-2.4.4.tar.gz"
+    url:         "https://downloads.xiph.org/releases/icecast/icecast-2.4.4.tar.gz"
     description: "Source Tarball"
   windows:
     format:      ".exe"
     size:        "5.0 MB"
-    url:         "http://downloads.xiph.org/releases/icecast/icecast_win32_2.4.4.exe"
+    url:         "https://downloads.xiph.org/releases/icecast/icecast_win32_2.4.4.exe"
     description: "Binary Installer"
 ---
 <div class="article" id="current-release" markdown="1">
@@ -42,7 +42,7 @@ For details please refer to the package repository section of your distribution'
 # Other Releases
 
 ## Older Releases
-Older releases can be found [here](http://downloads.xiph.org/releases/icecast/)
+Older releases can be found [here](https://downloads.xiph.org/releases/icecast/)
 
 ## Source Clients
 In addition to Icecast, you will most likely need to download a source client for creating the actual stream.
@@ -87,14 +87,14 @@ For further instruction, see our Wiki page: [Icecast Git Workflow](https://wiki.
 		<tr>
 			<td>libshout</td>
 			<td>Library which can be used to write a source client like ices</td>
-			<td><a href="http://downloads.xiph.org/releases/libshout/libshout-2.4.4.tar.gz">Latest: 2.4.4 (tar.gz)</a><br />
-				<a href="http://downloads.xiph.org/releases/libshout/">Older</a></td>
+			<td><a href="https://downloads.xiph.org/releases/libshout/libshout-2.4.5.tar.gz">Latest: 2.4.5 (tar.gz)</a><br />
+				<a href="https://downloads.xiph.org/releases/libshout/">Older</a></td>
 		</tr>
 		<tr>
 			<td>libigloo</td>
 			<td>Generic C framework used and developed by the Icecast project</td>
-			<td><a href="https://ftp.osuosl.org/pub/xiph/releases/igloo/libigloo-0.9.0.tar.gz">Latest: 0.9.0 (tar.gz)</a><br />
-				<a href="https://ftp.osuosl.org/pub/xiph/releases/igloo/">Older</a></td>
+			<td><a href="https://downloads.xiph.org/releases/igloo/libigloo-0.9.0.tar.gz">Latest: 0.9.0 (tar.gz)</a><br />
+				<a href="https://downloads.xiph.org/releases/igloo/">Older</a></td>
 		</tr>
         <tr>
             <td>libshout-java</td>
@@ -104,12 +104,12 @@ For further instruction, see our Wiki page: [Icecast Git Workflow](https://wiki.
 		<tr>
 			<td>shout-python</td>
 			<td>Python bindings for libshout 2</td>
-			<td><a href="http://downloads.us.xiph.org/releases/libshout/shout-python-0.2.1.tar.gz">Latest: 0.2.1 (tar.gz)</a></td>
+			<td><a href="https://downloads.xiph.org/releases/libshout/shout-python-0.2.1.tar.gz">Latest: 0.2.1 (tar.gz)</a></td>
 		</tr>
 		<tr>
 			<td>shout-perl</td>
 			<td>Perl bindings for libshout 2</td>
-			<td><a href="http://downloads.us.xiph.org/releases/libshout/Shout-2.1.tar.gz">Latest: 2.1 (tar.gz)</a></td>
+			<td><a href="https://downloads.xiph.org/releases/libshout/Shout-2.1.tar.gz">Latest: 2.1 (tar.gz)</a></td>
 		</tr>
 		<tr>
 			<td>ruby-shout</td>
