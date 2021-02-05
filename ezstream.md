@@ -101,7 +101,7 @@ Building ezstream depends on:
 ## Installation
 
 Most current UNIX-like operating system, such as Linux (including Windows
-Subsystem for Linux) and *BSD, either provide prebuilt binary packages of
+Subsystem for Linux) and \*BSD, either provide prebuilt binary packages of
 ezstream, or the necessary tools to build it manually.
 
 To find out whether ezstream is available as a prebuilt package and in which
