@@ -24,11 +24,11 @@ Ezstream is free software and licensed under the GNU General Public License.
 <div class="article" id="download" markdown="1">
 # Download
 
-## Latest version: 1.0.0
+## Latest version: 1.0.1
 
 - Source .tar.gz (all platforms)
-  - [ezstream-1.0.0.tar.gz](https://downloads.xiph.org/releases/ezstream/ezstream-1.0.0.tar.gz)
-  - SHA256: `f4612507e99f20f0b0f006e1946bea6a2bb623882e3333fc47bdd203819ef99f`
+  - [ezstream-1.0.1.tar.gz](https://downloads.xiph.org/releases/ezstream/ezstream-1.0.1.tar.gz)
+  - SHA256: `fc4bf494897a8b1cf75dceefb1eb22ebd36967e5c3b5ce2af9858dbb94cf1157`
 
 ## Older releases
 
@@ -39,10 +39,17 @@ Older releases, including version 0.x, can be found at
 <div class="article" id="release-notes" markdown="1">
 # Release Notes
 
-Ezstream 1.0.0 has been released on January 29th 2020.
+Ezstream 1.0.1 has been released on February 22nd 2020.
 
-Version 1.0 is a major feature release with a new configuration file
-structure.
+This is a bugfix release.
+
+ - Fix a crash, if there is a typo in the `<encoder />` setting
+ - Fix regression setting the stream name. From zygmund2000 on Github.
+ - Minor example and documentation tweaks
+
+## Version 1.0
+
+This is a major feature release with a new configuration file structure.
 
 Further changes include:
 
