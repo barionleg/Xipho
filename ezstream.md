@@ -106,8 +106,9 @@ rely on prebuilt binary packages for the dependencies as much as possible.
 This may require the installation of the respective -devel packages, if
 applicable.
 
-The ezstream source code ships with a `README.md` file that provides
-information on all further steps.
+The ezstream source code ships with a
+[`README.md`](https://gitlab.xiph.org/xiph/ezstream/blob/develop/README.md)
+file that provides information on all further steps.
 </div>
 
 <div class="article" id="support" markdown="1">
