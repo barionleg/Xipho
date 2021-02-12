@@ -24,28 +24,34 @@ Ezstream is free software and licensed under the GNU General Public License.
 <div class="article" id="download" markdown="1">
 # Download
 
-## Latest version: 1.0.1
+## Latest version: 1.0.2
 
 - Source .tar.gz (all platforms)
-  - [ezstream-1.0.1.tar.gz](https://downloads.xiph.org/releases/ezstream/ezstream-1.0.1.tar.gz)
-  - SHA256: `fc4bf494897a8b1cf75dceefb1eb22ebd36967e5c3b5ce2af9858dbb94cf1157`
+  - [ezstream-1.0.2.tar.gz](https://downloads.xiph.org/releases/ezstream/ezstream-1.0.2.tar.gz)
+  - SHA256: `11de897f455a95ba58546bdcd40a95d3bda69866ec5f7879a83b024126c54c2a`
 
 ## Older releases
 
-Older releases, including version 0.x, can be found at
-[downloads.xiph.org/releases/ezstream](https://downloads.xiph.org/releases/ezstream/).
+All releases, including version 0.x, can be found at
+[downloads.xiph.org/releases/ezstream](https://downloads.xiph.org/releases/ezstream/)
+and
+[ezstream.mrsserver.net/releases](https://ezstream.mrsserver.net/releases/).
 </div>
 
 <div class="article" id="release-notes" markdown="1">
 # Release Notes
 
-Ezstream 1.0.1 has been released on February 22nd 2020.
+Ezstream 1.0.2 has been released on February 12, 2020.
 
 This is a bugfix release.
 
- - Fix a crash, if there is a typo in the `<encoder />` setting
- - Fix regression setting the stream name. From zygmund2000 on Github.
- - Minor example and documentation tweaks
+ - Fix a crash, if metadata placeholders are configured for input files
+   that do not contain the respective values. From gui-lux on Github (#16).
+ - Fix a crash in one instance of querying the metadata program. From taku0220
+   on Github (#23).
+ - Fix a crash when referencing an unconfigured intake in a stream. From
+   Optiqus on Github (#28).
+ - Documentation and example improvements
 
 ## Version 1.0
 
@@ -83,7 +89,7 @@ Further changes include:
 Ezstream depends on:
 
  - [libshout]({{ "/download/" | prepend: site.baseurl }})
-   version 2.2.x or newer
+   version 2.4.3 or newer
  - [libxml](http://xmlsoft.org/) version 2.x
  - [TagLib](https://taglib.github.io/) for C version 1.x (1.4 or newer
    recommended)
