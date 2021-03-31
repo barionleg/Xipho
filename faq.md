@@ -71,6 +71,9 @@ The mountpoint is created as the software connects. Therefore if the source uses
 default credentials (username "`source`", and the password from the `<source-password>` tag)
 there is no need to configure anything on the Icecast side.
 
+## What is the default mountpoint?
+There is none. Mountpoints are created automatically when a source mounts (connects) to them.
+
 </div>
 
 <div class="article" id="setup" markdown="1">
