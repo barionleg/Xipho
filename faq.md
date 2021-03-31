@@ -93,7 +93,7 @@ manager.
 Just navigate your web browser to host/port the Icecast server is listening on.
 
 If you are a Windows user, make sure you started the Icecast server and then click on the
-shortcut in the Startmenu, it will open the Icecats status page in your browser.
+shortcut in the Startmenu, it will open the Icecast status page in your browser.
 
 </div>
 
