@@ -53,7 +53,7 @@ It's basically just simple file serving, which webservers like nginx or Apache d
 ## What is a mountpoint?
 A mountpoint is the path a resource such as a stream, or a static, or a generated file is
 is associated with. The mountpoint is used when accessing the the resource.
-Each mountpoint is associated with eactly one resource.
+Each mountpoint is associated with exactly one resource.
 
 Icecast allows virtually any number of sources to mount different mountpoints at the same time.
 This permits streaming a number of different streams or channels with different content.
