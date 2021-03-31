@@ -2,6 +2,15 @@
 title: FAQ
 permalink: /faq/
 ---
+<div class="article" id="toc" markdown="1">
+# Table of Content
+* [General Questions](#general-questions)
+* [Setup](#setup)
+* [Administration](#administration)
+* [Interoperability](#interoperability)
+* [Configuration](#configuration)
+</div>
+
 <div class="article" id="general-questions" markdown="1">
 # General Questions
 
@@ -40,6 +49,30 @@ As already mentioned, Spotify and co. do not really "stream" in the classic mean
 Actually what they in most cases do is provide the client with the individual songs and the client
 takes care of all the other things, like play/pause and playing the tracks in the desired order.
 It's basically just simple file serving, which webservers like nginx or Apache do.
+
+## What is a mountpoint?
+A mountpoint is the path a resource such as a stream, or a static, or a generated file is
+is associated with. The mountpoint is used when accessing the the resource.
+Each mountpoint is associated with exactly one resource.
+
+Icecast allows virtually any number of sources to mount different mountpoints at the same time.
+This permits streaming a number of different streams or channels with different content.
+
+Mountpoints are created automatically when a resource is connected to them.
+There is no need to configure them at all. Mountpoints under "`/admin/`" are special
+as they provide the API, and administration interface.
+Mountpoints do not contain query parameters, or fragment identifiers.
+
+## What is a source?
+A source is a process that mounts a mountpoint.
+In simple words it is a software that connects a stream at a path on the Icecast server.
+
+The mountpoint is created as the software connects. Therefore if the source uses the
+default credentials (username "`source`", and the password from the `<source-password>` tag)
+there is no need to configure anything on the Icecast side.
+
+## What is the default mountpoint?
+There is none. Mountpoints are created automatically when a source mounts (connects) to them.
 
 </div>
 
@@ -85,7 +118,7 @@ manager.
 Just navigate your web browser to host/port the Icecast server is listening on.
 
 If you are a Windows user, make sure you started the Icecast server and then click on the
-shortcut in the Startmenu, it will open the Icecats status page in your browser.
+shortcut in the Startmenu, it will open the Icecast status page in your browser.
 
 </div>
 
@@ -99,3 +132,32 @@ We maintain a list of Icecast-compatible audio players [here]({{ "/apps" | prepe
 
 </div>
 
+<div class="article" id="configuration" markdown="1">
+# Configuration
+
+## What should I set `<location>` to?
+The `<location>` tag sets free form string that is listed publically as the server's location.
+(This is not the location of your station/studio.)
+The value should include at least the nation, and city.
+
+A good example would be "`Datacentre 4, OurSuperCompany GmbH, Frankfurt am Main, Germany`".
+A bad example would be "`Frankfurt`" (which one?) or "`rack4.2`".
+
+## What should I set `<admin>` to?
+The `<admin>`tag sets a free form string that is listed publically as the server's contact.
+This is normally an e-mail address, but could also be a phone number.
+(If you use a phone number please use the international format starting with "`+`".)
+
+## What should I set `<hostname>` to?
+This is the public hostname of your Icecast. Your server is reachable by this domain name.
+It is used in a few cases Icecast needs to know how it is reachable from the outside.
+One such case is for yp / directory submission.
+
+You should set this to a DNS name that has at least a `A`, or `AAAA` resource record pointing to
+this instance. Using of IP addresses, or (website) URIs is invalid.
+
+## Does setting `<server-id>`, or `<fileserve>` make my server more secure?
+No. Altering this settings does not improve security. However setting those values can easily
+break your server. It is best not to touch those options at all.
+
+</div>
