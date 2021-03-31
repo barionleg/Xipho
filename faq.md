@@ -50,6 +50,27 @@ Actually what they in most cases do is provide the client with the individual so
 takes care of all the other things, like play/pause and playing the tracks in the desired order.
 It's basically just simple file serving, which webservers like nginx or Apache do.
 
+## What is a mountpoint?
+A mountpoint is the path a resource such as a stream, or a static, or a generated file is
+is associated with. The mountpoint is used when accessing the the resource.
+Each mountpoint is associated with eactly one resource.
+
+Icecast allows virtually any number of sources to mount different mountpoints at the same time.
+This permits streaming a number of different streams or channels with different content.
+
+Mountpoints are created automatically when a resource is connected to them.
+There is no need to configure them at all. Mountpoints under "`/admin/`" are special
+as they provide the API, and administration interface.
+Mountpoints do not contain query parameters, or fragment identifiers.
+
+## What is a source?
+A source is a process that mounts a mountpoint.
+In simple words it is a software that connects a stream at a path on the Icecast server.
+
+The mountpoint is created as the software connects. Therefore if the source uses the
+default credentials (username "`source`", and the password from the `<source-password>` tag)
+there is no need to configure anything on the Icecast side.
+
 </div>
 
 <div class="article" id="setup" markdown="1">
