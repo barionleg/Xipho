@@ -2,6 +2,14 @@
 title: FAQ
 permalink: /faq/
 ---
+<div class="article" id="toc" markdown="1">
+# Table of Content
+* [General Questions](#general-questions)
+* [Setup](#setup)
+* [Administration](#administration)
+* [Interoperability](#interoperability)
+</div>
+
 <div class="article" id="general-questions" markdown="1">
 # General Questions
 
