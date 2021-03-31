@@ -8,6 +8,7 @@ permalink: /faq/
 * [Setup](#setup)
 * [Administration](#administration)
 * [Interoperability](#interoperability)
+* [Configuration](#configuration)
 </div>
 
 <div class="article" id="general-questions" markdown="1">
@@ -107,3 +108,32 @@ We maintain a list of Icecast-compatible audio players [here]({{ "/apps" | prepe
 
 </div>
 
+<div class="article" id="configuration" markdown="1">
+# Configuration
+
+## What should I set `<location>` to?
+The `<location>` tag sets free form string that is listed publically as the server's location.
+(This is not the location of your station/studio.)
+The value should include at least the nation, and city.
+
+A good example would be "`Datacentre 4, OurSuperCompany GmbH, Frankfurt am Main, Germany`".
+A bad example would be "`Frankfurt`" (which one?) or "`rack4.2`".
+
+## What should I set `<admin>` to?
+The `<admin>`tag sets a free form string that is listed publically as the server's contact.
+This is normally an e-mail address, but could also be a phone number.
+(If you use a phone number please use the international format starting with "`+`".)
+
+## What should I set `<hostname>` to?
+This is the public hostname of your Icecast. Your server is reachable by this domain name.
+It is used in a few cases Icecast needs to know how it is reachable from the outside.
+One such case is for yp / directory submission.
+
+You should set this to a DNS name that has at least a `A`, or `AAAA` resource record pointing to
+this instance. Using of IP addresses, or (website) URIs is invalid.
+
+## Does setting `<server-id>`, or `<fileserve>` make my server more secure?
+No. Altering this settings does not improve security. However setting those values can easily
+break your server. It is best not to touch those options at all.
+
+</div>
