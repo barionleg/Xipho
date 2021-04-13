@@ -72,7 +72,7 @@ default credentials (username "`source`", and the password from the `<source-pas
 there is no need to configure anything on the Icecast side.
 
 ## What is the default mountpoint?
-There is none. Mountpoints are created automatically when a source mounts (connects) to them.
+There is none. Mountpoints are created automatically when a source mounts (connects to) them.
 
 </div>
 
