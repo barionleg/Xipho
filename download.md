@@ -93,7 +93,7 @@ For further instruction, see our Wiki page: [Icecast Git Workflow](https://wiki.
 		<tr>
 			<td>libigloo</td>
 			<td>Generic C framework used and developed by the Icecast project</td>
-			<td><a href="https://downloads.xiph.org/releases/igloo/libigloo-0.9.0.tar.gz">Latest: 0.9.0 (tar.gz)</a><br />
+			<td><a href="https://downloads.xiph.org/releases/igloo/libigloo-0.9.1.tar.gz">Latest: 0.9.1 (tar.gz)</a><br />
 				<a href="https://downloads.xiph.org/releases/igloo/">Older</a></td>
 		</tr>
         <tr>
