@@ -160,4 +160,13 @@ this instance. Using of IP addresses, or (website) URIs is invalid.
 No. Altering this settings does not improve security. However setting those values can easily
 break your server. It is best not to touch those options at all.
 
+## Which characters are allowed in Icecast mountpoint names?
+Icecast accepts all characters but U+0000. However it is best to avoid some characters as for
+example players might not support them. Therefore it is recommended to avoid those that require
+escaping as per RFC 3986. The characters permitted by that standard without escaping are:
+"a" to "z", "A" to "Z", "0" to "9", "-", ".", "\_", and "~".
+In addition it is totally safe to use the slash ("/") as well.
+
+For technical reasons it is also required that the mountpoint starts with a slash ("/"),
+and must not start with "/admin/".
 </div>
