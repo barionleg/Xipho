@@ -169,4 +169,13 @@ In addition it is totally safe to use the slash ("/") as well.
 
 For technical reasons it is also required that the mountpoint starts with a slash ("/"),
 and must not start with "/admin/".
+
+## Can I add a GET-parameter to listener URLs for authentication/load balancing/tracking?
+Yes. There are two namespaces reserved for this. The first is "`cdn-`" for parameters purely in the domain of the CDN. This is useful for example for load balancers. The second namespace is "`app-`" for everything else.
+
+It is recommended to not use parameters outside those namespaces as they will likely collide with parameters Icecast uses internally.
+
+Examples:
+- https://icecast.example.org/best-music.opus?app-token=bGlzdGVuZXI6aGFja21l
+- https://icecast.example.org/best-music.opus?cdn-node=berlin-3&app-tree=birch
 </div>
