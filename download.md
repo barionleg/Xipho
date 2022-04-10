@@ -87,7 +87,7 @@ For further instruction, see our Wiki page: [Icecast Git Workflow](https://wiki.
 		<tr>
 			<td>libshout</td>
 			<td>Library which can be used to write a source client like ices</td>
-			<td><a href="https://downloads.xiph.org/releases/libshout/libshout-2.4.5.tar.gz">Latest: 2.4.5 (tar.gz)</a><br />
+			<td><a href="https://downloads.xiph.org/releases/libshout/libshout-2.4.6.tar.gz">Latest: 2.4.6 (tar.gz)</a><br />
 				<a href="https://downloads.xiph.org/releases/libshout/">Older</a></td>
 		</tr>
 		<tr>
