@@ -32,7 +32,7 @@ on [irc.libera.chat](https://libera.chat/) ([Webchat](https://kiwiirc.com/nextcl
 
 ## Bugreports
 The official ways to report bugs are to send a message to the `icecast-dev` mailing list,
-submit a bug report to [https://trac.xiph.org](https://trac.xiph.org/) or alternately go to the #icecast IRC channel.
+submit a bug report to [https://gitlab.xiph.org/xiph](https://gitlab.xiph.org/xiph) or alternately go to the #icecast IRC channel.
 Please submit this information in one of these ways.
 
 ## E-mail
